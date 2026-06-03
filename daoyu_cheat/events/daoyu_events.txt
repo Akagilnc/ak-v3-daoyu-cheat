@@ -1273,8 +1273,8 @@ daoyu.140 = {
 		hidden_effect = {
 			set_variable = daoyu_brazen_expedition
 			every_state = {
-				limit = { owner = { is_ai = yes } any_scope_building = { is_building_type = uilding_furniture_manufacturies } }
-				every_scope_building = { limit = { is_building_type = uilding_furniture_manufacturies } add_modifier = { name = daoyu_throughput_add multiplier = -10 weeks = 2 } }
+				limit = { owner = { is_ai = yes } any_scope_building = { is_building_type = building_furniture_manufactory } }
+				every_scope_building = { limit = { is_building_type = building_furniture_manufactory } add_modifier = { name = daoyu_throughput_add multiplier = -10 weeks = 2 } }
 			}
 		}
 	}

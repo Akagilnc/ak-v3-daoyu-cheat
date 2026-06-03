@@ -197,9 +197,6 @@ daoyu_high_growth_mortality = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
 	state_mortality_mult = 99.99
 }
-daoyu_123 = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-}
 #	building_group_bg_manufacturing_throughput_mult#制造业
 #	building_group_bg_plantations_throughput_mult#种植园
 #	building_group_bg_agriculture_throughput_mult#农业
