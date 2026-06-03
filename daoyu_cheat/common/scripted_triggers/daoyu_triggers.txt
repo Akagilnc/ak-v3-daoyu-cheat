@@ -1852,7 +1852,7 @@ daoyu_building_state_trait_trigger = {
 		and = { has_global_variable = daoyu_add_building_state_trait daoyu_add_building_state_trait_$STATE_TRAIT$ = yes }
 	}
 }
-daoyu_add_building_state_trait_building_arts_academy = { has_technology_researched = romanticism }
+daoyu_add_building_state_trait_building_art_academy = { has_technology_researched = romanticism }
 daoyu_add_building_state_trait_building_coal_mine = { has_technology_researched = shaft_mining }
 daoyu_add_building_state_trait_building_iron_mine = { has_technology_researched = shaft_mining }
 daoyu_add_building_state_trait_building_lead_mine = { has_technology_researched = shaft_mining }
@@ -1869,7 +1869,7 @@ daoyu_add_building_state_trait_building_rice_farm = { has_technology_researched 
 daoyu_add_building_state_trait_building_maize_farm = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_millet_farm = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_livestock_ranch = { has_technology_researched = enclosure }
-daoyu_add_building_state_trait_building_vineyard_plantation = { has_technology_researched = enclosure }
+daoyu_add_building_state_trait_building_vineyard = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_dye_plantation = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_silk_plantation = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_cotton_plantation = { has_technology_researched = enclosure }
@@ -1880,21 +1880,21 @@ daoyu_add_building_state_trait_building_sugar_plantation = { has_technology_rese
 daoyu_add_building_state_trait_building_banana_plantation = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_opium_plantation = { has_technology_researched = enclosure }
 daoyu_add_building_state_trait_building_food_industry = { has_technology_researched = romanticism }
-daoyu_add_building_state_trait_building_textile_mills = { has_technology_researched = romanticism }
-daoyu_add_building_state_trait_building_furniture_manufacturies = { has_technology_researched = manufacturies }
+daoyu_add_building_state_trait_building_textile_mill = { has_technology_researched = romanticism }
+daoyu_add_building_state_trait_building_furniture_manufactory = { has_technology_researched = manufacturies }
 daoyu_add_building_state_trait_building_glassworks = { has_technology_researched = manufacturies }
-daoyu_add_building_state_trait_building_tooling_workshops = { has_technology_researched = manufacturies }
-daoyu_add_building_state_trait_building_paper_mills = { has_technology_researched = manufacturies }
-daoyu_add_building_state_trait_building_shipyards = { always = yes }
+daoyu_add_building_state_trait_building_tooling_workshop = { has_technology_researched = manufacturies }
+daoyu_add_building_state_trait_building_paper_mill = { has_technology_researched = manufacturies }
+daoyu_add_building_state_trait_building_shipyard = { always = yes }
 daoyu_add_building_state_trait_building_arms_industry = { has_technology_researched = gunsmithing }
-daoyu_add_building_state_trait_building_artillery_foundries = { has_technology_researched = gunsmithing }
-daoyu_add_building_state_trait_building_chemical_plants = { has_technology_researched = intensive_agriculture }
+daoyu_add_building_state_trait_building_artillery_foundry = { has_technology_researched = gunsmithing }
+daoyu_add_building_state_trait_building_chemical_plant = { has_technology_researched = intensive_agriculture }
 daoyu_add_building_state_trait_building_explosives_factory = { has_technology_researched = intensive_agriculture }
-daoyu_add_building_state_trait_building_synthetics_plants = { has_technology_researched = aniline }
-daoyu_add_building_state_trait_building_steel_mills = { has_technology_researched = steelworking }
+daoyu_add_building_state_trait_building_synthetics_plant = { has_technology_researched = aniline }
+daoyu_add_building_state_trait_building_steel_mill = { has_technology_researched = steelworking }
 daoyu_add_building_state_trait_building_motor_industry = { has_technology_researched = atmospheric_engine }
 daoyu_add_building_state_trait_building_electrics_industry = { has_technology_researched = telephone }
-daoyu_add_building_state_trait_building_munition_plants = { has_technology_researched = percussion_cap }
+daoyu_add_building_state_trait_building_munition_plant = { has_technology_researched = percussion_cap }
 daoyu_add_building_state_trait_building_power_plant = { has_technology_researched = electrical_generation }
 daoyu_resources_building_state_trait_trigger = {
 	any_state = {

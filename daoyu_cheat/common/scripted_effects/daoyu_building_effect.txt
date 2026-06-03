@@ -517,7 +517,7 @@ daoyu_building_level_effect = {
 		if = { limit = { has_variable = daoyu_building_millet_farm } create_building = { building = building_millet_farm level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_wheat_farm } create_building = { building = building_wheat_farm level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_livestock_ranch } create_building = { building = building_livestock_ranch level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_vineyard_plantation } create_building = { building = building_vineyard level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_vineyard } create_building = { building = building_vineyard level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_dye_plantation } create_building = { building = building_dye_plantation level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_silk_plantation } create_building = { building = building_silk_plantation level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_cotton_plantation } create_building = { building = building_cotton_plantation level = $LEVEL$ reserves = 1 } }
@@ -527,30 +527,30 @@ daoyu_building_level_effect = {
 		if = { limit = { has_variable = daoyu_building_sugar_plantation } create_building = { building = building_sugar_plantation level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_banana_plantation } create_building = { building = building_banana_plantation level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_opium_plantation } create_building = { building = building_opium_plantation level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_barracks } create_building = { building = building_barrack level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_barrack } create_building = { building = building_barrack level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_construction_sector } create_building = { building = building_construction_sector level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_railway } create_building = { building = building_railway level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_government_administration } create_building = { building = building_government_administration level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_building_skyscraper } create_building = { building = building_skyscraper level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_university } create_building = { building = building_university level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_arts_academy } create_building = { building = building_art_academy level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_art_academy } create_building = { building = building_art_academy level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_port } create_building = { building = building_port level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_food_industry } create_building = { building = building_food_industry level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_textile_mills } create_building = { building = building_textile_mill level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_furniture_manufacturies } create_building = { building = building_furniture_manufactory level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_textile_mill } create_building = { building = building_textile_mill level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_furniture_manufactory } create_building = { building = building_furniture_manufactory level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_glassworks } create_building = { building = building_glassworks level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_tooling_workshops } create_building = { building = building_tooling_workshop level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_paper_mills } create_building = { building = building_paper_mill level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_shipyards } create_building = { building = building_shipyard level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_tooling_workshop } create_building = { building = building_tooling_workshop level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_paper_mill } create_building = { building = building_paper_mill level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_shipyard } create_building = { building = building_shipyard level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_arms_industry } create_building = { building = building_arms_industry level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_artillery_foundries } create_building = { building = building_artillery_foundry level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_chemical_plants } create_building = { building = building_chemical_plant level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_artillery_foundry } create_building = { building = building_artillery_foundry level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_chemical_plant } create_building = { building = building_chemical_plant level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_explosives_factory } create_building = { building = building_explosives_factory level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_synthetics_plants } create_building = { building = building_synthetics_plant level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_steel_mills } create_building = { building = building_steel_mill level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_synthetics_plant } create_building = { building = building_synthetics_plant level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_steel_mill } create_building = { building = building_steel_mill level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_motor_industry } create_building = { building = building_motor_industry level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_electrics_industry } create_building = { building = building_electrics_industry level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_munition_plants } create_building = { building = building_munition_plant level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_munition_plant } create_building = { building = building_munition_plant level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_power_plant } create_building = { building = building_power_plant level = $LEVEL$ reserves = 1 } }
 	}
 	daoyu_clean_building_level_effect = yes
@@ -586,7 +586,7 @@ daoyu_clean_building_level_effect = {
 					has_variable = daoyu_building_millet_farm
 					has_variable = daoyu_building_wheat_farm
 					has_variable = daoyu_building_livestock_ranch
-					has_variable = daoyu_building_vineyard_plantation
+					has_variable = daoyu_building_vineyard
 					has_variable = daoyu_building_dye_plantation
 					has_variable = daoyu_building_silk_plantation
 					has_variable = daoyu_building_cotton_plantation
@@ -605,13 +605,13 @@ daoyu_clean_building_level_effect = {
 		limit = {
 			any_scope_state = {
 				or = {
-					has_variable = daoyu_building_barracks
+					has_variable = daoyu_building_barrack
 					has_variable = daoyu_building_construction_sector
 					has_variable = daoyu_building_government_administration
 					has_variable = daoyu_building_building_skyscraper
 					has_variable = daoyu_building_railway
 					has_variable = daoyu_building_university
-					has_variable = daoyu_building_arts_academy
+					has_variable = daoyu_building_art_academy
 					has_variable = daoyu_building_port
 				}
 			}
@@ -623,21 +623,21 @@ daoyu_clean_building_level_effect = {
 			any_scope_state = {
 				or = {
 					has_variable = daoyu_building_food_industry
-					has_variable = daoyu_building_textile_mills
-					has_variable = daoyu_building_furniture_manufacturies
+					has_variable = daoyu_building_textile_mill
+					has_variable = daoyu_building_furniture_manufactory
 					has_variable = daoyu_building_glassworks
-					has_variable = daoyu_building_tooling_workshops
-					has_variable = daoyu_building_paper_mills
-					has_variable = daoyu_building_shipyards
+					has_variable = daoyu_building_tooling_workshop
+					has_variable = daoyu_building_paper_mill
+					has_variable = daoyu_building_shipyard
 					has_variable = daoyu_building_arms_industry
-					has_variable = daoyu_building_artillery_foundries
-					has_variable = daoyu_building_chemical_plants
+					has_variable = daoyu_building_artillery_foundry
+					has_variable = daoyu_building_chemical_plant
 					has_variable = daoyu_building_explosives_factory
-					has_variable = daoyu_building_synthetics_plants
-					has_variable = daoyu_building_steel_mills
+					has_variable = daoyu_building_synthetics_plant
+					has_variable = daoyu_building_steel_mill
 					has_variable = daoyu_building_motor_industry
 					has_variable = daoyu_building_electrics_industry
-					has_variable = daoyu_building_munition_plants
+					has_variable = daoyu_building_munition_plant
 					has_variable = daoyu_building_power_plant
 				}
 			}
@@ -662,7 +662,7 @@ daoyu_clean_building_level_effect = {
 		remove_variable = daoyu_building_millet_farm
 		remove_variable = daoyu_building_wheat_farm
 		remove_variable = daoyu_building_livestock_ranch
-		remove_variable = daoyu_building_vineyard_plantation
+		remove_variable = daoyu_building_vineyard
 		remove_variable = daoyu_building_dye_plantation
 		remove_variable = daoyu_building_silk_plantation
 		remove_variable = daoyu_building_cotton_plantation
@@ -672,30 +672,30 @@ daoyu_clean_building_level_effect = {
 		remove_variable = daoyu_building_sugar_plantation
 		remove_variable = daoyu_building_banana_plantation
 		remove_variable = daoyu_building_opium_plantation
-		remove_variable = daoyu_building_barracks
+		remove_variable = daoyu_building_barrack
 		remove_variable = daoyu_building_construction_sector
 		remove_variable = daoyu_building_government_administration
 		remove_variable = daoyu_building_building_skyscraper
 		remove_variable = daoyu_building_railway
 		remove_variable = daoyu_building_university
-		remove_variable = daoyu_building_arts_academy
+		remove_variable = daoyu_building_art_academy
 		remove_variable = daoyu_building_port
 		remove_variable = daoyu_building_food_industry
-		remove_variable = daoyu_building_textile_mills
-		remove_variable = daoyu_building_furniture_manufacturies
+		remove_variable = daoyu_building_textile_mill
+		remove_variable = daoyu_building_furniture_manufactory
 		remove_variable = daoyu_building_glassworks
-		remove_variable = daoyu_building_tooling_workshops
-		remove_variable = daoyu_building_paper_mills
-		remove_variable = daoyu_building_shipyards
+		remove_variable = daoyu_building_tooling_workshop
+		remove_variable = daoyu_building_paper_mill
+		remove_variable = daoyu_building_shipyard
 		remove_variable = daoyu_building_arms_industry
-		remove_variable = daoyu_building_artillery_foundries
-		remove_variable = daoyu_building_chemical_plants
+		remove_variable = daoyu_building_artillery_foundry
+		remove_variable = daoyu_building_chemical_plant
 		remove_variable = daoyu_building_explosives_factory
-		remove_variable = daoyu_building_synthetics_plants
-		remove_variable = daoyu_building_steel_mills
+		remove_variable = daoyu_building_synthetics_plant
+		remove_variable = daoyu_building_steel_mill
 		remove_variable = daoyu_building_motor_industry
 		remove_variable = daoyu_building_electrics_industry
-		remove_variable = daoyu_building_munition_plants
+		remove_variable = daoyu_building_munition_plant
 		remove_variable = daoyu_building_power_plant
 	}
 	remove_global_variable = daoyu_low_building_level
@@ -1136,7 +1136,7 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_livestock_ranch" PM = "pm_barbed_wire_fences" }
 	daoyu_production_method_effect = { TYPE = "building_livestock_ranch" PM = "pm_refrigerated_rail_cars_building_livestock_ranch" }
 	daoyu_production_method_effect = { TYPE = "building_livestock_ranch" PM = "pm_refrigerated_storage_building_livestock_ranch" }
-	daoyu_production_method_effect = { TYPE = "building_vineyard" PM = "automatic_irrigation_building_vineyard_plantation" }
+	daoyu_production_method_effect = { TYPE = "building_vineyard" PM = "automatic_irrigation_building_vineyard" }
 	daoyu_production_method_effect = { TYPE = "building_vineyard" PM = "pm_steam_rail_transport" }
 	daoyu_production_method_effect = { TYPE = "building_coal_mine" PM = "pm_diesel_pump_building_coal_mine" }
 	daoyu_production_method_effect = { TYPE = "building_coal_mine" PM = "pm_condensing_engine_pump_building_coal_mine" }
