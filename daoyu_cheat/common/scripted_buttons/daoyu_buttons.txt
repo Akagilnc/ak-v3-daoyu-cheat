@@ -3,7 +3,7 @@ daoyu_fast_construction = {
 	desc = "NEVER"
 	visible = { not = { has_modifier = daoyu_fast_construction } }
 	possible = { }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = {
 		hidden_effect = { remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction }
 	}
@@ -13,7 +13,7 @@ daoyu_fast_construction_off = {
 	desc = "NEVER"
 	visible = { has_modifier = daoyu_fast_construction }
 	possible = { }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { remove_modifier = daoyu_fast_construction }
 }
 daoyu_stop_construction = {
@@ -21,7 +21,7 @@ daoyu_stop_construction = {
 	desc = "NEVER"
 	visible = { not = { has_modifier = daoyu_stop_construction } }
 	possible = { }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = {
 		hidden_effect = { remove_modifier = daoyu_fast_construction } add_modifier = { name = daoyu_stop_construction }
 	}
@@ -31,7 +31,7 @@ daoyu_stop_construction_off = {
 	desc = "NEVER"
 	visible = { has_modifier = daoyu_stop_construction }
 	possible = { }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { remove_modifier = daoyu_stop_construction }
 }
 daoyu_w1 = {
@@ -39,7 +39,7 @@ daoyu_w1 = {
 	desc = "7"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 7 } }
 }
 daoyu_w2 = {
@@ -47,7 +47,7 @@ daoyu_w2 = {
 	desc = "6"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 6 } }
 }
 daoyu_w3 = {
@@ -55,7 +55,7 @@ daoyu_w3 = {
 	desc = "5"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 5 } }
 }
 daoyu_w4 = {
@@ -63,7 +63,7 @@ daoyu_w4 = {
 	desc = "4"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 4 } }
 }
 daoyu_w5 = {
@@ -71,7 +71,7 @@ daoyu_w5 = {
 	desc = "3"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 3 } }
 }
 daoyu_w6 = {
@@ -79,7 +79,7 @@ daoyu_w6 = {
 	desc = "2"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 2 } }
 }
 daoyu_w7 = {
@@ -87,7 +87,7 @@ daoyu_w7 = {
 	desc = "1"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_modifier = daoyu_fast_construction } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = { hidden_effect = { remove_modifier = daoyu_fast_construction remove_modifier = daoyu_stop_construction } add_modifier = { name = daoyu_fast_construction days = 1 } }
 }
 daoyu_expand_nationally_owned_building_under_construction = {
@@ -95,7 +95,7 @@ daoyu_expand_nationally_owned_building_under_construction = {
 	desc = "daoyu_expand_nationally_owned_building_under_construction"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_global_variable = daoyu_buildings_expand } any_scope_building = { is_under_construction = yes level > 0 private_ownership_fraction = 0 } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = {
 		set_global_variable = daoyu_buildings_expand daoyu_set_change_option = yes
 		every_scope_building = { limit = { is_under_construction = yes level > 0 private_ownership_fraction = 0 } add_modifier = { name = daoyu_potential_building days = 1 } }
@@ -108,7 +108,7 @@ daoyu_nationalized_buildings_under_construction = {
 	desc = "daoyu_nationalized_buildings_under_construction"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { not = { has_global_variable = daoyu_ucy_nationally_owned } any_scope_building = { is_under_construction = yes level > 0 private_ownership_fraction > 0 } }
-	ai_chance = { base = 0 }
+	ai_chance = { value = 0 }
 	effect = {
 		set_global_variable = daoyu_ucy_nationally_owned daoyu_set_change_option = yes
 		every_scope_building = { limit = { is_under_construction = yes level > 0 private_ownership_fraction = 0 } add_modifier = { name = daoyu_potential_building days = 1 } }
@@ -121,7 +121,7 @@ daoyu_quit = {
 	desc = "QUIT"
 	visible = { has_variable = daoyu_show_daoyu_fast_construction }
 	possible = { }
-	ai_chance = { base = 100 }
+	ai_chance = { value = 100 }
 	effect = {
 		remove_variable = daoyu_show_daoyu_fast_construction
 		if = { limit = { has_modifier = daoyu_fast_construction } remove_modifier = daoyu_fast_construction }
