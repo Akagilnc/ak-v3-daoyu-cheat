@@ -4,7 +4,7 @@ MOD = r"D:/WorkSpace/V3/daoyu_cheat"
 
 # 具体 scope(scope:xxx / owner / capital / this / root / prev / overlord) 里直接用 limit 当守卫,
 # 1.13 不合法(报 Unknown effect limit)。改成 scope = { if = { limit = {...} <effects> } }
-SCOPE_PAT = re.compile(r'(?:scope:[\w.:]+|owner|capital|this|root|prev|overlord)\s*=\s*\{')
+SCOPE_PAT = re.compile(r'(?:scope:[\w.:]+|ig:[\w]+|cu:[\w]+|rel:[\w]+|owner|capital|this|root|prev|overlord)\s*=\s*\{')
 
 def fix_text(text):
     inserts = []  # (pos, str)

@@ -2,22 +2,22 @@
 	every_country = { limit = { or = { and = { is_subject = yes top_overlord = { is_ai = no } } is_ai = no } } set_variable = daoyu_player }
 	every_country = { limit = { is_subject = yes not = { has_variable = daoyu_player } } make_independent = yes }
 	every_state = {
-		limit = { owner = { any_scope_state { count = 1 } } state_region = { any_scope_state { is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state { count > 1 } } } } }
+		limit = { owner = { any_scope_state = { count = 1 } } state_region = { any_scope_state = { is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state = { count > 1 } } } } }
 		state_region = {
 			prev.owner = {
-				every_state = { limit = { state_region = prev.capital.state_region is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state { count > 1 } } } set_state_owner = prev }
+				every_state = { limit = { state_region = prev.capital.state_region is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state = { count > 1 } } } set_state_owner = prev }
 			}
 		}
 	}
 	every_country = { limit = { not = { has_variable = daoyu_player } any_scope_state = { count > 2 } } daoyu_create_country_effect = yes }
 	every_country = { limit = { not = { has_variable = daoyu_player } any_scope_state = { count > 2 } } daoyu_create_country_effect = yes }
 	every_state = {
-		limit = { owner = { any_scope_state { count = 1 } } state_region = { any_scope_state { is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state { count > 1 } } } } }
+		limit = { owner = { any_scope_state = { count = 1 } } state_region = { any_scope_state = { is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state = { count > 1 } } } } }
 		state_region = {
 			prev.owner = {
 				set_variable = daoyu_victorian_century
 				every_state = {
-					limit = { state_region = prev.capital.state_region is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state { count > 1 } } }
+					limit = { state_region = prev.capital.state_region is_capital = no owner = { not = { has_variable = daoyu_player } any_scope_state = { count > 1 } } }
 					set_state_owner = prev
 				}
 			}

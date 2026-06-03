@@ -5036,13 +5036,13 @@ daoyu.291 = {
 		if = { limit = { not = { has_technology_researched = human_rights } } add_technology_researched = human_rights }
 		if = { limit = { not = { has_technology_researched = feminism } } add_technology_researched = feminism }
 		ig:ig_trade_unions = { add_modifier = { name = modifier_supported_marx years = 10 } add_modifier = { name = daoyu_interest_group_pol_str multiplier = 100 months = -1 } if = { limit = { is_in_government = no } add_ruling_interest_group = yes } }
-		ig:ig_armed_forces = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
-		ig:ig_landowners = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
-		ig:ig_devout = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
-		ig:ig_industrialists = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
-		ig:ig_intelligentsia = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
-		ig:ig_petty_bourgeoisie = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
-		ig:ig_rural_folk = { limit = { is_in_government = yes } remove_ruling_interest_group = yes }
+		ig:ig_armed_forces = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
+		ig:ig_landowners = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
+		ig:ig_devout = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
+		ig:ig_industrialists = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
+		ig:ig_intelligentsia = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
+		ig:ig_petty_bourgeoisie = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
+		ig:ig_rural_folk = { if = { limit = { is_in_government = yes } remove_ruling_interest_group = yes  }}
 		if = { limit = { not = { has_law = law_type:law_universal_suffrage } } activate_law = law_type:law_universal_suffrage }
 		if = { limit = { not = { has_law = law_type:law_collectivized_agriculture } } activate_law = law_type:law_collectivized_agriculture }
 		if = { limit = { not = { has_law = law_type:law_graduated_taxation } } activate_law = law_type:law_graduated_taxation }

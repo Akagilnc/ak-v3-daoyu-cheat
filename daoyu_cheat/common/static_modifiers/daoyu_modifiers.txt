@@ -34,7 +34,6 @@ daoyu_country_influence_add = {
 	country_influence_mult = 0.1
 	country_infamy_decay_mult = 0.1
 	country_tension_decay_mult = 0.1
-	country_relations_decay_add = 0.1
 	country_improve_relations_speed_mult = 0.1
 	country_damage_relations_speed_mult = 0.1
 }
@@ -251,7 +250,6 @@ daoyu_negative_character_health_add = {
 daoyu_general_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	character_command_limit_add = 20
-	character_supply_route_cost_mult = -0.25
 	character_advancement_speed_add = 5
 	unit_kill_rate_add = 0.25
 	unit_recovery_rate_add = 0.25
@@ -266,7 +264,6 @@ daoyu_admiral_modifier = {
 	unit_morale_damage_mult = 0.1
 	unit_morale_recovery_mult = 0.1
 	unit_supply_consumption_mult = -0.1
-	unit_combat_unit_type_submarine_offense_mult = 0.1
 	character_battle_condition_rough_waters_mult = -0.1
 	unit_offense_add = 5
 	unit_defense_add = 5
@@ -324,7 +321,6 @@ daoyu_country_foreign_collectivization_bool = {
 }
 daoyu_country_disable_privatization_bool = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	country_disable_privatization_bool = yes
 }
 daoyu_country_can_form_construction_company_bool = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
