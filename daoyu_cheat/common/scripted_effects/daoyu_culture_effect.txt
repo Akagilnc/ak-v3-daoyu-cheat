@@ -26,12 +26,12 @@ daoyu_culture_effect = {
 	}
 	if = {
 		limit = { has_global_variable = daoyu_m_cu exists = scope:daoyu_target_country exists = scope:daoyu_target_state }
-		scope:daoyu_target_state = {
+		scope:daoyu_target_state = { if = {
 			limit = { state_is_eligible_as_mass_migration_target = yes }
 			if = { limit = { not = { has_modifier = daoyu_migration_pull } } add_modifier = { name = daoyu_migration_pull multiplier = 100 years = 2 } }
 			remove_variable = daoyu_target_state
 			create_mass_migration = { origin = scope:daoyu_target_country culture = cu:$CULTURE$ }
-		}
+		 }}
 	}
 	if = {
 		limit = { has_global_variable = daoyu_c_cu exists = scope:daoyu_target_country }
@@ -203,10 +203,10 @@ daoyu_single_culture_effect = {
 	}
 	if = {
 		limit = { has_global_variable = daoyu_add_radicals_in_state_effect }
-		if = { limit = { owner = { country_has_primary_culture = cu:$CULTURE$ } state_region = { is_homeland = cu:$CULTURE$ } any_scope_pop = { strata = poor } } add_radicals_in_state = { value = 1 strata = poor } order_by = turmoil }
+		if = { limit = { owner = { country_has_primary_culture = cu:$CULTURE$ } state_region = { is_homeland = cu:$CULTURE$ } any_scope_pop = { strata = poor } } add_radicals_in_state = { value = 1 strata = poor } }
 		if = {
 			limit = { owner = { not = { country_has_primary_culture = cu:$CULTURE$ } } state_region = { is_homeland = cu:$CULTURE$ } any_scope_pop = { culture = cu:$CULTURE$ } }
-			add_radicals_in_state = { value = 1 culture = cu:$CULTURE$ } order_by = turmoil 
+			add_radicals_in_state = { value = 1 culture = cu:$CULTURE$ } 
 			if = { limit = { has_global_variable = daoyu_country_add_radicals } add_culture_standard_of_living_modifier = { culture = cu:$CULTURE$ months = 1 multiplier = -100 } }
 			else = { add_culture_standard_of_living_modifier = { culture = cu:$CULTURE$ months = 12 multiplier = -100 } }
 		}

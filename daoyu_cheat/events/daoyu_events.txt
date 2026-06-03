@@ -2303,7 +2303,7 @@ daoyu.181 = {
 			if = { limit = { any_state = { owner = { is_ai = yes has_modifier = daoyu_target_country } } } random_state = { limit = { owner = { is_ai = yes has_modifier = daoyu_target_country } } owner = { save_scope_as = daoyu_target_country } } }
 		}
 		else = { save_scope_as = daoyu_target_country }
-		scope:daoyu_target_country = {
+		scope:daoyu_target_country = { if = {
 			limit = { not = { has_global_variable = daoyu_IG_ideologies } }
 			if = {
 				limit = { is_ai = no }
@@ -2342,7 +2342,7 @@ daoyu.181 = {
 				if = { limit = { not = { has_variable = daoyu_ig_trade_unions_pol_str } } set_variable = { name = daoyu_ig_trade_unions_pol_str years = 1 value = 0 } }
 				if = { limit = { not = { has_variable = daoyu_ig_rural_folk_pol_str } } set_variable = { name = daoyu_ig_rural_folk_pol_str years = 1 value = 0 } }
 			}
-		}
+		 }}
 	}
 	option = {
 		name = daoyu_remove_all_ig_modifiers#删除所有利益集团修正
@@ -3655,9 +3655,9 @@ daoyu.221 = {
 		random_country = { limit = { has_variable = daoyu_target_country } save_scope_as = daoyu_target_country }
 		random_character = { limit = { has_trait = daoyu_target_character } save_scope_as = daoyu_target_character }
 		random_character = { limit = { has_trait = daoyu_target_character } interest_group = { save_scope_as = daoyu_target_ig } }
-		scope:daoyu_target_ig = { limit = { has_global_variable = daoyu_interest_group_approval } remove_modifier = daoyu_interest_group_approval }
-		scope:daoyu_target_ig = { limit = { has_global_variable = daoyu_interest_group_pol_str } remove_modifier = daoyu_interest_group_pol_str }
-		scope:daoyu_target_character = { limit = { has_global_variable = daoyu_character_health_add } remove_modifier = daoyu_negative_character_health_add remove_modifier = daoyu_character_health_add }
+		scope:daoyu_target_ig = { if = { limit = { has_global_variable = daoyu_interest_group_approval } remove_modifier = daoyu_interest_group_approval  }}
+		scope:daoyu_target_ig = { if = { limit = { has_global_variable = daoyu_interest_group_pol_str } remove_modifier = daoyu_interest_group_pol_str  }}
+		scope:daoyu_target_character = { if = { limit = { has_global_variable = daoyu_character_health_add } remove_modifier = daoyu_negative_character_health_add remove_modifier = daoyu_character_health_add  }}
 	}
 	option = {
 		name = -100

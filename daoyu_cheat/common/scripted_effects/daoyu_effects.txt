@@ -348,7 +348,7 @@ daoyu_goods_effect = {
 		}
 		else_if = {
 			limit = { has_variable = daoyu_mark_target_culture_obsession exists = scope:daoyu_mark_target_culture }
-			scope:daoyu_mark_target_culture = { limit = { not = { has_cultural_obsession = $GOODS$ } } hidden_effect = { add_cultural_obsession = $GOODS$ } }
+			scope:daoyu_mark_target_culture = { if = { limit = { not = { has_cultural_obsession = $GOODS$ } } hidden_effect = { add_cultural_obsession = $GOODS$ }  }}
 		}
 	}
 	else_if = {
@@ -359,11 +359,11 @@ daoyu_goods_effect = {
 		}
 		else_if = {
 			limit = { has_variable = daoyu_mark_target_culture_obsession exists = scope:daoyu_mark_target_culture }
-			scope:daoyu_mark_target_culture = { limit = { has_cultural_obsession = $GOODS$ } hidden_effect = { remove_cultural_obsession = $GOODS$ } }
+			scope:daoyu_mark_target_culture = { if = { limit = { has_cultural_obsession = $GOODS$ } hidden_effect = { remove_cultural_obsession = $GOODS$ }  }}
 		}
 	}
-	else_if = { limit = { has_global_variable = daoyu_add_banned_goods } scope:daoyu_target_country = { limit = { not = { is_banning_goods = g:$GOODS$ } } add_banned_goods = g:$GOODS$ } }
-	else_if = { limit = { has_global_variable = daoyu_remove_banned_goods } scope:daoyu_target_country = { limit = { is_banning_goods = g:$GOODS$ } remove_banned_goods = g:$GOODS$ } }
+	else_if = { limit = { has_global_variable = daoyu_add_banned_goods } scope:daoyu_target_country = { if = { limit = { not = { is_banning_goods = g:$GOODS$ } } add_banned_goods = g:$GOODS$  }} }
+	else_if = { limit = { has_global_variable = daoyu_remove_banned_goods } scope:daoyu_target_country = { if = { limit = { is_banning_goods = g:$GOODS$ } remove_banned_goods = g:$GOODS$  }} }
 	else_if = {
 		limit = { has_global_variable = daoyu_increase_price_goods }
 		every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } owner = { create_trade_route = { goods = $GOODS$ level = 10 direction = import target = scope:daoyu_target_country.market } } }
