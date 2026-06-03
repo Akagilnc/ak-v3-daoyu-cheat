@@ -2172,11 +2172,11 @@ daoyu_goods_trigger = {
 		}
 		and = {
 			has_global_variable = daoyu_increase_price_goods
-			any_country = { has_variable = daoyu_target_country can_establish_any_export_route = g:$GOODS$ any_market = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } }
+			any_country = { has_variable = daoyu_target_country any_market = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } }
 		}
 		and = {
 			has_global_variable = daoyu_decrease_price_goods
-			any_country = { has_variable = daoyu_target_country can_establish_any_import_route = g:$GOODS$ any_market = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } }
+			any_country = { has_variable = daoyu_target_country any_market = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } }
 		}
 	}
 }
