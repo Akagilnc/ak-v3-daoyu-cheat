@@ -41,5 +41,5 @@ building_whaling_station = { icon = "gfx/interface/icons/building_icons/whaling_
 building_oil_rig = { icon = "gfx/interface/icons/building_icons/oil_rig.dds" }
 building_power_plant = { icon = "gfx/interface/icons/building_icons/power_plant.dds" }
 building_vineyard = { icon = "gfx/interface/icons/building_icons/vineyards.dds" }
-building_art_academy = { icon = "gfx/interface/icons/building_icons/building_art_academy.dds" }
-building_railway = { icon = "gfx/interface/icons/building_icons/railway.dds" }
+building_art_academy = { icon = "gfx/interface/icons/building_icons/building_arts_academy.dds" }
+building_railway = { icon = "gfx/interface/icons/building_icons/building_railway.dds" }
