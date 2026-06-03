@@ -2797,7 +2797,7 @@ daoyu.190 = {
 	option = {
 		name = daoyu_target_country_remove_all_modifiers
 		trigger = { any_country = { is_ai = yes has_modifier = daoyu_target_country daoyu_has_country_modifiers_trigger = yes } }
-		random_country = { limit = { is_ai = yes daoyu_target_country daoyu_has_country_modifiers_trigger = yes } daoyu_remove_all_country_modifier_effect = yes }
+		random_country = { limit = { is_ai = yes has_variable = daoyu_target_country daoyu_has_country_modifiers_trigger = yes } daoyu_remove_all_country_modifier_effect = yes }
 		hidden_effect = { trigger_event = { id = daoyu.190 popup = yes } }
 	}
 	option = {
@@ -5150,7 +5150,7 @@ daoyu.300 = {
 	}
 	option = {
 		name = concept_political_lobbies#游说团
-		trigger = { has_dlc_feature = lobbies dlc = dlc010 }
+		trigger = { has_dlc_feature = lobbies }
 		if = {
 			limit = { or = { any_political_lobby = { count > 0 } any_country = { has_modifier = daoyu_target_country any_political_lobby = { count > 0 } } } }
 			hidden_effect = { trigger_event = { id = daoyu.360 popup = yes } }
@@ -5535,7 +5535,7 @@ daoyu.330 = {
 		trigger = { any_country = { is_ai = yes is_ai = yes has_modifier = daoyu_target_country not = { is_country_type = decentralized } is_subject = yes } }
 		scope:daoyu_target_country = {
 			if = {
-				limit = { subject_type = subject_type_personal_union }
+				limit = { is_subject_type = subject_type_personal_union }
 				make_independent = yes
 				if = {
 					limit = { has_law = law_type:law_monarchy }

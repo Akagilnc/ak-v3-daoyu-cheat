@@ -2639,3 +2639,9 @@ daoyu_can_country_monopolized_urban_trigger = {
 daoyu_t_c_has_building = {
 	scope:daoyu_target_country = { any_scope_building = { is_building_type = $BUILDING$ } }
 }
+daoyu_show_nonexistent_country_POR = { has_variable = daoyu_query_countries_tag not = { exists = c:POR } }
+daoyu_show_nonexistent_country_NOR = { has_variable = daoyu_query_countries_tag not = { exists = c:NOR } }
+daoyu_show_nonexistent_country_MOR = { has_variable = daoyu_query_countries_tag not = { exists = c:MOR } }
+daoyu_show_nonexistent_country_KOR = { has_variable = daoyu_query_countries_tag not = { exists = c:KOR } }
+daoyu_show_nonexistent_country_COR = { has_variable = daoyu_query_countries_tag not = { exists = c:COR } }
+daoyu_show_nonexistent_country_BOR = { has_variable = daoyu_query_countries_tag not = { exists = c:BOR } }
