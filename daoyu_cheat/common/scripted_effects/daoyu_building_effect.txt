@@ -528,7 +528,6 @@ daoyu_building_level_effect = {
 		if = { limit = { has_variable = daoyu_building_banana_plantation } create_building = { building = building_banana_plantation level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_opium_plantation } create_building = { building = building_opium_plantation level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_barracks } create_building = { building = building_barrack level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_naval_base } create_building = { building = building_port level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_construction_sector } create_building = { building = building_construction_sector level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_railway } create_building = { building = building_railway level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_government_administration } create_building = { building = building_government_administration level = $LEVEL$ reserves = 1 } }
@@ -543,7 +542,6 @@ daoyu_building_level_effect = {
 		if = { limit = { has_variable = daoyu_building_tooling_workshops } create_building = { building = building_tooling_workshop level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_paper_mills } create_building = { building = building_paper_mill level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_shipyards } create_building = { building = building_shipyard level = $LEVEL$ reserves = 1 } }
-		if = { limit = { has_variable = daoyu_building_military_shipyards } create_building = { building = building_shipyard level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_arms_industry } create_building = { building = building_arms_industry level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_artillery_foundries } create_building = { building = building_artillery_foundry level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_chemical_plants } create_building = { building = building_chemical_plant level = $LEVEL$ reserves = 1 } }
@@ -608,7 +606,6 @@ daoyu_clean_building_level_effect = {
 			any_scope_state = {
 				or = {
 					has_variable = daoyu_building_barracks
-					has_variable = daoyu_building_naval_base
 					has_variable = daoyu_building_construction_sector
 					has_variable = daoyu_building_government_administration
 					has_variable = daoyu_building_building_skyscraper
@@ -632,7 +629,6 @@ daoyu_clean_building_level_effect = {
 					has_variable = daoyu_building_tooling_workshops
 					has_variable = daoyu_building_paper_mills
 					has_variable = daoyu_building_shipyards
-					has_variable = daoyu_building_military_shipyards
 					has_variable = daoyu_building_arms_industry
 					has_variable = daoyu_building_artillery_foundries
 					has_variable = daoyu_building_chemical_plants
@@ -677,7 +673,6 @@ daoyu_clean_building_level_effect = {
 		remove_variable = daoyu_building_banana_plantation
 		remove_variable = daoyu_building_opium_plantation
 		remove_variable = daoyu_building_barracks
-		remove_variable = daoyu_building_naval_base
 		remove_variable = daoyu_building_construction_sector
 		remove_variable = daoyu_building_government_administration
 		remove_variable = daoyu_building_building_skyscraper
@@ -692,7 +687,6 @@ daoyu_clean_building_level_effect = {
 		remove_variable = daoyu_building_tooling_workshops
 		remove_variable = daoyu_building_paper_mills
 		remove_variable = daoyu_building_shipyards
-		remove_variable = daoyu_building_military_shipyards
 		remove_variable = daoyu_building_arms_industry
 		remove_variable = daoyu_building_artillery_foundries
 		remove_variable = daoyu_building_chemical_plants

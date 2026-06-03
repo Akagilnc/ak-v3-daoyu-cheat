@@ -40,7 +40,6 @@ daoyu_s_num = {
 		daoyu_create_building = { TYPE = "building_barrack" LEVEL = $NUM$ }#兵营
 		daoyu_create_building = { TYPE = "building_construction_sector" LEVEL = $NUM$ }#建造部门
 		daoyu_create_building = { TYPE = "building_government_administration" LEVEL = $NUM$ }#政府行政机构
-		daoyu_create_building = { TYPE = "building_port" LEVEL = $NUM$ }#海军基地
 		daoyu_create_building = { TYPE = "building_port" LEVEL = $NUM$ }#港口
 		daoyu_create_building = { TYPE = "building_railway" LEVEL = $NUM$ }#铁路
 		daoyu_create_building = { TYPE = "building_trade_center" LEVEL = $NUM$ }#贸易中心
@@ -89,7 +88,6 @@ daoyu_s_num = {
 		daoyu_create_building = { TYPE = "building_power_plant" LEVEL = $NUM$ }#发电厂
 		daoyu_create_building = { TYPE = "building_electrics_industry" LEVEL = $NUM$ }#电子厂
 		daoyu_create_building = { TYPE = "building_shipyard" LEVEL = $NUM$ }#造船厂
-		daoyu_create_building = { TYPE = "building_shipyard" LEVEL = $NUM$ }#军用造船厂
 	}
 	if = { limit = { has_global_variable = daoyu_get_building_level_1 } if = { limit = { scope:daoyu_current_building_1 = { level = $NUM$ } } set_variable = { name = daoyu_current_building_1 value = $NUM$ } remove_global_variable = daoyu_get_building_level_1 } }
 	if = { limit = { has_global_variable = daoyu_get_building_level_2 } if = { limit = { scope:daoyu_current_building_2 = { level = $NUM$ } } set_variable = { name = daoyu_current_building_2 value = $NUM$ } remove_global_variable = daoyu_get_building_level_2 } }

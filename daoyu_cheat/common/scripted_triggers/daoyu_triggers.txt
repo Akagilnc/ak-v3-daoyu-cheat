@@ -1886,7 +1886,6 @@ daoyu_add_building_state_trait_building_glassworks = { has_technology_researched
 daoyu_add_building_state_trait_building_tooling_workshops = { has_technology_researched = manufacturies }
 daoyu_add_building_state_trait_building_paper_mills = { has_technology_researched = manufacturies }
 daoyu_add_building_state_trait_building_shipyards = { always = yes }
-daoyu_add_building_state_trait_building_military_shipyards = { always = yes }
 daoyu_add_building_state_trait_building_arms_industry = { has_technology_researched = gunsmithing }
 daoyu_add_building_state_trait_building_artillery_foundries = { has_technology_researched = gunsmithing }
 daoyu_add_building_state_trait_building_chemical_plants = { has_technology_researched = intensive_agriculture }

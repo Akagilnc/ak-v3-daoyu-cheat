@@ -10896,7 +10896,6 @@ daoyu.605 = {
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_banana_plantation } } desc = building_banana_plantation }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_opium_plantation } } desc = building_opium_plantation }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_barracks } } desc = building_barrack }
-			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_naval_base } } desc = building_port }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_construction_sector } } desc = building_construction_sector }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_railway } } desc = building_railway }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_government_administration } } desc = building_government_administration }
@@ -10916,7 +10915,6 @@ daoyu.605 = {
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_paper_mills } } desc = building_paper_mill }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_rye_farm } } desc = building_rye_farm }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_shipyards } } desc = building_shipyard }
-			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_military_shipyards } } desc = building_shipyard }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_steel_mills } } desc = building_steel_mill }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_synthetics_plants } } desc = building_synthetics_plant }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_textile_mills } } desc = building_textile_mill }
@@ -11054,7 +11052,6 @@ daoyu.606 = {
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_banana_plantation } } desc = building_banana_plantation }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_opium_plantation } } desc = building_opium_plantation }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_barracks } } desc = building_barrack }
-			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_naval_base } } desc = building_port }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_construction_sector } } desc = building_construction_sector }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_railway } } desc = building_railway }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_government_administration } } desc = building_government_administration }
@@ -11074,7 +11071,6 @@ daoyu.606 = {
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_paper_mills } } desc = building_paper_mill }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_rye_farm } } desc = building_rye_farm }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_shipyards } } desc = building_shipyard }
-			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_military_shipyards } } desc = building_shipyard }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_steel_mills } } desc = building_steel_mill }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_synthetics_plants } } desc = building_synthetics_plant }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_textile_mills } } desc = building_textile_mill }
@@ -11265,7 +11261,6 @@ daoyu.620 = {
 	option = {
 		name = building_port
 		trigger = { has_technology_researched = navigation any_scope_state = { is_sea_adjacent = yes has_decree = decree_daoyu_target_state } }
-		every_scope_state = { limit = { has_decree = decree_daoyu_target_state is_sea_adjacent = yes } set_variable = daoyu_building_naval_base }
 		set_global_variable = daoyu_low_building_level
 		hidden_effect = { trigger_event = { id = daoyu.605 popup = yes } }
 	}
@@ -11357,7 +11352,6 @@ daoyu.625 = {
 	option = {
 		name = building_shipyard
 		trigger = { has_technology_researched = admiralty any_scope_state = { is_sea_adjacent = yes has_decree = decree_daoyu_target_state } }
-		every_scope_state = { limit = { has_decree = decree_daoyu_target_state is_sea_adjacent = yes } set_variable = daoyu_building_military_shipyards }
 		hidden_effect = { trigger_event = { id = daoyu.605 popup = yes } }
 	}
 	option = { name = building_arms_industry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "gunsmithing" } } daoyu_building_lens_effcet = { BUILDING = "building_arms_industry" } }
@@ -13189,7 +13183,6 @@ daoyu.693 = {
 	option = { name = building_tooling_workshop trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_tooling_workshop" } } set_global_variable = daoyu_S_T_building_tooling_workshops }
 	option = { name = building_paper_mill trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_paper_mill" } } set_global_variable = daoyu_S_T_building_paper_mills }
 	option = { name = building_shipyard trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_shipyard" } } set_global_variable = daoyu_S_T_building_shipyards }
-	option = { name = building_shipyard trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_shipyard" } } set_global_variable = daoyu_S_T_building_military_shipyards }
 	option = { name = building_arms_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_arms_industry" } } set_global_variable = daoyu_S_T_building_arms_industry }
 	option = { name = building_artillery_foundry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_artillery_foundry" } } set_global_variable = daoyu_S_T_building_artillery_foundries }
 	option = { name = building_chemical_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_chemical_plant" } } set_global_variable = daoyu_S_T_building_chemical_plants }
@@ -13253,7 +13246,7 @@ daoyu.695 = {
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_paper_mills } desc = building_paper_mill }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_rye_farm } desc = building_rye_farm }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_shipyards } desc = building_shipyard }
-			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_military_shipyards } desc = building_shipyard }
+			triggered_desc = { trigger = { } desc = building_shipyard }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_steel_mills } desc = building_steel_mill }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_synthetics_plants } desc = building_synthetics_plant }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_textile_mills } desc = building_textile_mill }
@@ -13275,7 +13268,7 @@ daoyu.695 = {
 			if = {
 				limit = { has_global_variable = daoyu_add_building_state_trait }
 				if = {
-					limit = { or = { has_global_variable = daoyu_S_T_building_whaling_station has_global_variable = daoyu_S_T_building_fishing_wharf has_global_variable = daoyu_S_T_building_shipyards has_global_variable = daoyu_S_T_building_military_shipyards } }
+					limit = { or = { has_global_variable = daoyu_S_T_building_whaling_station has_global_variable = daoyu_S_T_building_fishing_wharf has_global_variable = daoyu_S_T_building_shipyards } }
 					every_scope_state = { limit = { is_sea_adjacent = yes has_decree = decree_daoyu_target_state } set_variable = daoyu_potential_target }
 				}
 				else = { every_scope_state = { limit = { has_decree = decree_daoyu_target_state } set_variable = daoyu_potential_target } }
