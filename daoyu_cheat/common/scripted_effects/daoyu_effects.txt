@@ -1749,16 +1749,16 @@ daoyu_remove_personality_traits = {
 daoyu_add_military_modifier = {
 	if = {
 		limit = { has_global_variable = daoyu_character_health_add }
-		if = { limit = { has_variable = daoyu_generals_orders } every_scope_general = { limit = { is_ruler = no } add_modifier = { name = daoyu_character_health_add months = -1 multiplier = $MULTIPLIER$ } } }
-		else_if = { limit = { has_variable = daoyu_admirals_orders } every_scope_admiral = { limit = { is_ruler = no } add_modifier = { name = daoyu_character_health_add months = -1 multiplier = $MULTIPLIER$ } } }
+		if = { limit = { has_variable = daoyu_generals_orders } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_modifier = { name = daoyu_character_health_add months = -1 multiplier = $MULTIPLIER$ } } }
+		else_if = { limit = { has_variable = daoyu_admirals_orders } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_modifier = { name = daoyu_character_health_add months = -1 multiplier = $MULTIPLIER$ } } }
 		else = {
 			random_character = { limit = { has_trait = daoyu_target_character has_role = character_role_general } add_modifier = { name = daoyu_character_health_add months = -1 multiplier = $MULTIPLIER$ } }
 			random_character = { limit = { has_trait = daoyu_target_character has_role = character_role_admiral } add_modifier = { name = daoyu_character_health_add months = -1 multiplier = $MULTIPLIER$ } }
 		}
 	}
 	else = {
-		if = { limit = { has_variable = daoyu_generals_orders } every_scope_general = { limit = { is_ruler = no } add_modifier = { name = daoyu_general_modifier months = -1 multiplier = $MULTIPLIER$ } } }
-		else_if = { limit = { has_variable = daoyu_admirals_orders } every_scope_admiral = { limit = { is_ruler = no } add_modifier = { name = daoyu_admiral_modifier months = -1 multiplier = $MULTIPLIER$ } } }
+		if = { limit = { has_variable = daoyu_generals_orders } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_modifier = { name = daoyu_general_modifier months = -1 multiplier = $MULTIPLIER$ } } }
+		else_if = { limit = { has_variable = daoyu_admirals_orders } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_modifier = { name = daoyu_admiral_modifier months = -1 multiplier = $MULTIPLIER$ } } }
 		else = {
 			random_character = { limit = { has_trait = daoyu_target_character has_role = character_role_general } add_modifier = { name = daoyu_general_modifier months = -1 multiplier = $MULTIPLIER$ } }
 			random_character = { limit = { has_trait = daoyu_target_character has_role = character_role_admiral } add_modifier = { name = daoyu_admiral_modifier months = -1 multiplier = $MULTIPLIER$ } }
@@ -1968,20 +1968,20 @@ daoyu_create_character = {
 			}
 			else_if = {
 				limit = { has_global_variable = daoyu_create_ruler }
-				hidden_effect = { every_scope_character = { limit = { or = { is_ruler = yes is_heir = yes } } kill_character = { hidden = yes } } }
+				hidden_effect = { every_scope_character = { limit = { or = { has_role = character_role_ruler has_role = character_role_heir } } kill_character = { hidden = yes } } }
 				if = { limit = { has_global_variable = daoyu_noble } create_character = { age = 35 ruler = yes ig_leader = yes noble = yes interest_group = $IG$ traits = { daoyu_target_character } } }
 				else = { create_character = { age = 35 ruler = yes ig_leader = yes noble = no interest_group = $IG$ traits = { daoyu_target_character } } }
 			}
 			else_if = {
 				limit = { has_global_variable = daoyu_create_heir }
-				hidden_effect = { random_scope_character = { limit = { is_heir = yes } kill_character = { hidden = yes } } }
+				hidden_effect = { random_scope_character = { limit = { has_role = character_role_heir } kill_character = { hidden = yes } } }
 				if = {
-					limit = { any_scope_character = { is_ruler = yes age >= 35 } }
+					limit = { any_scope_character = { has_role = character_role_ruler age >= 35 } }
 					if = { limit = { has_global_variable = daoyu_noble } create_character = { age = 16 heir = yes noble = yes interest_group = $IG$ traits = { daoyu_target_character } } }
 					else = { create_character = { age = 16 heir = yes noble = no interest_group = $IG$ traits = { daoyu_target_character } } }
 				}
 				if = {
-					limit = { any_scope_character = { is_ruler = yes age >= 19 age < 35 } }
+					limit = { any_scope_character = { has_role = character_role_ruler age >= 19 age < 35 } }
 					if = { limit = { has_global_variable = daoyu_noble } create_character = { age = 0 heir = yes noble = yes interest_group = $IG$ traits = { daoyu_target_character trait_child } } }
 					else = { create_character = { age = 0 heir = yes noble = no interest_group = $IG$ traits = { daoyu_target_character trait_child } } }
 				}
@@ -2001,7 +2001,7 @@ daoyu_create_character = {
 			}
 			else_if = {
 				limit = { has_global_variable = daoyu_create_ruler }
-				hidden_effect = { every_scope_character = { limit = { or = { is_ruler = yes is_heir = yes } } kill_character = { hidden = yes } } }
+				hidden_effect = { every_scope_character = { limit = { or = { has_role = character_role_ruler has_role = character_role_heir } } kill_character = { hidden = yes } } }
 				if = {
 					limit = { coa_monarchy_trigger = yes }
 					if = { limit = { has_global_variable = daoyu_noble } create_character = { age = 18 female = yes ruler = yes ig_leader = yes noble = yes interest_group = $IG$ traits = { daoyu_target_character } } }
@@ -2014,14 +2014,14 @@ daoyu_create_character = {
 			}
 			else_if = {
 				limit = { has_global_variable = daoyu_create_heir }
-				hidden_effect = { random_scope_character = { limit = { is_heir = yes } kill_character = { hidden = yes } } }
+				hidden_effect = { random_scope_character = { limit = { has_role = character_role_heir } kill_character = { hidden = yes } } }
 				if = {
-					limit = { any_scope_character = { is_ruler = yes age >= 35 } }
+					limit = { any_scope_character = { has_role = character_role_ruler age >= 35 } }
 					if = { limit = { has_global_variable = daoyu_noble } create_character = { age = 16 female = yes heir = yes noble = yes interest_group = $IG$ traits = { daoyu_target_character } } }
 					else = { create_character = { age = 16 female = yes heir = yes noble = no interest_group = $IG$ traits = { daoyu_target_character } } }
 				}
 				if = {
-					limit = { any_scope_character = { is_ruler = yes age >= 19 age < 35 } }
+					limit = { any_scope_character = { has_role = character_role_ruler age >= 19 age < 35 } }
 					if = { limit = { has_global_variable = daoyu_noble } create_character = { age = 0 female = yes heir = yes noble = yes interest_group = $IG$ traits = { daoyu_target_character trait_child } } }
 					else = { create_character = { age = 0 female = yes heir = yes noble = no interest_group = $IG$ traits = { daoyu_target_character trait_child } } }
 				}

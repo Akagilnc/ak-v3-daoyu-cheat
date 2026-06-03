@@ -81,7 +81,7 @@ daoyu.9 = {
 			remove_primary_culture = cu:manchu
 			every_primary_culture = { remove_cultural_obsession = opium }
 			create_character = { first_name = Guofan last_name = Zeng historical = yes culture = cu:han female = no ruler = yes ideology = ideology_traditionalist interest_group = ig_armed_forces birth_date = 1811.11.26 traits = { plains_commander pious pillager } }
-			random_character = { limit = { culture = cu:manchu is_heir = yes } kill_character = { hidden = yes } }
+			random_character = { limit = { culture = cu:manchu has_role = character_role_heir } kill_character = { hidden = yes } }
 		}
 	}
 	after = { trigger_event = { id = daoyu.10 popup = yes } }
@@ -1608,7 +1608,7 @@ daoyu.145 = {
 		trigger = { has_variable = daoyu_je_matter_of_slavery has_journal_entry = je_matter_of_slavery }
 		activate_law = law_type:law_legacy_slavery
 		c:BRZ ?= {
-			random_scope_character = { limit = { or = { is_heir = yes is_ruler = yes } age >= 20 } set_ideology = ideology:ideology_humanitarian_royalist }
+			random_scope_character = { limit = { or = { has_role = character_role_heir has_role = character_role_ruler } age >= 20 } set_ideology = ideology:ideology_humanitarian_royalist }
 			ig:ig_landowners = { add_modifier = { name = daoyu_interest_group_approval multiplier = -1000 months = 1 } }
 			ig:ig_landowners = { add_modifier = { name = daoyu_interest_group_pol_str multiplier = -1000 months = 1 } }
 			ig:ig_landowners = { set_ig_suppression = yes }
@@ -3282,47 +3282,47 @@ daoyu.210 = {
 	}
 	option = {
 		name = concept_heir#继任者
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { is_heir = yes } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_heir } } }
 		random_country = { limit = { has_variable = daoyu_target_country } heir = { add_trait = daoyu_target_character } }
 		hidden_effect = { trigger_event = { id = daoyu.220 popup = yes } }
 	}
 	option = {
 		name = concept_general#陆军将领
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_general is_ruler = no is_heir = no } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_general NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } } }
 		set_variable = daoyu_general
-		random_country = { limit = { has_variable = daoyu_target_country } every_scope_general = { limit = { is_ruler = no is_heir = no } add_trait = daoyu_potential_target } }
+		random_country = { limit = { has_variable = daoyu_target_country } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } add_trait = daoyu_potential_target } }
 		hidden_effect = { trigger_event = { id = daoyu.211 popup = yes } }
 	}
 	option = {
 		name = concept_admiral#海军将领
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_admiral is_ruler = no is_heir = no } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_admiral NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } } }
 		set_variable = daoyu_admiral
-		random_country = { limit = { has_variable = daoyu_target_country } every_scope_admiral = { limit = { is_ruler = no is_heir = no } add_trait = daoyu_potential_target } }
+		random_country = { limit = { has_variable = daoyu_target_country } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } add_trait = daoyu_potential_target } }
 		hidden_effect = { trigger_event = { id = daoyu.211 popup = yes } }
 	}
 	option = {
 		name = concept_politician#政治家
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_politician is_ruler = no is_heir = no } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_politician NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } } }
 		set_variable = daoyu_politician
-		random_country = { limit = { has_variable = daoyu_target_country } every_scope_character = { limit = { has_role = character_role_politician is_ruler = no is_heir = no } add_trait = daoyu_potential_target } }
+		random_country = { limit = { has_variable = daoyu_target_country } every_scope_character = { limit = { has_role = character_role_politician NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } add_trait = daoyu_potential_target } }
 		hidden_effect = { trigger_event = { id = daoyu.211 popup = yes } }
 	}
 	option = {
 		name = concept_agitator#鼓动者
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_agitator is_ruler = no is_heir = no } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_character = { has_role = character_role_agitator NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } } }
 		set_variable = daoyu_agitator
-		random_country = { limit = { has_variable = daoyu_target_country } every_scope_character = { limit = { has_role = character_role_agitator is_ruler = no is_heir = no } add_trait = daoyu_potential_target } }
+		random_country = { limit = { has_variable = daoyu_target_country } every_scope_character = { limit = { has_role = character_role_agitator NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } } add_trait = daoyu_potential_target } }
 		hidden_effect = { trigger_event = { id = daoyu.211 popup = yes } }
 	}
 	option = {
 		name = daoyu_generals_orders#给陆军将领下令
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_general = { is_ruler = no is_heir = no count > 1 } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_general = { NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } count > 1 } } }
 		set_variable = daoyu_generals_orders
 		hidden_effect = { trigger_event = { id = daoyu.280 popup = yes } }
 	}
 	option = {
 		name = daoyu_admirals_orders#给海军将领下令
-		trigger = { any_country = { has_variable = daoyu_target_country any_scope_admiral = { is_ruler = no is_heir = no count > 1 } } }
+		trigger = { any_country = { has_variable = daoyu_target_country any_scope_admiral = { NOT = { has_role = character_role_ruler } NOT = { has_role = character_role_heir } count > 1 } } }
 		set_variable = daoyu_admirals_orders
 		hidden_effect = { trigger_event = { id = daoyu.280 popup = yes } }
 	}
@@ -3422,7 +3422,7 @@ daoyu.220 = {
 	}
 	option = {
 		name = SET_CHARACTER_AS_RULER#成为统治者
-		trigger = { exists = scope:daoyu_target_character scope:daoyu_target_character = { is_ruler = no not = { has_role = character_role_executive } has_trait = daoyu_target_character } }
+		trigger = { exists = scope:daoyu_target_character scope:daoyu_target_character = { NOT = { has_role = character_role_ruler } not = { has_role = character_role_executive } has_trait = daoyu_target_character } }
 		set_global_variable = daoyu_set_character_as_ruler
 		hidden_effect = { trigger_event = { id = daoyu.222 popup = yes } }
 	}
@@ -3567,7 +3567,7 @@ daoyu.220 = {
 	}
 	option = {
 		name = PROMOTE_COMMANDER#晋升
-		trigger = { exists = scope:daoyu_target_character scope:daoyu_target_character = { or = { has_role = character_role_general has_role = character_role_admiral } has_trait = daoyu_target_character commander_rank < 5 is_ruler = no } }
+		trigger = { exists = scope:daoyu_target_character scope:daoyu_target_character = { or = { has_role = character_role_general has_role = character_role_admiral } has_trait = daoyu_target_character commander_rank < 5 NOT = { has_role = character_role_ruler } } }
 		scope:daoyu_target_character = { add_commander_rank = 1 }
 		hidden_effect = { trigger_event = { id = daoyu.220 popup = yes } }
 	}
@@ -4166,7 +4166,7 @@ daoyu.243 = {
 		name = ACHIEVEMENT_FILTER_BUTTON_ALL
 		scope:daoyu_target_character = {
 			if = {
-				limit = { is_ruler = yes is_heir = yes }
+				limit = { has_role = character_role_ruler has_role = character_role_heir }
 				add_trait = traditionalist_commander add_trait = expert_political_operator add_trait = expert_colonial_administrator add_trait = firebrand
 			}
 			if = {
@@ -4211,7 +4211,7 @@ daoyu.243 = {
 	option = { name = expert_naval_commander trigger = { scope:daoyu_target_character = { has_role = character_role_admiral not = { has_trait = expert_naval_commander } } } scope:daoyu_target_character = { add_trait = expert_naval_commander } }
 	option = { name = expert_convoy_raider trigger = { scope:daoyu_target_character = { has_role = character_role_admiral not = { has_trait = expert_convoy_raider } } } scope:daoyu_target_character = { add_trait = expert_convoy_raider } }
 	option = { name = dockyard_master trigger = { scope:daoyu_target_character = { has_role = character_role_admiral not = { has_trait = dockyard_master } } } scope:daoyu_target_character = { add_trait = dockyard_master } }
-	option = { name = expert_colonial_administrator trigger = { scope:daoyu_target_character = { or = { is_ruler = yes is_heir = yes } not = { has_trait = expert_colonial_administrator } } } scope:daoyu_target_character = { add_trait = expert_colonial_administrator } }
+	option = { name = expert_colonial_administrator trigger = { scope:daoyu_target_character = { or = { has_role = character_role_ruler has_role = character_role_heir } not = { has_trait = expert_colonial_administrator } } } scope:daoyu_target_character = { add_trait = expert_colonial_administrator } }
 	option = { name = expert_political_operator trigger = { scope:daoyu_target_character = { is_commander = no not = { has_trait = expert_political_operator } } } scope:daoyu_target_character = { add_trait = expert_political_operator } }
 	option = { name = firebrand trigger = { scope:daoyu_target_character = { is_commander = no not = { has_trait = firebrand } } } scope:daoyu_target_character = { add_trait = firebrand } }
 	option = { name = social_bandit
@@ -4663,7 +4663,7 @@ daoyu.280 = {
 			any_country = {
 				has_variable = daoyu_target_country 
 				any_scope_general = {
-					is_ruler = no
+					NOT = { has_role = character_role_ruler }
 					not = {
 						has_trait = pillager has_trait = surveyor has_trait = defense_in_depth_specialist has_trait = resupply_commander has_trait = forest_commander has_trait = plains_commander has_trait = explorer
 						has_trait = mountain_commander has_trait = expert_artillery_commander has_trait = expert_offensive_planner has_trait = expert_defensive_strategist
@@ -4673,7 +4673,7 @@ daoyu.280 = {
 		}
 		scope:daoyu_target_country = {
 			every_scope_general = {
-				limit = { is_ruler = no }
+				limit = { NOT = { has_role = character_role_ruler } }
 				hidden_effect = {
 					remove_trait = trench_rat remove_trait = basic_artillery_commander remove_trait = experienced_artillery_commander remove_trait = experienced_defensive_strategist
 					remove_trait = basic_offensive_planner remove_trait = experienced_offensive_planner remove_trait = basic_defensive_strategist remove_trait = stalwart_defender
@@ -4688,11 +4688,11 @@ daoyu.280 = {
 		name = daoyu_skill_traits
 		trigger = {
 			has_variable = daoyu_admirals_orders
-			any_country = { has_variable = daoyu_target_country any_scope_admiral = { is_ruler = no not = { has_trait = dockyard_master has_trait = expert_naval_commander has_trait = expert_convoy_raider has_trait = explorer } } }
+			any_country = { has_variable = daoyu_target_country any_scope_admiral = { NOT = { has_role = character_role_ruler } not = { has_trait = dockyard_master has_trait = expert_naval_commander has_trait = expert_convoy_raider has_trait = explorer } } }
 		}
 		scope:daoyu_target_country = {
 			every_scope_admiral = {
-				limit = { is_ruler = no }
+				limit = { NOT = { has_role = character_role_ruler } }
 				hidden_effect = {
 					remove_trait = basic_naval_commander remove_trait = experienced_naval_commander remove_trait = convoy_raider_commander remove_trait = experienced_convoy_raider
 				}
@@ -4707,49 +4707,49 @@ daoyu.280 = {
 	}
 	option = {
 		name = PROMOTE_COMMANDER#晋升
-		trigger = { has_variable = daoyu_generals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { commander_rank < 5 is_ruler = no } } }
+		trigger = { has_variable = daoyu_generals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { commander_rank < 5 NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = {
-			if = { limit = { any_scope_general = { is_ruler = no commander_rank < 2 } } every_scope_general = { limit = { is_ruler = no commander_rank < 2 } add_commander_rank = 1 } }
-			else_if = { limit = { any_scope_general = { is_ruler = no commander_rank < 3 } } every_scope_general = { limit = { is_ruler = no commander_rank < 3 } add_commander_rank = 1 } }
-			else_if = { limit = { any_scope_general = { is_ruler = no commander_rank < 4 } } every_scope_general = { limit = { is_ruler = no commander_rank < 4 } add_commander_rank = 1 } }
-			else_if = { limit = { any_scope_general = { is_ruler = no commander_rank < 5 } } every_scope_general = { limit = { is_ruler = no commander_rank < 5 } add_commander_rank = 1 } }
+			if = { limit = { any_scope_general = { NOT = { has_role = character_role_ruler } commander_rank < 2 } } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 2 } add_commander_rank = 1 } }
+			else_if = { limit = { any_scope_general = { NOT = { has_role = character_role_ruler } commander_rank < 3 } } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 3 } add_commander_rank = 1 } }
+			else_if = { limit = { any_scope_general = { NOT = { has_role = character_role_ruler } commander_rank < 4 } } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 4 } add_commander_rank = 1 } }
+			else_if = { limit = { any_scope_general = { NOT = { has_role = character_role_ruler } commander_rank < 5 } } every_scope_general = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 5 } add_commander_rank = 1 } }
 		}
 		hidden_effect = { trigger_event = { id = daoyu.280 popup = yes } }
 	}
 	option = {
 		name = PROMOTE_COMMANDER#晋升
-		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { commander_rank < 5 is_ruler = no } } }
+		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { commander_rank < 5 NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = {
-			if = { limit = { any_scope_admiral = { is_ruler = no commander_rank < 2 } } every_scope_admiral = { limit = { is_ruler = no commander_rank < 2 } add_commander_rank = 1 } }
-			else_if = { limit = { any_scope_admiral = { is_ruler = no commander_rank < 3 } } every_scope_admiral = { limit = { is_ruler = no commander_rank < 3 } add_commander_rank = 1 } }
-			else_if = { limit = { any_scope_admiral = { is_ruler = no commander_rank < 4 } } every_scope_admiral = { limit = { is_ruler = no commander_rank < 4 } add_commander_rank = 1 } }
-			else_if = { limit = { any_scope_admiral = { is_ruler = no commander_rank < 5 } } every_scope_admiral = { limit = { is_ruler = no commander_rank < 5 } add_commander_rank = 1 } }
+			if = { limit = { any_scope_admiral = { NOT = { has_role = character_role_ruler } commander_rank < 2 } } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 2 } add_commander_rank = 1 } }
+			else_if = { limit = { any_scope_admiral = { NOT = { has_role = character_role_ruler } commander_rank < 3 } } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 3 } add_commander_rank = 1 } }
+			else_if = { limit = { any_scope_admiral = { NOT = { has_role = character_role_ruler } commander_rank < 4 } } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 4 } add_commander_rank = 1 } }
+			else_if = { limit = { any_scope_admiral = { NOT = { has_role = character_role_ruler } commander_rank < 5 } } every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } commander_rank < 5 } add_commander_rank = 1 } }
 		}
 		hidden_effect = { trigger_event = { id = daoyu.280 popup = yes } }
 	}
 	option = {
 		name = character_health_add#角色健康
-		trigger = { has_variable = daoyu_generals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { is_ruler = no } } }
+		trigger = { has_variable = daoyu_generals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = { every_scope_general = { hidden_effect = { remove_modifier = daoyu_character_health_add } } }
 		set_global_variable = daoyu_character_health_add
 		hidden_effect = { trigger_event = { id = daoyu.245 popup = yes } }
 	}
 	option = {
 		name = character_health_add#角色健康
-		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country every_scope_admiral = { is_ruler = no } } }
+		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country every_scope_admiral = { NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = { every_scope_admiral = { hidden_effect = { remove_modifier = daoyu_character_health_add } } }
 		set_global_variable = daoyu_character_health_add
 		hidden_effect = { trigger_event = { id = daoyu.245 popup = yes } }
 	}
 	option = {
 		name = daoyu_general_modifier
-		trigger = { has_variable = daoyu_generals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { is_ruler = no } } }
+		trigger = { has_variable = daoyu_generals_orders any_country = { has_variable = daoyu_target_country any_scope_general = { NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = { every_scope_general = { hidden_effect = { remove_modifier = daoyu_general_modifier } } }
 		hidden_effect = { trigger_event = { id = daoyu.245 popup = yes } }
 	}
 	option = {
 		name = daoyu_admiral_modifier
-		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country every_scope_admiral = { is_ruler = no } } }
+		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country every_scope_admiral = { NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = { every_scope_admiral = { hidden_effect = { remove_modifier = daoyu_admiral_modifier } } }
 		hidden_effect = { trigger_event = { id = daoyu.245 popup = yes } }
 	}
@@ -4791,108 +4791,108 @@ daoyu.281 = {
 	}
 	option = {
 		name = direct
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = direct } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = direct } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = direct } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = direct } } }
 	}
 	option = {
 		name = persistent
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = persistent } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = persistent } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = persistent } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = persistent } } }
 	}
 	option = {
 		name = cautious
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = cautious } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = cautious } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = cautious } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = cautious } } }
 	}
 	option = {
 		name = arrogant
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = arrogant } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = arrogant } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = arrogant } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = arrogant } } }
 	}
 	option = {
 		name = bigoted
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = bigoted } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = bigoted } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = bigoted } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = bigoted } } }
 	}
 	option = {
 		name = reckless
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = reckless } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = reckless } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = reckless } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = reckless } } }
 	}
 	option = {
 		name = tactful
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = tactful } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = tactful } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = tactful } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = tactful } } }
 	}
 	option = {
 		name = ambitious
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = ambitious } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = ambitious } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = ambitious } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = ambitious } } }
 	}
 	option = {
 		name = imperious
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = imperious } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = imperious } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = imperious } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = imperious } } }
 	}
 	option = {
 		name = wrathful
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = wrathful } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = wrathful } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = wrathful } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = wrathful } } }
 	}
 	option = {
 		name = reserved
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = reserved } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = reserved } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = reserved } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = reserved } } }
 	}
 	option = {
 		name = cruel
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = cruel } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = cruel } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = cruel } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = cruel } } }
 	}
 	option = {
 		name = meticulous
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = meticulous } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = meticulous } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = meticulous } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = meticulous } } }
 	}
 	option = {
 		name = charismatic
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = charismatic } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = charismatic } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = charismatic } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = charismatic } } }
 	}
 	option = {
 		name = romantic
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = romantic } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = romantic } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = romantic } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = romantic } } }
 	}
 	option = {
 		name = brave
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = brave } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = brave } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = brave } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = brave } } }
 	}
 	option = {
 		name = innovative
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = innovative } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = innovative } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = innovative } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = innovative } } }
 	}
 	option = {
 		name = hedonist
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = hedonist } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = hedonist } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = hedonist } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = hedonist } } }
 	}
 	option = {
 		name = pious
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = pious } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = pious } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = pious } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = pious } } }
 	}
 	option = {
 		name = imposing
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = imposing } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = imposing } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = imposing } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = imposing } } }
 	}
 	option = {
 		name = honorable
-		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { is_ruler = no } add_trait = honorable } } }
-		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { is_ruler = no } add_trait = honorable } } }
+		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = honorable } } }
+		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = honorable } } }
 	}
 	after = { trigger_event = { id = daoyu.280 popup = yes } }
 }
@@ -5054,7 +5054,7 @@ daoyu.291 = {
 		hidden_effect = {
 			if = { limit = { has_modifier = daoyu_country_legitimacy_base_add } remove_modifier = daoyu_country_legitimacy_base_add }
 			add_modifier = { name = daoyu_country_legitimacy_base_add multiplier = 100 months = -1 }
-			random_scope_character = { limit = { is_heir = yes } disinherit_character = yes }
+			random_scope_character = { limit = { has_role = character_role_heir } disinherit_character = yes }
 		}
 	}
 	after = { trigger_event = { id = daoyu.290 popup = yes } }

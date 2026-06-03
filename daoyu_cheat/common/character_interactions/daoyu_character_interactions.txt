@@ -5,8 +5,8 @@ daoyu_exile_character = {
 		has_global_variable = daoyu_on
 		is_in_exile_pool = no
 		is_in_void = no
-		is_ruler = no
-		is_heir = no
+		NOT = { has_role = character_role_ruler }
+		NOT = { has_role = character_role_heir }
 		or = {
 			has_role = character_role_politician
 			has_role = character_role_agitator
@@ -193,8 +193,8 @@ daoyu_arrange_accident = {
 		has_global_variable = daoyu_on
 		is_in_exile_pool = no
 		is_in_void = no
-		is_ruler = no
-		is_heir = no
+		NOT = { has_role = character_role_ruler }
+		NOT = { has_role = character_role_heir }
 		not = { has_variable = daoyu_dead }
 	}
 	show_requirements = yes
@@ -210,7 +210,7 @@ daoyu_open_daoyu_cheat = {
 	potential = {
 		owner ?= { is_ai = no }
 		has_global_variable = daoyu_on
-		is_ruler = yes
+		has_role = character_role_ruler
 	}
 	possible = {
 		custom_tooltip = { text = daoyu_quit_diplomatic_actions nor = { has_global_variable = daoyu_declare_war has_global_variable = daoyu_from_diplomatic_actions } }
@@ -280,7 +280,7 @@ daoyu_interactions_generals_orders = {
 	potential = {
 		owner ?= { is_ai = no }
 		has_global_variable = daoyu_on
-		or = { is_ruler = yes has_role = character_role_general }
+		or = { has_role = character_role_ruler has_role = character_role_general }
 	}
 	possible = {
 		custom_tooltip = {
@@ -303,7 +303,7 @@ daoyu_interactions_admirals_orders = {
 	potential = {
 		owner ?= { is_ai = no }
 		has_global_variable = daoyu_on
-		or = { is_ruler = yes has_role = character_role_admiral }
+		or = { has_role = character_role_ruler has_role = character_role_admiral }
 	}
 	possible = {
 		custom_tooltip = {

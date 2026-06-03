@@ -445,7 +445,7 @@ daoyu_ideology_nihilist = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_nihilist_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { OR = { has_law = law_type:law_presidential_republic has_law = law_type:law_parliamentary_republic has_law = law_type:law_council_republic } has_law = law_type:law_state_atheism } }
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_nihilist_valid_trigger = yes }
 		}
 	}
@@ -455,7 +455,7 @@ daoyu_ideology_republican_leader = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_republican_leader_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { OR = { has_law = law_type:law_presidential_republic has_law = law_type:law_parliamentary_republic } has_law = law_type:law_elected_bureaucrats } }
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_republican_leader_valid_trigger = yes }
 		}
 	}
@@ -466,7 +466,7 @@ daoyu_ideology_radical = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_radical_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { OR = { has_law = law_type:law_presidential_republic has_law = law_type:law_parliamentary_republic } has_law = law_type:law_universal_suffrage has_law = law_type:law_protected_speech has_law = law_type:law_guaranteed_liberties } }
-			NOT = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NOT = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_radical_valid_trigger = yes }
 		}
 	}
@@ -523,7 +523,7 @@ daoyu_ideology_communist = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_communist_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { has_law = law_type:law_collectivized_agriculture has_law = law_type:law_state_atheism has_law = law_type:law_council_republic has_law = law_type:law_worker_protections } }
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_communist_valid_trigger = yes }
 		}
 	}
@@ -534,7 +534,7 @@ daoyu_ideology_vanguardist = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_vanguardist_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { has_law = law_type:law_collectivized_agriculture has_law = law_type:law_council_republic has_law = law_type:law_command_economy has_law = law_type:law_protectionism has_law = law_type:law_single_party_state } }
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_vanguardist_valid_trigger = yes }
 		}
 	}
@@ -555,7 +555,7 @@ daoyu_ideology_anarchist = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_anarchist_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { has_law = law_type:law_anarchy has_law = law_type:law_national_militia has_law = law_type:law_protected_speech has_law = law_type:law_no_police has_law = law_type:law_council_republic } }
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_anarchist_valid_trigger = yes }
 		}
 	}
@@ -635,7 +635,7 @@ daoyu_ideology_positivist = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_positivist_valid_trigger = yes }
 		and = {
 			NAND = { has_role = character_role_agitator owner = { has_law = law_type:law_appointed_bureaucrats has_law = law_type:law_technocracy has_law = law_type:law_state_atheism has_law = law_type:law_presidential_republic } }
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } }
 			interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_positivist_valid_trigger = yes }
 		}
 	}
@@ -726,7 +726,7 @@ daoyu_ideology_utopian = {
 					OR = { has_law = law_type:law_presidential_republic has_law = law_type:law_parliamentary_republic has_law = law_type:law_council_republic }
 				}
 			}
-			NAND = { owner = { has_law = law_type:law_monarchy } OR = { is_ruler = yes is_heir = yes } } interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_utopian_valid_trigger = yes }
+			NAND = { owner = { has_law = law_type:law_monarchy } OR = { has_role = character_role_ruler has_role = character_role_heir } } interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_utopian_valid_trigger = yes }
 		}
 	}
 }
