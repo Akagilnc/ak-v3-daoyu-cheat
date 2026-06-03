@@ -1053,9 +1053,9 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_lathe" }
 	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_precision_tools" }
 	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_luxury_furniture" }
-	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_assembly_lines_building_furniture_manufacturies" }
-	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_rotary_valve_engine_building_furniture_manufacturies" }
-	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_watertube_boiler_building_furniture_manufacturies" }
+	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_assembly_lines_building_furniture_manufactory" }
+	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_rotary_valve_engine_building_furniture_manufactory" }
+	daoyu_production_method_effect = { TYPE = "building_furniture_manufactory" PM = "pm_watertube_boiler_building_furniture_manufactory" }
 	daoyu_production_method_effect = { TYPE = "building_glassworks" PM = "pm_houseware_plastics" }
 	daoyu_production_method_effect = { TYPE = "building_glassworks" PM = "pm_crystal_glass" }
 	daoyu_production_method_effect = { TYPE = "building_glassworks" PM = "pm_leaded_glass" }
@@ -1065,13 +1065,13 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_rubber_grips" }
 	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_steel" }
 	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_pig_iron" }
-	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_assembly_lines_building_tooling_workshops" }
-	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_rotary_valve_engine_building_tooling_workshops" }
-	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_watertube_boiler_building_tooling_workshops" }
+	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_assembly_lines_building_tooling_workshop" }
+	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_rotary_valve_engine_building_tooling_workshop" }
+	daoyu_production_method_effect = { TYPE = "building_tooling_workshop" PM = "pm_watertube_boiler_building_tooling_workshop" }
 	daoyu_production_method_effect = { TYPE = "building_paper_mill" PM = "pm_bleached_paper" }
 	daoyu_production_method_effect = { TYPE = "building_paper_mill" PM = "pm_sulfite_pulping" }
-	daoyu_production_method_effect = { TYPE = "building_paper_mill" PM = "pm_rotary_valve_engine_building_paper_mills" }
-	daoyu_production_method_effect = { TYPE = "building_paper_mill" PM = "pm_watertube_boiler_building_paper_mills" }
+	daoyu_production_method_effect = { TYPE = "building_paper_mill" PM = "pm_rotary_valve_engine_building_paper_mill" }
+	daoyu_production_method_effect = { TYPE = "building_paper_mill" PM = "pm_watertube_boiler_building_paper_mill" }
 	daoyu_production_method_effect = { TYPE = "building_chemical_plant" PM = "pm_nitrogen_fixation" }
 	daoyu_production_method_effect = { TYPE = "building_chemical_plant" PM = "pm_improved_fertilizer" }
 	daoyu_production_method_effect = { TYPE = "building_explosives_factory" PM = "pm_brine_electrolysis" }
@@ -1081,8 +1081,8 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_electric_arc_process" }
 	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_open_hearth_process" }
 	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_bessemer_process" }
-	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_rotary_valve_engine_building_steel_mills" }
-	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_watertube_boiler_building_steel_mills" }
+	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_rotary_valve_engine_building_steel_mill" }
+	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_watertube_boiler_building_steel_mill" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_diesel_engines" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_electric_engines" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_automobile_production" }
@@ -1106,8 +1106,8 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_artillery_foundry" PM = "pm_assembly_lines_building_arms_industry" }
 	daoyu_production_method_effect = { TYPE = "building_artillery_foundry" PM = "pm_rotary_valve_engine_building_arms_industry" }
 	daoyu_production_method_effect = { TYPE = "building_munition_plant" PM = "pm_explosive_shells" }
-	daoyu_production_method_effect = { TYPE = "building_munition_plant" PM = "pm_assembly_lines_building_munition_plants" }
-	daoyu_production_method_effect = { TYPE = "building_munition_plant" PM = "pm_rotary_valve_engine_building_munition_plants" }
+	daoyu_production_method_effect = { TYPE = "building_munition_plant" PM = "pm_assembly_lines_building_munition_plant" }
+	daoyu_production_method_effect = { TYPE = "building_munition_plant" PM = "pm_rotary_valve_engine_building_munition_plant" }
 	daoyu_production_method_effect = { TYPE = "building_rye_farm" PM = "pm_chemical_fertilizer" }
 	daoyu_production_method_effect = { TYPE = "building_rye_farm" PM = "pm_fertilization" }
 	daoyu_production_method_effect = { TYPE = "building_rye_farm" PM = "pm_soil_enriching_farming" }
@@ -1313,16 +1313,16 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_manor_house" PM = "pm_manor_house_bureaucrat_ownership" }
 	daoyu_production_method_effect = { TYPE = "building_financial_district" PM = "pm_financial_district_principle_divine_economics_2" }
 	daoyu_production_method_effect = { TYPE = "building_financial_district" PM = "pm_financial_district_publicly_traded" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_farm" PM = "pm_home_workshops_building_subsistence_farms" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_farm" PM = "pm_home_workshops_building_subsistence_farm" }
 	daoyu_production_method_effect = { TYPE = "building_subsistence_farm" PM = "pm_serfdom" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_orchard" PM = "pm_home_workshops_building_subsistence_orchards" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_orchard" PM = "pm_serfdom_building_subsistence_orchards" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_pasture" PM = "pm_home_workshops_building_subsistence_pastures" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_pasture" PM = "pm_serfdom_building_subsistence_pastures" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_fishing_village" PM = "pm_home_workshops_building_subsistence_fishing_villages" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_fishing_village" PM = "pm_serfdom_building_subsistence_fishing_villages" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_rice_farm" PM = "pm_home_workshops_building_subsistence_rice_paddies" }
-	daoyu_production_method_effect = { TYPE = "building_subsistence_rice_farm" PM = "pm_serfdom_building_subsistence_rice_paddies" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_orchard" PM = "pm_home_workshops_building_subsistence_orchard" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_orchard" PM = "pm_serfdom_building_subsistence_orchard" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_pasture" PM = "pm_home_workshops_building_subsistence_pasture" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_pasture" PM = "pm_serfdom_building_subsistence_pasture" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_fishing_village" PM = "pm_home_workshops_building_subsistence_fishing_village" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_fishing_village" PM = "pm_serfdom_building_subsistence_fishing_village" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_rice_farm" PM = "pm_home_workshops_building_subsistence_rice_farm" }
+	daoyu_production_method_effect = { TYPE = "building_subsistence_rice_farm" PM = "pm_serfdom_building_subsistence_rice_farm" }
 	daoyu_production_method_effect = { TYPE = "building_construction_sector" PM = "pm_arc_welded_buildings" }
 	daoyu_production_method_effect = { TYPE = "building_construction_sector" PM = "pm_steel_frame_buildings" }
 	daoyu_production_method_effect = { TYPE = "building_construction_sector" PM = "pm_iron_frame_buildings" }

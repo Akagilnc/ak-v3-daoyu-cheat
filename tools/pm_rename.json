@@ -1,0 +1,23 @@
+{
+  "pm_assembly_lines_building_furniture_manufacturies": "pm_assembly_lines_building_furniture_manufactory",
+  "pm_assembly_lines_building_munition_plants": "pm_assembly_lines_building_munition_plant",
+  "pm_assembly_lines_building_tooling_workshops": "pm_assembly_lines_building_tooling_workshop",
+  "pm_home_workshops_building_subsistence_farms": "pm_home_workshops_building_subsistence_farm",
+  "pm_home_workshops_building_subsistence_fishing_villages": "pm_home_workshops_building_subsistence_fishing_village",
+  "pm_home_workshops_building_subsistence_orchards": "pm_home_workshops_building_subsistence_orchard",
+  "pm_home_workshops_building_subsistence_pastures": "pm_home_workshops_building_subsistence_pasture",
+  "pm_home_workshops_building_subsistence_rice_paddies": "pm_home_workshops_building_subsistence_rice_farm",
+  "pm_rotary_valve_engine_building_furniture_manufacturies": "pm_rotary_valve_engine_building_furniture_manufactory",
+  "pm_rotary_valve_engine_building_munition_plants": "pm_rotary_valve_engine_building_munition_plant",
+  "pm_rotary_valve_engine_building_paper_mills": "pm_rotary_valve_engine_building_paper_mill",
+  "pm_rotary_valve_engine_building_steel_mills": "pm_rotary_valve_engine_building_steel_mill",
+  "pm_rotary_valve_engine_building_tooling_workshops": "pm_rotary_valve_engine_building_tooling_workshop",
+  "pm_serfdom_building_subsistence_fishing_villages": "pm_serfdom_building_subsistence_fishing_village",
+  "pm_serfdom_building_subsistence_orchards": "pm_serfdom_building_subsistence_orchard",
+  "pm_serfdom_building_subsistence_pastures": "pm_serfdom_building_subsistence_pasture",
+  "pm_serfdom_building_subsistence_rice_paddies": "pm_serfdom_building_subsistence_rice_farm",
+  "pm_watertube_boiler_building_furniture_manufacturies": "pm_watertube_boiler_building_furniture_manufactory",
+  "pm_watertube_boiler_building_paper_mills": "pm_watertube_boiler_building_paper_mill",
+  "pm_watertube_boiler_building_steel_mills": "pm_watertube_boiler_building_steel_mill",
+  "pm_watertube_boiler_building_tooling_workshops": "pm_watertube_boiler_building_tooling_workshop"
+}
