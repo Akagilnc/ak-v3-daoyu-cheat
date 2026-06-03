@@ -507,7 +507,7 @@ daoyu.120 = {
 	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/american_civil_war"
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	duration = 0
-	immediate = { if = { limit = { not = { has_variable = daoyu_root_war_support } } random_country = { limit = { is_ai = yes has_modifier = daoyu_target_country } not = { has_variable = daoyu_declare_war_initiator } save_scope_as = daoyu_target_country } } }
+	immediate = { if = { limit = { not = { has_variable = daoyu_root_war_support } } random_country = { limit = { is_ai = yes has_modifier = daoyu_target_country not = { has_variable = daoyu_declare_war_initiator } } save_scope_as = daoyu_target_country } } }
 	option = {
 		name = SINGLE_GOODS_OR_EMPLOYMENT_MORE
 		if = { limit = { has_variable = daoyu_root_war_support } every_scope_war = { add_war_war_support = { target = scope:daoyu_target_country value = 20 } } }
@@ -4308,7 +4308,7 @@ daoyu.245 = {
 	immediate = {
 		random_country = { limit = { has_variable = daoyu_target_country } save_scope_as = daoyu_target_country }
 		if = { limit = { has_global_variable = daoyu_character_health_add } random_character = { limit = { has_trait = daoyu_target_character } save_scope_as = daoyu_target_character remove_modifier = daoyu_negative_character_health_add remove_modifier = daoyu_character_health_add } }
-		else = { random_character = { limit = { has_trait = daoyu_target_character } save_scope_as = daoyu_target_character remove_modifier =  remove_modifier =  remove_modifier = daoyu_general_modifier remove_modifier = daoyu_admiral_modifier } }
+		else = { random_character = { limit = { has_trait = daoyu_target_character } save_scope_as = daoyu_target_character remove_modifier = daoyu_general_modifier remove_modifier = daoyu_admiral_modifier } }
 	}
 	option = { name = 1x daoyu_add_military_modifier = { MULTIPLIER = 1 } }
 	option = { name = 2x daoyu_add_military_modifier = { MULTIPLIER = 2 } }
@@ -7294,7 +7294,7 @@ daoyu.375 = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	duration = 0
 	immediate = {
-		random_country = { limit = { is_ai = yes has_modifier = daoyu_target_country } not = { has_variable = daoyu_declare_war_initiator } save_scope_as = daoyu_target_country }
+		random_country = { limit = { is_ai = yes has_modifier = daoyu_target_country not = { has_variable = daoyu_declare_war_initiator } } save_scope_as = daoyu_target_country }
 		random_country = { limit = { is_ai = yes not = { has_modifier = daoyu_target_country } has_variable = daoyu_declare_war_initiator } save_scope_as = daoyu_declare_war_initiator }
 	}
 	option = {

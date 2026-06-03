@@ -754,7 +754,7 @@ daoyu_single_religious_effect = {
 		limit = { has_global_variable = daoyu_move_pop_religion_unemployed_effect }
 		if = {
 			limit = { has_global_variable = daoyu_move_pop_$RELIGION$ }
-			scope:daoyu_migration_from = { random_scope_pop = { limit = { culture = { has_variable = daoyu_target_culture } religion = rel:_$RELIGION$ is_employed = no } move_pop = scope:daoyu_migration_go_to } }
+			scope:daoyu_migration_from = { random_scope_pop = { limit = { culture = { has_variable = daoyu_target_culture } religion = rel:$RELIGION$ is_employed = no } move_pop = scope:daoyu_migration_go_to } }
 		}
 	}
 	if = {
