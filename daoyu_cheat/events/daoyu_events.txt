@@ -1469,7 +1469,7 @@ daoyu.142 = {
 			if = { limit = { nor = { has_law = law_type:law_isolationism has_law = law_type:law_mercantilism } } activate_law = law_type:law_mercantilism }
 			if = {
 				limit = { not = { market_capital.market = { mg:grain = { market_goods_pricier > 0.25 } } } }
-				every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = root } } owner = { create_trade_route = { goods = grain level = 100 direction = import target = root.market } } }
+				every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = root } } owner = {  } }
 			}
 			set_variable = daoyu_je_corn_laws
 			trigger_event = { id = daoyu.142 popup = yes }
@@ -6183,13 +6183,13 @@ daoyu.351 = {
 				not = { has_strategy = ai_strategy_plantation_economy }
 				or = {
 					capital.region = sr:region_dixie
-					is_in_geographic_region = geographic_region:geographic_region_south_america
-					is_in_geographic_region = geographic_region:geographic_region_central_america
-					country_is_in_india = yes
-					country_is_in_southeast_asia = yes
-					country_is_in_africa = yes
-					country_is_in_east_asia = yes
-					country_is_in_middle_east = yes
+					is_in_geographic_region = geographic_region_south_america
+					is_in_geographic_region = geographic_region_central_america
+					is_in_geographic_region = geographic_region_india
+					is_in_geographic_region = geographic_region_south_east_asia
+					is_in_geographic_region = geographic_region_africa
+					is_in_geographic_region = geographic_region_east_asia
+					is_in_geographic_region = geographic_region_middle_east
 				}
 			}
 		}

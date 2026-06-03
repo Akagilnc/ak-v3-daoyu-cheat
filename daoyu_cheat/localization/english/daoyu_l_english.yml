@@ -512,8 +512,6 @@
  daoyu_country_disable_investment_pool_bool_desc:0 "$country_disable_investment_pool_bool_desc$"
  daoyu_country_can_form_construction_company_bool:0 "$country_can_form_construction_company_bool$"
  daoyu_country_can_form_construction_company_bool_desc:0 "$country_can_form_construction_company_bool_desc$"
- IBL:0 "Ibibioland"
- IBL_ADJ:0 "Ibibio"
  daoyu_query_countries_tag:0 "Query countries tag"
  daoyu_country_agitator_slots_add:0 "Agitator slots"
  daoyu_country_legitimacy_base_add:0 "$warlord_legitimacy$"

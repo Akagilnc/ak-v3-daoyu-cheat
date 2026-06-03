@@ -366,11 +366,11 @@ daoyu_goods_effect = {
 	else_if = { limit = { has_global_variable = daoyu_remove_banned_goods } scope:daoyu_target_country = { if = { limit = { is_banning_goods = g:$GOODS$ } remove_banned_goods = g:$GOODS$  }} }
 	else_if = {
 		limit = { has_global_variable = daoyu_increase_price_goods }
-		every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } owner = { create_trade_route = { goods = $GOODS$ level = 10 direction = import target = scope:daoyu_target_country.market } } }
+		every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } owner = {  } }
 	}
 	else_if = {
 		limit = { has_global_variable = daoyu_decrease_price_goods }
-		every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } owner = { create_trade_route = { goods = $GOODS$ level = 10 direction = export target = scope:daoyu_target_country.market } } }
+		every_market = { limit = { daoyu_can_create_trade_route_trigger = { SCOPE = scope:daoyu_target_country } } owner = {  } }
 	}
 }
 
@@ -2094,14 +2094,14 @@ daoyu_add_military_access_effect = {
 #		limit = { any_market = { mg:$GOODS$ = { market_goods_production >= 10 market_goods_cheaper > $FLOOR$ market_goods_cheaper <= $CEILING$ } daoyu_can_create_trade_route_trigger = { SCOPE = root } } }
 #		random_market = {
 #			limit = { mg:$GOODS$ = { market_goods_production >= 10 market_goods_cheaper > $FLOOR$ market_goods_cheaper <= $CEILING$ }
-#			daoyu_can_create_trade_route_trigger = { SCOPE = root } } owner = { create_trade_route = { goods = $GOODS$ level = 10 direction = export target = root.market } }
+#			daoyu_can_create_trade_route_trigger = { SCOPE = root } } owner = {  }
 #		}
 #	}
 #}
 #daoyu_auto_single_trade_route_cheaper_effcet = {
 #	if = {
 #		limit = { any_market = { mg:$GOODS$ = { market_goods_pricier > $FLOOR$ market_goods_pricier <= $CEILING$ } daoyu_can_create_trade_route_trigger = { SCOPE = root } } }
-#		random_market = { limit = { mg:$GOODS$ = { market_goods_pricier > $FLOOR$ market_goods_pricier <= $CEILING$ } daoyu_can_create_trade_route_trigger = { SCOPE = root } } owner = { create_trade_route = { goods = $GOODS$ level = 10 direction = import target = root.market } } }
+#		random_market = { limit = { mg:$GOODS$ = { market_goods_pricier > $FLOOR$ market_goods_pricier <= $CEILING$ } daoyu_can_create_trade_route_trigger = { SCOPE = root } } owner = {  } }
 #	}
 #}
 #daoyu_auto_single_trade_route_effcet = {
