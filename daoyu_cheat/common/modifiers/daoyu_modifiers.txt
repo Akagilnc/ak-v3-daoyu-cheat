@@ -1,4 +1,4 @@
-daoyu_victorian_century = {
+﻿daoyu_victorian_century = {
 	state_birth_rate_mult = -1
 	state_mortality_mult = 10000
 }

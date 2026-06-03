@@ -1,4 +1,4 @@
-daoyu_fast_construction = {
+﻿daoyu_fast_construction = {
 	name = "daoyu_fast_construction"
 	desc = "NEVER"
 	visible = { not = { has_modifier = daoyu_fast_construction } }

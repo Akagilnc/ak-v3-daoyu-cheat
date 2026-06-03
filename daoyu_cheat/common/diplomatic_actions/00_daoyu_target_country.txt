@@ -1,4 +1,4 @@
-daoyu_target_country = {
+﻿daoyu_target_country = {
 	groups = { general }
 	requires_approval = no
 	should_notify_third_parties = yes

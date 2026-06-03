@@ -1,4 +1,4 @@
-daoyu_on = {
+﻿daoyu_on = {
 	is_shown = {
 		is_ai = no
 		not = { has_global_variable = daoyu_on }

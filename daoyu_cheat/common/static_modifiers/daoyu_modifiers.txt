@@ -1,4 +1,4 @@
-daoyu_country_diplomatic_play_maneuvers_add = {
+﻿daoyu_country_diplomatic_play_maneuvers_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_diplomatic_play_maneuvers_add = 50
 }

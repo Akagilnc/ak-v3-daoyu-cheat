@@ -1,4 +1,4 @@
-namespace = daoyu
+﻿namespace = daoyu
 daoyu.1 = {
 	type = country_event
 	placement = ROOT

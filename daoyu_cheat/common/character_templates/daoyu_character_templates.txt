@@ -1,4 +1,4 @@
-#恩格斯
+﻿#恩格斯
 daoyu_friedrich_engels = {
 	first_name = Friedrich
 	last_name = Engels

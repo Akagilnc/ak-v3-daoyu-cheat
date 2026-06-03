@@ -1,4 +1,4 @@
-catalyst_event_positive = {
+﻿catalyst_event_positive = {
 	duration_to_show = { months = 0 }
 	is_always_usable = yes
 }

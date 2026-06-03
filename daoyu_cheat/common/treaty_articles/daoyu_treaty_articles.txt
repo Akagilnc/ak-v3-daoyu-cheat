@@ -1,4 +1,4 @@
-daoyu_treaty_articles = {
+﻿daoyu_treaty_articles = {
 	kind = directed
 	cost = 0
 	relations_progress_per_day = 100

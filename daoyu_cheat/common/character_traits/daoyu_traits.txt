@@ -1,4 +1,4 @@
-daoyu_potential_target = {
+﻿daoyu_potential_target = {
 	type = condition
 	texture = "gfx/interface/icons/character_trait_icons/alcoholic.dds"
 	possible = { age > 999 }

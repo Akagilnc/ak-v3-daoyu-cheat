@@ -1,4 +1,4 @@
-daoyu_auto_single_expand_building_effcet = {
+﻿daoyu_auto_single_expand_building_effcet = {
 	if = {
 		limit = {
 			or = {

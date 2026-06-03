@@ -1,4 +1,4 @@
-daoyu_all_country_division_effect = {
+﻿daoyu_all_country_division_effect = {
 	every_country = { limit = { or = { and = { is_subject = yes top_overlord = { is_ai = no } } is_ai = no } } set_variable = daoyu_player }
 	every_country = { limit = { is_subject = yes not = { has_variable = daoyu_player } } make_independent = yes }
 	every_state = {

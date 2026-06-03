@@ -1,4 +1,4 @@
-namespace = dculo
+﻿namespace = dculo
 #传承
 dculo.10 = {
 	type = country_event

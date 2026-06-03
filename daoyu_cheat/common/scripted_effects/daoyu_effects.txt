@@ -1,4 +1,4 @@
-
+﻿
 daoyu_determine_page_prev = {
 	if = { limit = { has_variable = daoyu_page_16 } remove_variable = daoyu_page_16 set_variable = daoyu_page_15 }
 	else_if = { limit = { has_variable = daoyu_page_15 } remove_variable = daoyu_page_15 set_variable = daoyu_page_14 }

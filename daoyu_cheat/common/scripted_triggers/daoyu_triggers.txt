@@ -1,4 +1,4 @@
-#判断页码
+﻿#判断页码
 daoyu_check_page_next = {
 	or = {
 		and = { has_variable = daoyu_page_01 has_variable = daoyu_count var:daoyu_count > 14 }

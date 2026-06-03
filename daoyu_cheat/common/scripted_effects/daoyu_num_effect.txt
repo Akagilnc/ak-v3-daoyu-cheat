@@ -1,4 +1,4 @@
-daoyu_unit_count_effect = {
+﻿daoyu_unit_count_effect = {
 	set_variable = { name = daoyu_unit_count_var value = 0 }
 	daoyu_num_effect = yes
 }

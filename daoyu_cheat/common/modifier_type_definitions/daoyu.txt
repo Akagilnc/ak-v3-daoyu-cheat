@@ -1,4 +1,4 @@
-
+﻿
 country_force_collectivization_bool={
 	decimals=1
 	color=neutral

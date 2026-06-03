@@ -1,4 +1,4 @@
-daoyu_culture_effect = {
+﻿daoyu_culture_effect = {
 	if = {
 		limit = { has_global_variable = daoyu_target_character_mark_target_culture }
 		scope:daoyu_target_character = { change_character_culture = cu:$CULTURE$ }
