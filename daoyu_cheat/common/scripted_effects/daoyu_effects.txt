@@ -2203,3 +2203,4 @@ daoyu_add_military_access_effect = {
 #	daoyu_auto_single_trade_route_effcet = { GOODS = "ironclads" }
 #	daoyu_auto_single_trade_route_effcet = { GOODS = "aeroplanes" }
 #}
+daoyu_search_potential_building = { }

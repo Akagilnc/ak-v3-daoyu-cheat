@@ -1464,7 +1464,6 @@ daoyu.142 = {
 		trigger = { nor = { has_variable = daoyu_je_corn_laws has_variable = corn_laws_abolished has_journal_entry = je_corn_laws } }
 		hidden_effect = {
 			if = { limit = { ig:ig_landowners = { is_marginal = yes } } ig:ig_landowners = { add_modifier = { name = daoyu_interest_group_approval multiplier = 1000 months = 1 } add_modifier = { name = daoyu_interest_group_pol_str multiplier = 1000 months = 1 } } }
-			if = { limit = { not = { has_export_priority_tariffs = g:grain } } set_tariffs_export_priority = g:grain }
 			if = { limit = { ig:ig_landowners = { is_in_government = no } } ig:ig_landowners = { add_ruling_interest_group = yes } }
 			if = { limit = { nor = { has_law = law_type:law_isolationism has_law = law_type:law_mercantilism } } activate_law = law_type:law_mercantilism }
 			if = {
@@ -1611,7 +1610,6 @@ daoyu.145 = {
 			random_scope_character = { limit = { or = { has_role = character_role_heir has_role = character_role_ruler } age >= 20 } set_ideology = ideology:ideology_humanitarian_royalist }
 			ig:ig_landowners = { add_modifier = { name = daoyu_interest_group_approval multiplier = -1000 months = 1 } }
 			ig:ig_landowners = { add_modifier = { name = daoyu_interest_group_pol_str multiplier = -1000 months = 1 } }
-			ig:ig_landowners = { set_ig_suppression = yes }
 			start_enactment = law_type:law_slavery_banned
 			add_enactment_phase = 2
 		}
