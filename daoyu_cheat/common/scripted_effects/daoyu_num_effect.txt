@@ -86,7 +86,6 @@ daoyu_s_num = {
 		daoyu_create_building = { TYPE = "building_munition_plant" LEVEL = $NUM$ }#弹药厂
 		daoyu_create_building = { TYPE = "building_artillery_foundry" LEVEL = $NUM$ }#火炮铸造厂
 		daoyu_create_building = { TYPE = "building_motor_industry" LEVEL = $NUM$ }#动力机械厂
-		daoyu_create_building = { TYPE = "building_automotive_industry" LEVEL = $NUM$ }#汽车工业
 		daoyu_create_building = { TYPE = "building_power_plant" LEVEL = $NUM$ }#发电厂
 		daoyu_create_building = { TYPE = "building_electrics_industry" LEVEL = $NUM$ }#电子厂
 		daoyu_create_building = { TYPE = "building_shipyard" LEVEL = $NUM$ }#造船厂
