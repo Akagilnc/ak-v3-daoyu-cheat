@@ -1307,8 +1307,8 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_railway" PM = "pm_steel_passenger_carriages" }
 	daoyu_production_method_effect = { TYPE = "building_railway" PM = "pm_wooden_passenger_carriages" }
 	daoyu_production_method_effect = { TYPE = "building_trade_center" PM = "pm_trade_center_principle_external_trade_2" }
-	daoyu_production_method_effect = { TYPE = "building_trade_center" PM = "pm_trade_center_bureaucrat_ownership" }
-	daoyu_production_method_effect = { TYPE = "building_trade_center" PM = "pm_trade_center_privately_owned" }
+	#1.13移除trade_center所有权pm# daoyu_production_method_effect = { TYPE = "building_trade_center" PM = "pm_trade_center_bureaucrat_ownership" }
+	#1.13移除trade_center所有权pm# daoyu_production_method_effect = { TYPE = "building_trade_center" PM = "pm_trade_center_privately_owned" }
 	daoyu_production_method_effect = { TYPE = "building_manor_house" PM = "pm_manor_house_principle_divine_economics_2" }
 	daoyu_production_method_effect = { TYPE = "building_manor_house" PM = "pm_manor_house_bureaucrat_ownership" }
 	daoyu_production_method_effect = { TYPE = "building_financial_district" PM = "pm_financial_district_principle_divine_economics_2" }
