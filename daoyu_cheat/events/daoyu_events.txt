@@ -327,8 +327,8 @@ daoyu.108 = {
 	desc = PRESTIGE#威望
 	flavor = daoyu_current_prestige
 	flavor = {
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional }
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_line_reaks }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional } }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_line_reaks } }
 		first_valid = { desc = daoyu_current_prestige }
 	}
 	event_image = { video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2" }
@@ -2283,8 +2283,8 @@ daoyu.181 = {
 		}
 	}
 	flavor = {
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional }
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_line_reaks }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional } }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_line_reaks } }
 		first_valid = {
 			triggered_desc = { trigger = { has_global_variable = daoyu_interest_group_approval } desc = daoyu_ig_approval }
 			triggered_desc = { trigger = { has_global_variable = daoyu_interest_group_pol_str } desc = daoyu_ig_pol_str }
@@ -2463,8 +2463,8 @@ daoyu.182 = {
 		}
 	}
 	flavor = {
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional }
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_line_reaks }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional } }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_line_reaks } }
 		first_valid = {
 			triggered_desc = { trigger = { has_global_variable = daoyu_interest_group_approval has_global_variable = daoyu_ig_armed_forces } desc = daoyu_ig_armed_forces_approval }
 			triggered_desc = { trigger = { has_global_variable = daoyu_interest_group_approval has_global_variable = daoyu_ig_landowners } desc = daoyu_ig_landowners_approval }
@@ -2601,7 +2601,7 @@ daoyu.183 = {
 	placement = root
 	title = daoyu_cheat
 	desc = {
-		first_valid = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional }
+		first_valid = { triggered_desc = { trigger = { not = { has_global_variable = daoyu_from_common } } desc = daoyu_target_country_additional } }
 	}
 	flavor = {
 		first_valid = {
@@ -7434,7 +7434,7 @@ daoyu.379 = {
 	option = {
 		name = URBAN_PART_OF_STATE#城镇建筑
 		trigger = {
-			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building set_global_variable = daoyu_instant_diplomatic_actions_on }
+			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building }
 			scope:daoyu_target_country = { any_scope_building = { daoyu_development_building_trigger = yes } }
 		}
 		set_global_variable = daoyu_urban_building
@@ -7443,7 +7443,7 @@ daoyu.379 = {
 	option = {
 		name = RESOURCE#资源
 		trigger = {
-			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building set_global_variable = daoyu_instant_diplomatic_actions_on }
+			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building }
 			scope:daoyu_target_country = { any_scope_building = { daoyu_resources_building_trigger = yes } }
 		}
 		set_global_variable = daoyu_resource_building
@@ -7452,7 +7452,7 @@ daoyu.379 = {
 	option = {
 		name = AGRICULTURE#农业
 		trigger = {
-			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building set_global_variable = daoyu_instant_diplomatic_actions_on }
+			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building }
 			scope:daoyu_target_country = { any_scope_building = { daoyu_agriculture_building_trigger = yes } }
 		}
 		set_global_variable = daoyu_agriculture_building
@@ -7461,7 +7461,7 @@ daoyu.379 = {
 	option = {
 		name = INFRA_PART_OF_STATE#开发
 		trigger = {
-			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building set_global_variable = daoyu_instant_diplomatic_actions_on }
+			nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building }
 			scope:daoyu_target_country = { any_scope_building = { daoyu_urban_building_trigger = yes } }
 		}
 		set_global_variable = daoyu_development_building
@@ -7523,7 +7523,7 @@ daoyu.379 = {
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_shipyard" } } daoyu_t_c_remove_building = { BUILDING = "building_shipyard" } }#军用造船厂
 	option = {
 		name = RESIGN
-		trigger = { or = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building set_global_variable = daoyu_instant_diplomatic_actions_on } }
+		trigger = { or = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building } }
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_development_building
 		remove_global_variable = daoyu_resource_building
@@ -7533,7 +7533,7 @@ daoyu.379 = {
 	}
 	option = {
 		name = QUIT
-		trigger = { nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building set_global_variable = daoyu_instant_diplomatic_actions_on } }
+		trigger = { nor = { has_global_variable = daoyu_development_building has_global_variable = daoyu_resource_building has_global_variable = daoyu_agriculture_building has_global_variable = daoyu_urban_building } }
 		default_option = yes
 		set_global_variable = daoyu_instant_diplomatic_actions_on
 		remove_global_variable = daoyu_target_country_remove_building
