@@ -1,4 +1,4 @@
-daoyu_nonexistent = {
+﻿daoyu_nonexistent = {
 	color= hsv{ 0.10 0.44 0.35 }
 	religion = catholic
 	heritage = heritage_iranian

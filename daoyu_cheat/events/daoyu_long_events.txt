@@ -38,7 +38,6 @@ dculo.10 = {
 			if = {
 				limit = { has_global_variable = daoyu_new_culture_for_name }
 				remove_global_variable = daoyu_new_culture_for_name
-				trigger_event = { id = daoyu.272 popup = yes }
 			}
 			else_if = {
 				limit = { has_global_variable = daoyu_one_earth_one_nation_one_religion }

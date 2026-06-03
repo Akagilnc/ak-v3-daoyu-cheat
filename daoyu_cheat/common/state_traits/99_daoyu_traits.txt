@@ -1,4 +1,4 @@
-building_food_industry = { icon = "gfx/interface/icons/building_icons/food_industry.dds" }
+﻿building_food_industry = { icon = "gfx/interface/icons/building_icons/food_industry.dds" }
 building_textile_mill = { icon = "gfx/interface/icons/building_icons/textile_industry.dds" }
 building_furniture_manufactory = { icon = "gfx/interface/icons/building_icons/furniture_manufacturies.dds" }
 building_glassworks = { icon = "gfx/interface/icons/building_icons/glassworks.dds" }
@@ -42,3 +42,4 @@ building_oil_rig = { icon = "gfx/interface/icons/building_icons/oil_rig.dds" }
 building_power_plant = { icon = "gfx/interface/icons/building_icons/power_plant.dds" }
 building_vineyard = { icon = "gfx/interface/icons/building_icons/vineyards.dds" }
 building_art_academy = { icon = "gfx/interface/icons/building_icons/building_art_academy.dds" }
+building_railway = { icon = "gfx/interface/icons/building_icons/railway.dds" }

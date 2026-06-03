@@ -1104,7 +1104,7 @@ daoyu.140 = {
 	}
 	option = {
 		name = je_famine#大饥荒
-		trigger = { has_journal_entry = je_famine }
+		trigger = { has_journal_entry = je_indian_famines }
 		set_variable = daoyu_je_famine
 	}
 	option = {
@@ -1578,7 +1578,7 @@ daoyu.145 = {
 			}
 		}
 		if = { limit = { has_variable = daoyu_je_divided_monarchists has_journal_entry = je_divided_monarchists } remove_variable = daoyu_je_divided_monarchists set_variable = one_true_french_dynasty }
-		if = { limit = { has_variable = daoyu_je_famine has_journal_entry = je_famine } remove_variable = daoyu_je_famine every_scope_state = { add_modifier = { name = expecting_riches_less multiplier = 20 days = 28 } } }
+		if = { limit = { has_variable = daoyu_je_famine has_journal_entry = je_indian_famines } remove_variable = daoyu_je_famine every_scope_state = { add_modifier = { name = expecting_riches_less multiplier = 20 days = 28 } } }
 		if = { limit = { has_variable = daoyu_je_matter_of_slavery has_journal_entry = je_matter_of_slavery } remove_variable = daoyu_je_matter_of_slavery activate_law = law_type:law_legacy_slavery }
 		#if = { limit = { has_variable = daoyu_je_opium_obsession has_journal_entry = je_opium_obsession } remove_variable = daoyu_je_opium_obsession add_banned_goods = g:opium }
 		if = { limit = { has_variable = daoyu_je_spanish_flu has_journal_entry = je_spanish_flu } remove_variable = daoyu_je_spanish_flu every_scope_state = { limit = { has_modifier = plague_modifier } remove_modifier = plague_modifier } }
@@ -4736,7 +4736,7 @@ daoyu.280 = {
 	}
 	option = {
 		name = character_health_add#角色健康
-		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country every_scope_admiral = { NOT = { has_role = character_role_ruler } } } }
+		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country any_scope_admiral = { NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = { every_scope_admiral = { hidden_effect = { remove_modifier = daoyu_character_health_add } } }
 		set_global_variable = daoyu_character_health_add
 		hidden_effect = { trigger_event = { id = daoyu.245 popup = yes } }
@@ -4749,7 +4749,7 @@ daoyu.280 = {
 	}
 	option = {
 		name = daoyu_admiral_modifier
-		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country every_scope_admiral = { NOT = { has_role = character_role_ruler } } } }
+		trigger = { has_variable = daoyu_admirals_orders any_country = { has_variable = daoyu_target_country any_scope_admiral = { NOT = { has_role = character_role_ruler } } } }
 		scope:daoyu_target_country = { every_scope_admiral = { hidden_effect = { remove_modifier = daoyu_admiral_modifier } } }
 		hidden_effect = { trigger_event = { id = daoyu.245 popup = yes } }
 	}
@@ -6183,8 +6183,8 @@ daoyu.351 = {
 				not = { has_strategy = ai_strategy_plantation_economy }
 				or = {
 					capital.region = sr:region_dixie
-					country_is_in_south_america = yes
-					country_is_in_central_america = yes
+					is_in_geographic_region = geographic_region:geographic_region_south_america
+					is_in_geographic_region = geographic_region:geographic_region_central_america
 					country_is_in_india = yes
 					country_is_in_southeast_asia = yes
 					country_is_in_africa = yes
@@ -12949,7 +12949,7 @@ daoyu.680 = {
 	}
 	after = {
 		if = { limit = { has_variable = daoyu_return } remove_variable = daoyu_return trigger_event = { id = daoyu.600 popup = yes } }
-		else = { trigger_event = { id = daoyu.681 popup = yes } }
+		else = { }
 	}
 }
 #低配置主机解决卡顿
