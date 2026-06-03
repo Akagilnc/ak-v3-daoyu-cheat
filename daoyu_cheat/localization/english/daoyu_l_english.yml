@@ -412,7 +412,7 @@
  daoyu_modify_target_country:0 "Modify $daoyu_target_country_get_name$"
  daoyu_modify_our_country:0 "Modify $daoyu_root_get_name$"
  daoyu_laws_desc:0 "#R Modify $daoyu_target_country_get_name$ Laws#!\n$daoyu_laws_flavor$"
- daoyu_laws_flavor:0 "If you do not find the law you want to implement, please check whether you need relevant technology or violate the implemented law.\n$daoyu_target_country_desc$"\n$daoyu_compatible_with_other_mod$
+ daoyu_laws_flavor:0 "If you do not find the law you want to implement, please check whether you need relevant technology or violate the implemented law.\n$daoyu_target_country_desc$\n$daoyu_compatible_with_other_mod$"
  daoyu_technology_desc:0 "#R $daoyu_target_country_get_name$#!\n$acquired_technology_notification_group$\n$daoyu_compatible_with_other_mod$"
  daoyu_compatible_with_other_mod:0 "If you are a mod author who modifies technology and law and want to be compatible with Daoyu Cheat, please search for daoyu_tec_and_law in the Daoyu Cheat folder and check the instructions there."
  daoyu_create_character_flavor:0 "Since the character creation after the game update cannot select a headquarters, the options for creating generals and admirals are temporarily blocked."
