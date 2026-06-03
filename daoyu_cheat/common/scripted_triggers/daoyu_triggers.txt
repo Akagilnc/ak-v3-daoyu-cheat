@@ -387,7 +387,7 @@ daoyu_can_create_trade_route_trigger = {
 		not = { is_country_type = decentralized }
 		or = {
 			any_scope_state = { any_neighbouring_state = { owner = $SCOPE$ } }
-			and = { has_port = yes $SCOPE$ = { has_port = yes } }
+			and = { is_coastal = yes $SCOPE$ = { is_coastal = yes } }
 		}
 	}
 }

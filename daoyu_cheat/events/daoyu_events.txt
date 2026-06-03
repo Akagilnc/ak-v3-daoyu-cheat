@@ -5513,33 +5513,6 @@ daoyu.330 = {
 		every_country = { limit = { has_truce_with = scope:daoyu_target_country } end_truce = scope:daoyu_target_country }
 	}
 	option = {
-		name = concept_defensive_pact#共同防御条约
-		trigger = {
-			aggressive_diplomatic_plays_permitted = yes has_diplomatic_relevance = scope:daoyu_target_country
-			not = { is_subject_of = root has_war_with = root is_subject_of = scope:daoyu_target_country has_diplomatic_pact = { type = defensive_pact who = scope:daoyu_target_country } }
-			scope:daoyu_target_country = { has_modifier = daoyu_target_country not = { is_country_type = decentralized } aggressive_diplomatic_plays_permitted = yes not = { is_subject_of = root has_war_with = root } }
-		}
-		create_diplomatic_pact = { country = scope:daoyu_target_country type = defensive_pact }
-	}
-	option = {
-		name = concept_alliance#同盟
-		trigger = {
-			aggressive_diplomatic_plays_permitted = yes has_diplomatic_relevance = scope:daoyu_target_country
-			not = { is_subject_of = scope:daoyu_target_country has_diplomatic_pact = { type = alliance who = scope:daoyu_target_country } }
-			scope:daoyu_target_country = { has_modifier = daoyu_target_country not = { is_country_type = decentralized } aggressive_diplomatic_plays_permitted = yes not = { is_subject_of = root has_war_with = root } }
-		}
-		create_diplomatic_pact = { country = scope:daoyu_target_country type = alliance }
-	}
-	option = {
-		name = concept_customs_union#关税同盟
-		trigger = {
-			aggressive_diplomatic_plays_permitted = yes has_diplomatic_relevance = scope:daoyu_target_country
-			not = { is_country_type = unrecognized is_subject_of = scope:daoyu_target_country has_diplomatic_pact = { type = customs_union who = scope:daoyu_target_country } }
-			scope:daoyu_target_country = { has_modifier = daoyu_target_country not = { is_country_type = decentralized } aggressive_diplomatic_plays_permitted = yes not = { is_subject_of = root has_war_with = root } }
-		}
-		create_diplomatic_pact = { country = scope:daoyu_target_country type = customs_union }
-	}
-	option = {
 		name = redeem_obligation#免除义务
 		trigger = { owes_obligation_to = scope:daoyu_target_country }
 		set_owes_obligation_to = { country = scope:daoyu_target_country setting = no }

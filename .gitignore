@@ -5,6 +5,9 @@
 __pycache__/
 *.pyc
 
+# Game 1.13 script_docs reference (not part of the mod)
+game_docs_113/
+
 # editor/OS noise
 Thumbs.db
 desktop.ini
