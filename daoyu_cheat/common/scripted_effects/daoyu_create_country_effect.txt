@@ -127,7 +127,7 @@
 	if = { limit = { exists = c:ASA } s:STATE_SOUTH_CAROLINA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:ASA } } }
 	if = { limit = { exists = c:CSA } s:STATE_TENNESSEE = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:CSA } } }
 	if = { limit = { exists = c:ATB } s:STATE_YUKON_TERRITORY = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:ATB } } }
-	if = { limit = { exists = c:CSA } sr:region_dixie = { every_scope_state = { limit = { owner = c:USA owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:CSA } } }
+	if = { limit = { exists = c:CSA } every_state = { limit = { is_in_geographic_region = geographic_region_dixie_old owner = c:USA owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:CSA } }
 	if = { limit = { exists = c:PRM } every_state = { limit = { is_homeland_of_country_cultures = c:PRM owner = { any_scope_state = { count > 4 } not = { has_variable = daoyu_player } } } set_state_owner = c:PRM } }
 	if = { limit = { exists = c:KAZ } every_state = { limit = { is_homeland_of_country_cultures = c:KAZ owner = { any_scope_state = { count > 2 } not = { has_variable = daoyu_player } } } set_state_owner = c:KAZ } }
 	if = { limit = { exists = c:SIB } every_state = { limit = { is_homeland_of_country_cultures = c:SIB owner = { any_scope_state = { count > 3 } not = { has_variable = daoyu_player } } } set_state_owner = c:SIB } }

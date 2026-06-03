@@ -6180,7 +6180,7 @@ daoyu.351 = {
 				is_ai = yes has_modifier = daoyu_target_country
 				not = { has_strategy = ai_strategy_plantation_economy }
 				or = {
-					capital.region = sr:region_dixie
+					capital = { is_in_geographic_region = geographic_region_dixie_old }
 					is_in_geographic_region = geographic_region_south_america
 					is_in_geographic_region = geographic_region_central_america
 					is_in_geographic_region = geographic_region_india
