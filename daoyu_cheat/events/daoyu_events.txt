@@ -7518,7 +7518,6 @@ daoyu.379 = {
 	option = { name = building_munition_plant trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_munition_plant" } } daoyu_t_c_remove_building = { BUILDING = "building_munition_plant" } }#弹药厂
 	option = { name = building_artillery_foundry trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_artillery_foundry" } } daoyu_t_c_remove_building = { BUILDING = "building_artillery_foundry" } }#火炮铸造厂
 	option = { name = building_motor_industry trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_motor_industry" } } daoyu_t_c_remove_building = { BUILDING = "building_motor_industry" } }#动力机械厂
-	option = { name = building_motor_industry trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_motor_industry" } } daoyu_t_c_remove_building = { BUILDING = "building_motor_industry" } }#汽车工业
 	option = { name = building_electrics_industry trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_electrics_industry" } } daoyu_t_c_remove_building = { BUILDING = "building_electrics_industry" } }#电子厂
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_shipyard" } } daoyu_t_c_remove_building = { BUILDING = "building_shipyard" } }#造船厂
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_t_c_has_building = { BUILDING = "building_shipyard" } } daoyu_t_c_remove_building = { BUILDING = "building_shipyard" } }#军用造船厂
@@ -8309,7 +8308,6 @@ daoyu.411 = {
 	option = { name = building_munition_plant trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_munition_plant" } } add_country_monopoly = bt:building_munition_plant }#弹药厂
 	option = { name = building_artillery_foundry trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_artillery_foundry" } } add_country_monopoly = bt:building_artillery_foundry }#火炮铸造厂
 	option = { name = building_motor_industry trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_motor_industry" } } add_country_monopoly = bt:building_motor_industry }#动力机械厂
-	option = { name = building_motor_industry trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_motor_industry" } } add_country_monopoly = bt:building_motor_industry }#汽车工业
 	option = { name = building_electrics_industry trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_electrics_industry" } } add_country_monopoly = bt:building_electrics_industry }#电子厂
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_shipyard" } } add_country_monopoly = bt:building_shipyard }#造船厂
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_shipyard" } } add_country_monopoly = bt:building_shipyard }#军用造船厂
@@ -10923,7 +10921,6 @@ daoyu.605 = {
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_synthetics_plants } } desc = building_synthetics_plant }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_textile_mills } } desc = building_textile_mill }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_tooling_workshops } } desc = building_tooling_workshop }
-			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_motor_industry } } desc = building_motor_industry }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_power_plant } } desc = building_power_plant }
 		}
 	}
@@ -11082,7 +11079,6 @@ daoyu.606 = {
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_synthetics_plants } } desc = building_synthetics_plant }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_textile_mills } } desc = building_textile_mill }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_tooling_workshops } } desc = building_tooling_workshop }
-			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_motor_industry } } desc = building_motor_industry }
 			triggered_desc = { trigger = { any_scope_state = { has_variable = daoyu_building_power_plant } } desc = building_power_plant }
 		}
 	}
@@ -11371,7 +11367,6 @@ daoyu.625 = {
 	option = { name = building_synthetics_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "aniline" } } daoyu_building_lens_effcet = { BUILDING = "building_synthetics_plant" } }
 	option = { name = building_steel_mill trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "steelworking" } } daoyu_building_lens_effcet = { BUILDING = "building_steel_mill" } }
 	option = { name = building_motor_industry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "atmospheric_engine" } } daoyu_building_lens_effcet = { BUILDING = "building_motor_industry" } }
-	option = { name = building_motor_industry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "military_aviation" } } daoyu_building_lens_effcet = { BUILDING = "building_motor_industry" } }
 	option = { name = building_electrics_industry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "telephone" } } daoyu_building_lens_effcet = { BUILDING = "building_electrics_industry" } }
 	option = { name = building_munition_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "percussion_cap" } } daoyu_building_lens_effcet = { BUILDING = "building_munition_plant" } }
 	option = { name = building_power_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "electrical_generation" } } daoyu_building_lens_effcet = { BUILDING = "building_power_plant" } }
@@ -12709,7 +12704,6 @@ daoyu.673 = {
 	option = { name = building_munition_plant trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_munition_plant" } } daoyu_can_nationalized_effect = { BUILDING = "building_munition_plant" } }#弹药厂
 	option = { name = building_artillery_foundry trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_artillery_foundry" } } daoyu_can_nationalized_effect = { BUILDING = "building_artillery_foundry" } }#火炮铸造厂
 	option = { name = building_motor_industry trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_motor_industry" } } daoyu_can_nationalized_effect = { BUILDING = "building_motor_industry" } }#动力机械厂
-	option = { name = building_motor_industry trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_motor_industry" } } daoyu_can_nationalized_effect = { BUILDING = "building_motor_industry" } }#汽车工业
 	option = { name = building_electrics_industry trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_electrics_industry" } } daoyu_can_nationalized_effect = { BUILDING = "building_electrics_industry" } }#电子厂
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_shipyard" } } daoyu_can_nationalized_effect = { BUILDING = "building_shipyard" } }#造船厂
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_shipyard" } } daoyu_can_nationalized_effect = { BUILDING = "building_shipyard" } }#军用造船厂
@@ -13203,7 +13197,6 @@ daoyu.693 = {
 	option = { name = building_synthetics_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_synthetics_plant" } } set_global_variable = daoyu_S_T_building_synthetics_plants }
 	option = { name = building_steel_mill trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_steel_mill" } } set_global_variable = daoyu_S_T_building_steel_mills }
 	option = { name = building_motor_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_motor_industry" } } set_global_variable = daoyu_S_T_building_motor_industry }
-	option = { name = building_motor_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_motor_industry" } } set_global_variable = daoyu_S_T_building_motor_industry }
 	option = { name = building_electrics_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_electrics_industry" } } set_global_variable = daoyu_S_T_building_electrics_industry }
 	option = { name = building_munition_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_munition_plant" } } set_global_variable = daoyu_S_T_building_munition_plants }
 	option = { name = building_power_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_power_plant" } } set_global_variable = daoyu_S_T_building_power_plant }
@@ -13265,7 +13258,6 @@ daoyu.695 = {
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_synthetics_plants } desc = building_synthetics_plant }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_textile_mills } desc = building_textile_mill }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_tooling_workshops } desc = building_tooling_workshop }
-			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_motor_industry } desc = building_motor_industry }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_power_plant } desc = building_power_plant }
 			triggered_desc = { trigger = { has_global_variable = daoyu_S_T_building_arts_academy } desc = building_art_academy }
 		}
@@ -14065,7 +14057,6 @@ daoyu.962 = {
 				if = { limit = { has_building = building_explosives_factory } remove_building = building_explosives_factory }
 				if = { limit = { has_building = building_synthetics_plant } remove_building = building_synthetics_plant }
 				if = { limit = { has_building = building_steel_mill } remove_building = building_steel_mill }
-				if = { limit = { has_building = building_motor_industry } remove_building = building_motor_industry }
 				if = { limit = { has_building = building_motor_industry } remove_building = building_motor_industry }
 				if = { limit = { has_building = building_electrics_industry } remove_building = building_electrics_industry }
 				if = { limit = { has_building = building_munition_plant } remove_building = building_munition_plant }
