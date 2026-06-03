@@ -1,0 +1,10 @@
+# Claude Code session/config (machine-local)
+.claude/
+
+# Python tooling artifacts
+__pycache__/
+*.pyc
+
+# editor/OS noise
+Thumbs.db
+desktop.ini
