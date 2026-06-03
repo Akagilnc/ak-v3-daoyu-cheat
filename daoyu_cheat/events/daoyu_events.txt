@@ -1740,7 +1740,7 @@ daoyu.150 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	immediate = { random_political_movement = { limit = { is_revolutionary_movement = yes } save_scope_as = daoyu_political_movement } }
+	immediate = { random_political_movement = { limit = { is_revolutionary = yes } save_scope_as = daoyu_political_movement } }
 	option = { name = daoyu_political_movement trigger = { any_civil_war = { is_civil_war_type = revolution } } set_variable = daoyu_revolution_and_secession }
 	option = { name = country_secession_notification_group trigger = { any_civil_war = { is_civil_war_type = secession } } set_variable = daoyu_revolution_and_secession }
 	option = { name = CREATE_POLITICAL_MOVEMENT_GLOBAL trigger = { daoyu_can_create_any_political_movement = yes } set_variable = daoyu_can_create_political_movement }
@@ -2115,7 +2115,7 @@ daoyu.158 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/event_appear"
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	immediate = { random_political_movement = { limit = { is_revolutionary_movement = yes } save_scope_as = daoyu_political_movement } }
+	immediate = { random_political_movement = { limit = { is_revolutionary = yes } save_scope_as = daoyu_political_movement } }
 	option = {
 		name = +20#革命
 		trigger = { any_civil_war = { is_civil_war_type = revolution } }

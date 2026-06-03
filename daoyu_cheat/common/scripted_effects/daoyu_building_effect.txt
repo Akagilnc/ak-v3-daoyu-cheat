@@ -1136,7 +1136,6 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_livestock_ranch" PM = "pm_barbed_wire_fences" }
 	daoyu_production_method_effect = { TYPE = "building_livestock_ranch" PM = "pm_refrigerated_rail_cars_building_livestock_ranch" }
 	daoyu_production_method_effect = { TYPE = "building_livestock_ranch" PM = "pm_refrigerated_storage_building_livestock_ranch" }
-	daoyu_production_method_effect = { TYPE = "building_vineyard" PM = "automatic_irrigation_building_vineyard" }
 	daoyu_production_method_effect = { TYPE = "building_vineyard" PM = "pm_steam_rail_transport" }
 	daoyu_production_method_effect = { TYPE = "building_coal_mine" PM = "pm_diesel_pump_building_coal_mine" }
 	daoyu_production_method_effect = { TYPE = "building_coal_mine" PM = "pm_condensing_engine_pump_building_coal_mine" }
@@ -1173,23 +1172,14 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_gold_mine" PM = "pm_nitroglycerin_building_gold_mine" }
 	daoyu_production_method_effect = { TYPE = "building_gold_mine" PM = "pm_steam_donkey_mine" }
 	daoyu_production_method_effect = { TYPE = "building_gold_mine" PM = "pm_rail_transport_mine" }
-	daoyu_production_method_effect = { TYPE = "building_coffee_plantation" PM = "automatic_irrigation_building_coffee_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_coffee_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_cotton_plantation" PM = "automatic_irrigation_building_cotton_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_cotton_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_dye_plantation" PM = "automatic_irrigation_building_dye_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_dye_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_opium_plantation" PM = "automatic_irrigation_building_opium_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_opium_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_tea_plantation" PM = "automatic_irrigation_building_tea_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_tea_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_tobacco_plantation" PM = "automatic_irrigation_building_tobacco_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_tobacco_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_sugar_plantation" PM = "automatic_irrigation_building_sugar_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_sugar_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_banana_plantation" PM = "automatic_irrigation_building_banana_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_banana_plantation" PM = "pm_steam_rail_transport" }
-	daoyu_production_method_effect = { TYPE = "building_silk_plantation" PM = "automatic_irrigation_building_silk_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_silk_plantation" PM = "pm_steam_rail_transport" }
 	daoyu_production_method_effect = { TYPE = "building_barrack" PM = "pm_mobile_warfare_tactics" }
 	daoyu_production_method_effect = { TYPE = "building_barrack" PM = "pm_nco_incorporation" }
@@ -1269,7 +1259,6 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_logging_camp" PM = "pm_steam_donkey_building_logging_camp" }
 	daoyu_production_method_effect = { TYPE = "building_logging_camp" PM = "pm_log_carts" }
 	daoyu_production_method_effect = { TYPE = "building_logging_camp" PM = "pm_rail_transport_building_logging_camp" }
-	daoyu_production_method_effect = { TYPE = "building_rubber_plantation" PM = "automatic_irrigation_building_rubber_plantation" }
 	daoyu_production_method_effect = { TYPE = "building_rubber_plantation" PM = "pm_steam_rail_transport" }
 	daoyu_production_method_effect = { TYPE = "building_fishing_wharf" PM = "pm_steam_trawlers" }
 	daoyu_production_method_effect = { TYPE = "building_fishing_wharf" PM = "pm_fishing_trawlers" }
