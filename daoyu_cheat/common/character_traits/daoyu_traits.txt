@@ -39,7 +39,7 @@ daoyu_shot_in_the_right_ear = {
 	country_modifier = {
 		interest_group_ig_rural_folk_approval_add = 20
 		country_improve_relations_speed_mult = -0.2
-		political_movement_radicalism_mult = 0.2
+		political_movement_radicalism_add = 0.2
 	}
 	agitator_modifier = {
 		interest_group_pop_attraction_mult = 0.2

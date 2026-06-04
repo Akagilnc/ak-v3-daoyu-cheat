@@ -34,5 +34,4 @@
     on_fail = {
 		custom_tooltip = QUIT
     }
-    should_be_pinned_by_default = yes
 }

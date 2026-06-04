@@ -4259,7 +4259,7 @@ daoyu_company.1 = {
 	desc = daoyu_remove_company#解散公司
 	flavor = {
 		first_valid = { triggered_desc = { trigger = { not = { any_state = { owner = { is_ai = yes has_modifier = daoyu_target_country } } } } desc = TARGET_COUNTRY_NOT_VALID } }
-		first_valid = { triggered_desc = { trigger = { any_country = { has_modifier = daoyu_target_country } daoyu_has_any_company = no } desc = TARGET_COUNTRY_NOT_VALID } }
+		first_valid = { triggered_desc = { trigger = { any_country = { has_modifier = daoyu_target_country } not = { any_company = { count >= 1 } } } desc = TARGET_COUNTRY_NOT_VALID } }
 		first_valid = { desc = daoyu_line_reaks }
 		first_valid = { desc = daoyu_target_country_desc }
 	}

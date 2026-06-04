@@ -11677,7 +11677,6 @@ daoyu.655 = {
 		else = { every_scope_state = { limit = { has_decree = decree_daoyu_target_state or = { has_assimilating_pops = yes has_converting_pops = yes } } set_variable = daoyu_state_modifier } }
 		hidden_effect = { trigger_event = { id = daoyu.655 popup = yes } }
 	}
-	any_scope_state = { or = { has_assimilating_pops = yes has_converting_pops = yes } }
 	option = {
 		name = 1x
 		trigger = { or = { has_global_variable = daoyu_state_colony_growth any_scope_state = { has_variable = daoyu_state_modifier } } }
@@ -12921,7 +12920,7 @@ daoyu.680 = {
 	duration = 0
 	option = {
 		name = URBAN_PART_OF_STATE#城镇建筑
-		trigger = { any_scope_state = { has_decree = decree_daoyu_target_state any_scope_building = { daoyu_industry_building_trigger = yes } } }
+		trigger = { any_scope_state = { has_decree = decree_daoyu_target_state any_scope_building = { daoyu_urban_building_trigger = yes } } }
 		set_global_variable = daoyu_remove_urban_building
 	}
 	option = {
@@ -12936,7 +12935,7 @@ daoyu.680 = {
 	}
 	option = {
 		name = INFRA_PART_OF_STATE#开发
-		trigger = { any_scope_state = { has_decree = decree_daoyu_target_state any_scope_building = { daoyu_infrastructure_building_trigger = yes } } }
+		trigger = { any_scope_state = { has_decree = decree_daoyu_target_state any_scope_building = { daoyu_development_building_trigger = yes } } }
 		set_global_variable = daoyu_remove_development_building
 	}
 	option = {
