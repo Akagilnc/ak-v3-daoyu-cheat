@@ -1198,11 +1198,6 @@ daoyu.140 = {
 		set_variable = daoyu_je_assassination_var
 	}
 	option = {
-		name = je_coup#政变！
-		trigger = { has_journal_entry = je_coup }
-		set_variable = daoyu_coup_var
-	}
-	option = {
 		name = je_prohibition#禁酒运动
 		trigger = { has_journal_entry = je_prohibition }
 		set_variable = daoyu_prohibition_laws_var

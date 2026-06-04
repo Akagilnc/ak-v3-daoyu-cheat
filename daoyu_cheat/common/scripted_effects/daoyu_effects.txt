@@ -1798,7 +1798,7 @@ daoyu_one_earth_one_nation_one_religion_effect = {
 	add_primary_culture = scope:daoyu_only_one_culture
 	every_scope_character = { change_character_culture = scope:daoyu_only_one_culture }
 	every_scope_state = {
-		every_scope_pop = { if = { limit = { not = { has_pop_culture = scope:daoyu_only_one_culture } } change_pop_culture = { value = 1 target = scope:daoyu_only_one_culture } } }
+		every_scope_pop = { if = { limit = { not = { culture = scope:daoyu_only_one_culture } } change_pop_culture = { value = 1 target = scope:daoyu_only_one_culture } } }
 	}
 	set_variable = daoyu_one_earth_one_nation_one_religion
 	if = {

@@ -30,7 +30,7 @@ daoyu_has_country_modifiers_trigger = {
 		has_modifier = daoyu_country_authority_add
 		has_modifier = daoyu_country_influence_add
 		has_modifier = daoyu_state_working_adult_ratio_add
-		has_modifier = daoyu_country_prestige_sub
+		has_modifier = daoyu_negative_country_prestige_add
 		has_modifier = daoyu_country_construction_add
 		has_modifier = daoyu_character_health_add
 		has_modifier = daoyu_mobilization_cost_mult
@@ -651,7 +651,7 @@ daoyu_ideology_land_reformer = {
 	}
 }
 daoyu_ideology_integralist = {
-	owner = { has_technology_researched = corporatism any_primary_culture = { OR = { has_discrimination_trait = lusophone has_discrimination_trait = hispanophone has_discrimination_trait = francophone } } }
+	owner = { has_technology_researched = corporatism any_primary_culture = { OR = { has_discrimination_trait = language_lusophone has_discrimination_trait = language_hispanophone has_discrimination_trait = language_francophone } } }
 	or = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_integralist_valid_trigger = yes }
 		and = {
@@ -697,7 +697,7 @@ daoyu_ideology_despotic_utopian = {
 	or = { interest_group = { leader = { has_trait = daoyu_target_character } ideology_despotic_utopian_valid_trigger = yes } and = { NOT = { has_role = character_role_agitator } interest_group = { leader = { not = { has_trait = daoyu_target_character } } ideology_despotic_utopian_valid_trigger = yes } } }
 }
 daoyu_ideology_utilitarian_leader = {
-	owner = { has_technology_researched = empiricism any_primary_culture = { has_discrimination_trait = anglophone } }
+	owner = { has_technology_researched = empiricism any_primary_culture = { has_discrimination_trait = language_anglophone } }
 	or = {
 		interest_group = { leader = { has_trait = daoyu_target_character } ideology_utilitarian_leader_valid_trigger = yes }
 		and = {
@@ -2474,7 +2474,7 @@ daoyu_can_create_movement_india_pan_national = {
 	is_subject = yes
 	not = {
 		any_primary_culture = {
-			has_discrimination_trait = south_asian_heritage
+			has_discrimination_trait_group = heritage_group_south_asian
 		}
 	}
 	has_technology_researched = pan-nationalism
