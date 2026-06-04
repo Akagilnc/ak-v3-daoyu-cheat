@@ -38,7 +38,7 @@
 	if = { limit = { exists = c:HAN } s:STATE_HANNOVER = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:HAN } } }
 	if = { limit = { exists = c:HAM } s:STATE_POSEN = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:HAM } } }
 	if = { limit = { exists = c:BRE } s:STATE_ELBE = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:BRE } } }
-	if = { limit = { exists = c:MST } s:STATE_SILESIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:MST } } }
+	if = { limit = { exists = c:MST } s:STATE_LOWER_SILESIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:MST } } }
 	if = { limit = { exists = c:MEC } s:STATE_MECKLENBURG = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:MEC } } }
 	if = { limit = { exists = c:HOL } s:STATE_RHINELAND = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:HOL } } }
 	if = { limit = { exists = c:LUB } s:STATE_NORTH_RHINE = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:LUB } } }
@@ -47,7 +47,7 @@
 	if = { limit = { exists = c:MOL } s:STATE_BESSARABIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:MOL } } }
 	if = { limit = { exists = c:GAL } s:STATE_VOLHYNIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:GAL } } }
 	if = { limit = { exists = c:TRS } s:STATE_NORTHERN_TRANSYLVANIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:TRS } } }
-	if = { limit = { exists = c:SER } s:STATE_SOUTHERN_SERBIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:SER } } }
+	if = { limit = { exists = c:SER } s:STATE_EASTERN_SERBIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:SER } } }
 	if = { limit = { exists = c:GRE } s:STATE_WESTERN_THRACE = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:GRE } } }
 	if = { limit = { exists = c:GRE } s:STATE_MACEDONIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:GRE } } }
 	if = { limit = { exists = c:GRE } s:STATE_THESSALIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:GRE } } }
@@ -62,7 +62,7 @@
 	if = { limit = { exists = c:PAR } s:STATE_ROMAGNA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:PAR } } }
 	if = { limit = { exists = c:LUC } s:STATE_SARDINIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:LUC } } }
 	if = { limit = { exists = c:MOD } s:STATE_EMILIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:MOD } } }
-	if = { limit = { exists = c:ANL } s:STATE_GRANADA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:ANL } } }
+	if = { limit = { exists = c:ANL } s:STATE_UPPER_ANDALUSIA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:ANL } } }
 	if = { limit = { exists = c:CAS } s:STATE_ARAGON = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:CAS } } }
 	if = { limit = { exists = c:YAK } s:STATE_OKHOTSK = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:YAK } } }
 	if = { limit = { exists = c:FER } s:STATE_CHUKOTKA = { every_scope_state = { limit = { owner = { not = { has_variable = daoyu_player } } } set_state_owner = c:FER } } }
@@ -212,8 +212,8 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "ENG" STATE = "STATE_HOME_COUNTIES" }
 	daoyu_single_create_country_effect = { TAG = "ULS" STATE = "STATE_ULSTER" }
 	daoyu_single_create_country_effect = { TAG = "WLS" STATE = "STATE_WALES" }
-	daoyu_single_create_country_effect = { TAG = "NAV" STATE = "STATE_NAVARRA" }
-	daoyu_single_create_country_effect = { TAG = "SPA" STATE = "STATE_TOLEDO" }
+	daoyu_single_create_country_effect = { TAG = "NAV" STATE = "STATE_BASQUE_COUNTRY" }
+	daoyu_single_create_country_effect = { TAG = "SPA" STATE = "STATE_NEW_CASTILE" }
 	daoyu_single_create_country_effect = { TAG = "WLL" STATE = "STATE_WALLONIA" }
 	daoyu_single_create_country_effect = { TAG = "ANH" STATE = "STATE_ANHALT" }
 	daoyu_single_create_country_effect = { TAG = "BAD" STATE = "STATE_BADEN" }
@@ -253,7 +253,7 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "LAT" STATE = "STATE_RIGA" }
 	daoyu_single_create_country_effect = { TAG = "POL" STATE = "STATE_GREATER_POLAND" }
 	daoyu_single_create_country_effect = { TAG = "GAL" STATE = "STATE_EAST_GALICIA" }
-	daoyu_single_create_country_effect = { TAG = "SLV" STATE = "STATE_WEST_SLOVAKIA" }
+	daoyu_single_create_country_effect = { TAG = "SLV" STATE = "STATE_SLOVAKIA" }
 	daoyu_single_create_country_effect = { TAG = "SWI" STATE = "STATE_WEST_SWITZERLAND" }
 	daoyu_single_create_country_effect = { TAG = "TRS" STATE = "STATE_SOUTHERN_TRANSYLVANIA" }
 	daoyu_single_create_country_effect = { TAG = "UKR" STATE = "STATE_KIEV" }
@@ -269,11 +269,11 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "MOL" STATE = "STATE_MOLDAVIA" }
 	daoyu_single_create_country_effect = { TAG = "MON" STATE = "STATE_MONTENEGRO" }
 	daoyu_single_create_country_effect = { TAG = "ROM" STATE = "STATE_WALLACHIA" }
-	daoyu_single_create_country_effect = { TAG = "SER" STATE = "STATE_NORTHERN_SERBIA" }
+	daoyu_single_create_country_effect = { TAG = "SER" STATE = "STATE_WESTERN_SERBIA" }
 	daoyu_single_create_country_effect = { TAG = "SLO" STATE = "STATE_SLOVENIA" }
 	daoyu_single_create_country_effect = { TAG = "TUR" STATE = "STATE_EASTERN_THRACE" }
 	daoyu_single_create_country_effect = { TAG = "WAL" STATE = "STATE_WALLACHIA" }
-	daoyu_single_create_country_effect = { TAG = "YUG" STATE = "STATE_NORTHERN_SERBIA" }
+	daoyu_single_create_country_effect = { TAG = "YUG" STATE = "STATE_WESTERN_SERBIA" }
 	daoyu_single_create_country_effect = { TAG = "ABU" STATE = "STATE_ABU_DHABI" }
 	daoyu_single_create_country_effect = { TAG = "AFG" STATE = "STATE_KABUL" }
 	daoyu_single_create_country_effect = { TAG = "ARM" STATE = "STATE_ARMENIA" }
@@ -353,7 +353,7 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "CHE" STATE = "STATE_ARKANSAS" }
 	daoyu_single_create_country_effect = { TAG = "COL" STATE = "STATE_BRITISH_COLUMBIA" }
 	daoyu_single_create_country_effect = { TAG = "COS" STATE = "STATE_COSTA_RICA" }
-	daoyu_single_create_country_effect = { TAG = "CUB" STATE = "STATE_CUBA" }
+	daoyu_single_create_country_effect = { TAG = "CUB" STATE = "STATE_WESTERN_CUBA" }
 	daoyu_single_create_country_effect = { TAG = "DES" STATE = "STATE_UTAH" }
 	daoyu_single_create_country_effect = { TAG = "DOM" STATE = "STATE_SANTO_DOMINGO" }
 	daoyu_single_create_country_effect = { TAG = "ELS" STATE = "STATE_SAN_SALVADOR" }
@@ -401,7 +401,7 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "TNG" STATE = "STATE_TONGA" }
 	daoyu_single_create_country_effect = { TAG = "WIN" STATE = "STATE_WEST_INDIES" }
 	daoyu_single_create_country_effect = { TAG = "MAY" STATE = "STATE_YUCATAN" }
-	daoyu_single_create_country_effect = { TAG = "IBE" STATE = "STATE_TOLEDO" }
+	daoyu_single_create_country_effect = { TAG = "IBE" STATE = "STATE_NEW_CASTILE" }
 	daoyu_single_create_country_effect = { TAG = "ORG" STATE = "STATE_OREGON" }
 	daoyu_single_create_country_effect = { TAG = "COM" STATE = "STATE_TEXAS" }
 	daoyu_single_create_country_effect = { TAG = "SEQ" STATE = "STATE_OKLAHOMA" }
@@ -418,8 +418,8 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "MKT" STATE = "STATE_NICARAGUA" }
 	daoyu_single_create_country_effect = { TAG = "NAH" STATE = "STATE_MEXICO" }
 	daoyu_single_create_country_effect = { TAG = "GRN" STATE = "STATE_GREENLAND" }
-	daoyu_single_create_country_effect = { TAG = "ANL" STATE = "STATE_ANDALUSIA" }
-	daoyu_single_create_country_effect = { TAG = "CAS" STATE = "STATE_TOLEDO" }
+	daoyu_single_create_country_effect = { TAG = "ANL" STATE = "STATE_LOWER_ANDALUSIA" }
+	daoyu_single_create_country_effect = { TAG = "CAS" STATE = "STATE_NEW_CASTILE" }
 	daoyu_single_create_country_effect = { TAG = "SMI" STATE = "STATE_NORTHERN_NORWAY" }
 	daoyu_single_create_country_effect = { TAG = "MLT" STATE = "STATE_MALTA" }
 	daoyu_single_create_country_effect = { TAG = "PRM" STATE = "STATE_PERM" }
@@ -614,7 +614,7 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "HHE" STATE = "STATE_LINDI" }
 	daoyu_single_create_country_effect = { TAG = "FTJ" STATE = "STATE_GUINEA" }
 	daoyu_single_create_country_effect = { TAG = "BUG" STATE = "STATE_UGANDA" }
-	daoyu_single_create_country_effect = { TAG = "ASH" STATE = "STATE_GHANA" }
+	daoyu_single_create_country_effect = { TAG = "ASH" STATE = "STATE_GOLD_COAST" }
 	daoyu_single_create_country_effect = { TAG = "YKA" STATE = "STATE_BAS_CONGO" }
 	daoyu_single_create_country_effect = { TAG = "KON" STATE = "STATE_BAS_CONGO" }
 	daoyu_single_create_country_effect = { TAG = "LNG" STATE = "STATE_CONGO" }
@@ -677,9 +677,9 @@ daoyu_create_country_effect = {
 	daoyu_single_create_country_effect = { TAG = "KRT" STATE = "STATE_WESTERN_MALI" }
 	daoyu_single_create_country_effect = { TAG = "SGU" STATE = "STATE_WESTERN_MALI" }
 	daoyu_single_create_country_effect = { TAG = "TRZ" STATE = "STATE_MAURITANIA" }
-	daoyu_single_create_country_effect = { TAG = "KBU" STATE = "STATE_GAMBIA" }
-	daoyu_single_create_country_effect = { TAG = "BND" STATE = "STATE_GAMBIA" }
-	daoyu_single_create_country_effect = { TAG = "SRR" STATE = "STATE_GAMBIA" }
+	daoyu_single_create_country_effect = { TAG = "KBU" STATE = "STATE_SENEGAL" }
+	daoyu_single_create_country_effect = { TAG = "BND" STATE = "STATE_SENEGAL" }
+	daoyu_single_create_country_effect = { TAG = "SRR" STATE = "STATE_SENEGAL" }
 	daoyu_single_create_country_effect = { TAG = "SSU" STATE = "STATE_GUINEA" }
 	daoyu_single_create_country_effect = { TAG = "MDK" STATE = "STATE_GUINEA" }
 	daoyu_single_create_country_effect = { TAG = "HAU" STATE = "STATE_OUTER_HAUSALAND" }

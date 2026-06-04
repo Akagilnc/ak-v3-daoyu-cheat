@@ -1137,17 +1137,17 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_LAZIO }
 	daoyu_mcomm = { REGION = STATE_VENETIA }
 	daoyu_mcomm = { REGION = STATE_SICILY }
-	daoyu_mcomm = { REGION = STATE_TOLEDO }
+	daoyu_mcomm = { REGION = STATE_NEW_CASTILE }
 	daoyu_mcomm = { REGION = STATE_GALICIA }
 	daoyu_mcomm = { REGION = STATE_ASTURIAS }
-	daoyu_mcomm = { REGION = STATE_CASTILE }
-	daoyu_mcomm = { REGION = STATE_NAVARRA }
+	daoyu_mcomm = { REGION = STATE_OLD_CASTILE }
+	daoyu_mcomm = { REGION = STATE_BASQUE_COUNTRY }
 	daoyu_mcomm = { REGION = STATE_ARAGON }
 	daoyu_mcomm = { REGION = STATE_CATALONIA }
-	daoyu_mcomm = { REGION = STATE_BALEARES }
-	daoyu_mcomm = { REGION = STATE_ANDALUSIA }
-	daoyu_mcomm = { REGION = STATE_GRANADA }
-	daoyu_mcomm = { REGION = STATE_BADAJOZ }
+	daoyu_mcomm = { REGION = STATE_BALEARIC_ISLANDS }
+	daoyu_mcomm = { REGION = STATE_LOWER_ANDALUSIA }
+	daoyu_mcomm = { REGION = STATE_UPPER_ANDALUSIA }
+	daoyu_mcomm = { REGION = STATE_EXTREMADURA }
 	daoyu_mcomm = { REGION = STATE_VALENCIA }
 	daoyu_mcomm = { REGION = STATE_BEIRA }
 	daoyu_mcomm = { REGION = STATE_ESTREMADURA }
@@ -1168,8 +1168,8 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_SLAVONIA }
 	daoyu_mcomm = { REGION = STATE_ISTRIA }
 	daoyu_mcomm = { REGION = STATE_MONTENEGRO }
-	daoyu_mcomm = { REGION = STATE_NORTHERN_SERBIA }
-	daoyu_mcomm = { REGION = STATE_SOUTHERN_SERBIA }
+	daoyu_mcomm = { REGION = STATE_WESTERN_SERBIA }
+	daoyu_mcomm = { REGION = STATE_EASTERN_SERBIA }
 	daoyu_mcomm = { REGION = STATE_CRETE }
 	daoyu_mcomm = { REGION = STATE_WEST_AEGEAN_ISLANDS }
 	daoyu_mcomm = { REGION = STATE_EAST_AEGEAN_ISLANDS }
@@ -1181,7 +1181,7 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_IONIAN_ISLANDS }
 	daoyu_mcomm = { REGION = STATE_PELOPONNESE }
 	daoyu_mcomm = { REGION = STATE_MAZOVIA }
-	daoyu_mcomm = { REGION = STATE_SILESIA }
+	daoyu_mcomm = { REGION = STATE_LOWER_SILESIA }
 	daoyu_mcomm = { REGION = STATE_GREATER_POLAND }
 	daoyu_mcomm = { REGION = STATE_LESSER_POLAND }
 	daoyu_mcomm = { REGION = STATE_WEST_PRUSSIA }
@@ -1194,8 +1194,7 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_TRANSDANUBIA }
 	daoyu_mcomm = { REGION = STATE_DELVIDEK }
 	daoyu_mcomm = { REGION = STATE_BANAT }
-	daoyu_mcomm = { REGION = STATE_WEST_SLOVAKIA }
-	daoyu_mcomm = { REGION = STATE_EAST_SLOVAKIA }
+	daoyu_mcomm = { REGION = STATE_SLOVAKIA }
 	daoyu_mcomm = { REGION = STATE_SOUTHERN_TRANSYLVANIA }
 	daoyu_mcomm = { REGION = STATE_NORTHERN_TRANSYLVANIA }
 	daoyu_mcomm = { REGION = STATE_MOLDAVIA }
@@ -1236,7 +1235,7 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_IVORY_COAST }
 	daoyu_mcomm = { REGION = STATE_WINDWARD_COAST }
 	daoyu_mcomm = { REGION = STATE_SENEGAL }
-	daoyu_mcomm = { REGION = STATE_GAMBIA }
+	daoyu_mcomm = { REGION = STATE_SENEGAL }
 	daoyu_mcomm = { REGION = STATE_SIERRA_LEONE }
 	daoyu_mcomm = { REGION = STATE_VOLTA }
 	daoyu_mcomm = { REGION = STATE_LIBERIA }
@@ -1249,7 +1248,7 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_NIGERIA }
 	daoyu_mcomm = { REGION = STATE_EAST_HAUSALAND }
 	daoyu_mcomm = { REGION = STATE_GUINEA }
-	daoyu_mcomm = { REGION = STATE_GHANA }
+	daoyu_mcomm = { REGION = STATE_GOLD_COAST }
 	daoyu_mcomm = { REGION = STATE_TOGO }
 	daoyu_mcomm = { REGION = STATE_DAHOMEY }
 	daoyu_mcomm = { REGION = STATE_LINDI }
@@ -1384,7 +1383,7 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_BAHAMAS }
 	daoyu_mcomm = { REGION = STATE_WEST_INDIES }
 	daoyu_mcomm = { REGION = STATE_JAMAICA }
-	daoyu_mcomm = { REGION = STATE_CUBA }
+	daoyu_mcomm = { REGION = STATE_WESTERN_CUBA }
 	daoyu_mcomm = { REGION = STATE_ECUADOR }
 	daoyu_mcomm = { REGION = STATE_GUAYANA }
 	daoyu_mcomm = { REGION = STATE_ZULIA }
@@ -1586,7 +1585,7 @@ daoyu_move_capital_or_move_market = {
 	daoyu_mcomm = { REGION = STATE_HOKKAIDO }
 	daoyu_mcomm = { REGION = STATE_TOHOKU }
 	daoyu_mcomm = { REGION = STATE_KANTO }
-	daoyu_mcomm = { REGION = STATE_CHUBU }
+	daoyu_mcomm = { REGION = STATE_TOKAI }
 	daoyu_mcomm = { REGION = STATE_KANSAI }
 	daoyu_mcomm = { REGION = STATE_KYUSHU }
 	daoyu_mcomm = { REGION = STATE_RYUKYU_ISLANDS }
