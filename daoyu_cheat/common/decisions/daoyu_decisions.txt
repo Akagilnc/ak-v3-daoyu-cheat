@@ -58,6 +58,7 @@ daoyu_remove_obsession_opium = {
 	when_taken = {
 		every_scope_state = { every_primary_culture = { remove_cultural_obsession = opium } }
 	}
+	ai_chance = { value = 100 }
 }
 daoyu_territorial_integrity = {
 	is_shown = {
