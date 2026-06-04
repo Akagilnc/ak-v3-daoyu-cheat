@@ -750,6 +750,7 @@ dcc.10 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.10 popup = yes } }
 	}
@@ -797,6 +798,7 @@ dcc.11 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = dcc.10 popup = yes } }
 	}
@@ -817,6 +819,7 @@ dcc.12 = {
 	duration = 0
 	option = {
 		name = daoyu_do_not_remove_all_modifiers#不删除修正
+		default_option = yes
 		hidden_effect = {
 			scope:daoyu_target_country = { remove_modifier = daoyu_target_country }
 			remove_global_variable = daoyu_cheat
@@ -852,6 +855,7 @@ dcc.19 = {
 	duration = 0
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = dcc.10 popup = yes } }
 	}
@@ -931,6 +935,7 @@ dcc.20 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = dcc
 		every_scope_state = { remove_variable = dcc_owned }
@@ -996,6 +1001,7 @@ dcc.30 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = dcc
 		every_scope_state = { remove_variable = dcc_owned remove_variable = dcc_capital }
@@ -1026,6 +1032,7 @@ dcc.40 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		trigger = { has_global_variable = dcc }
 		if = { limit = { has_variable = daoyu_query_countries_tag } remove_variable = daoyu_query_countries_tag trigger_event = { id = dcc.10 popup = yes } }
@@ -1094,6 +1101,7 @@ dcc.41 = {
 	option = { name = Z trigger = { has_variable = daoyu_next } remove_variable = daoyu_next daoyu_sort_by_chinese_or_english = { ALPHABET = "Z" } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		if = { limit = { not = { has_variable = daoyu_next } } remove_global_variable = daoyu_sort_by_chinese remove_global_variable = daoyu_sort_by_english }
 		set_variable = daoyu_return
@@ -1754,6 +1762,7 @@ dcc.42 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		daoyu_remove_page_num = yes
 		remove_daoyu_sort_global_variable = yes
@@ -3611,6 +3620,7 @@ dcc.50 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		daoyu_remove_page_num = yes
 		remove_daoyu_sort_global_variable = yes
@@ -3967,6 +3977,7 @@ daoyu_transfer_to_another_formation.1 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_global_variable = daoyu_220
 	}
@@ -4040,6 +4051,7 @@ daoyu_transfer_to_another_formation.2 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -4099,6 +4111,7 @@ daoyu_set_create_pops_parameters.1 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		if = { limit = { has_global_variable = daoyu_631 } remove_global_variable = daoyu_631 trigger_event = { id = daoyu.631 popup = yes } }
 		if = { limit = { has_global_variable = daoyu_573 } remove_global_variable = daoyu_573 trigger_event = { id = daoyu.573 popup = yes } }
@@ -4183,6 +4196,7 @@ daoyu_set_create_pops_parameters.2 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = { trigger_event = { id = daoyu_set_create_pops_parameters.1 popup = yes } }
@@ -4246,6 +4260,7 @@ daoyu_set_create_pops_parameters.3 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = { trigger_event = { id = daoyu_set_create_pops_parameters.1 popup = yes } }

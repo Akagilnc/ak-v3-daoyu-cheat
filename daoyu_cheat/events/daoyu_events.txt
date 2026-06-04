@@ -40,6 +40,7 @@ daoyu.2 = {
 	duration = 3
 	option = {
 		name = daoyu_understand
+		default_option = yes
 		hidden_effect = {
 			if = { limit = { this = c:CHI game_date = 1836.1.1 } trigger_event = { id = daoyu.9 popup = yes } }
 			else = { trigger_event = { id = daoyu.10 popup = yes } }
@@ -2710,6 +2711,7 @@ daoyu.183 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		trigger = { nor = { has_variable = daoyu_add_IG_ideology has_variable = daoyu_remove_IG_ideology } }
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
@@ -3370,6 +3372,7 @@ daoyu.211 = {
 	option = { name = NEXT_PAGE trigger = { any_scope_character = { has_trait = daoyu_potential_target } } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -3874,6 +3877,7 @@ daoyu.230 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = { trigger_event = { id = daoyu.220 popup = yes } }
@@ -3931,6 +3935,7 @@ daoyu.240 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.220 popup = yes } }
 	}
@@ -4052,6 +4057,7 @@ daoyu.241 = {
 	option = { name = expert_entrepreneur trigger = { scope:daoyu_target_character = { has_trait = expert_entrepreneur } } scope:daoyu_target_character = { remove_trait = expert_entrepreneur } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -4080,7 +4086,7 @@ daoyu.242 = {
 		random_country = { limit = { has_variable = daoyu_target_country } save_scope_as = daoyu_target_country }
 		random_character = { limit = { has_trait = daoyu_target_character } save_scope_as = daoyu_target_character daoyu_remove_personality_traits = yes }
 	}
-	option = { name = direct trigger = { scope:daoyu_target_character = { not = { has_trait = direct } } } scope:daoyu_target_character = { add_trait = direct } }
+	option = { name = direct default_option = yes trigger = { scope:daoyu_target_character = { not = { has_trait = direct } } } scope:daoyu_target_character = { add_trait = direct } }
 	option = { name = persistent trigger = { scope:daoyu_target_character = { not = { has_trait = persistent } } } scope:daoyu_target_character = { add_trait = persistent } }
 	option = { name = cautious trigger = { scope:daoyu_target_character = { not = { has_trait = cautious } } } scope:daoyu_target_character = { add_trait = cautious } }
 	option = { name = arrogant trigger = { scope:daoyu_target_character = { not = { has_trait = arrogant } } } scope:daoyu_target_character = { add_trait = arrogant } }
@@ -4213,6 +4219,7 @@ daoyu.243 = {
 	option = { name = expert_entrepreneur trigger = { scope:daoyu_target_character = { not = { has_trait = expert_entrepreneur } } } scope:daoyu_target_character = { add_trait = expert_entrepreneur } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -4268,6 +4275,7 @@ daoyu.244 = {
 	option = { name = sickly trigger = { scope:daoyu_target_character = { not = { has_trait = sickly } } } scope:daoyu_target_character = { add_trait = sickly } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -4316,6 +4324,7 @@ daoyu.245 = {
 	option = { name = 200x daoyu_add_military_modifier = { MULTIPLIER = 200 } }
 	option = {
 		name = CANCEL
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -4404,6 +4413,7 @@ daoyu.250 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		trigger = { nor = { has_variable = daoyu_show_available has_variable = daoyu_show_more } }
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
@@ -4438,6 +4448,7 @@ daoyu.260 = {
 	}
 	option = {
 		name = assassination_events.8.a
+		default_option = yes
 		hidden_effect = { scope:daoyu_target_character = { remove_trait = daoyu_target_character } }
 		scope:daoyu_target_character = { kill_character = yes }
 		hidden_effect = { trigger_event = { id = daoyu.200 popup = yes } }
@@ -4539,6 +4550,7 @@ daoyu.270 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.200 popup = yes } }
 	}
@@ -4605,6 +4617,7 @@ daoyu.271 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		trigger = { not = { has_global_variable = daoyu_character_interactions } }
 		set_variable = daoyu_return
@@ -4783,6 +4796,7 @@ daoyu.281 = {
 	}
 	option = {
 		name = direct
+		default_option = yes
 		if = { limit = { has_variable = daoyu_generals_orders } scope:daoyu_target_country = { every_scope_general = { limit = { NOT = { has_role = character_role_ruler } } add_trait = direct } } }
 		if = { limit = { has_variable = daoyu_admirals_orders } scope:daoyu_target_country = { every_scope_admiral = { limit = { NOT = { has_role = character_role_ruler } } add_trait = direct } } }
 	}
@@ -4990,6 +5004,7 @@ daoyu.290 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 		hidden_effect = { trigger_event = { id = daoyu.200 popup = yes } }
@@ -5291,6 +5306,7 @@ daoyu.302 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.300 popup = yes } }
 	}
@@ -5311,6 +5327,7 @@ daoyu.303 = {
 	}
 	option = {
 		name = tutorial_lesson_button_complete#我明白了
+		default_option = yes
 		hidden_effect = { trigger_event = { id = daoyu.302 popup = yes } }
 	}
 }
@@ -5922,6 +5939,7 @@ daoyu.345 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -6008,6 +6026,7 @@ daoyu.347 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -6086,6 +6105,7 @@ daoyu.350 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = {
 			if = { limit = { has_global_variable = daoyu_from_diplomatic_actions } trigger_event = { id = daoyu.370 popup = yes } }
@@ -6194,6 +6214,7 @@ daoyu.351 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = { trigger_event = { id = daoyu.350 popup = yes } }
@@ -6411,6 +6432,7 @@ daoyu.352 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = { trigger_event = { id = daoyu.350 popup = yes } }
@@ -6561,6 +6583,7 @@ daoyu.353 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = { trigger_event = { id = daoyu.350 popup = yes } }
@@ -6608,6 +6631,7 @@ daoyu.360 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		trigger_event = { id = daoyu.300 popup = yes }
 	}
@@ -6649,6 +6673,7 @@ daoyu.361 = {
 	option = { name = daoyu_tpl_9 trigger = { exists = scope:daoyu_tpl_9 scope:daoyu_tpl_9 = { daoyu_target_trigger_9 = { FLAG = tpl } } } scope:daoyu_tpl_9 = { save_scope_as = daoyu_target_political_lobby } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 		scope:daoyu_target_country = { remove_variable = daoyu_target_country }
@@ -6727,6 +6752,7 @@ daoyu.362 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = {
 			if = { limit = { has_variable = daoyu_political_lobby_disbanded } remove_variable = daoyu_political_lobby_disbanded trigger_event = { id = daoyu.362 popup = yes } }
@@ -6801,6 +6827,7 @@ daoyu.363 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_variable = daoyu_add_lobby_member
 		remove_variable = daoyu_remove_lobby_member
@@ -7022,6 +7049,7 @@ daoyu.371 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 		every_country = { limit = { has_variable = daoyu_return_my_vassal_state } remove_variable = daoyu_return_my_vassal_state }
@@ -7116,6 +7144,7 @@ daoyu.372 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 		scope:daoyu_target_country = { every_scope_state = { limit = { has_variable = daoyu_tst has_claim_by = scope:daoyu_target_vassal } remove_variable = daoyu_tst state_region = { remove_claim = scope:daoyu_target_vassal } } }
@@ -7219,6 +7248,7 @@ daoyu.373 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		if = {
 			limit = { has_variable = daoyu_create_diplomatic_play_complete }
@@ -7259,6 +7289,7 @@ daoyu.374 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.370 popup = yes } }
 	}
@@ -7358,6 +7389,7 @@ daoyu.375 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		trigger = { nor = { has_global_variable = daoyu_declare_war has_global_variable = daoyu_declare_war_completed } }
 		ai_chance = { base = 100 }
 		random_country = { limit = { has_variable = daoyu_declare_war_initiator } remove_variable = daoyu_declare_war_initiator add_modifier = { name = daoyu_target_country days = 1 } }
@@ -7524,6 +7556,7 @@ daoyu.380 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.300 popup = yes } }
 	}
@@ -7558,6 +7591,7 @@ daoyu.381 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.300 popup = yes } }
 	}
@@ -7600,6 +7634,7 @@ daoyu.382 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.300 popup = yes } }
 	}
@@ -7630,6 +7665,7 @@ daoyu.383 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.300 popup = yes } }
 	}
@@ -8203,6 +8239,7 @@ daoyu.410 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -8279,6 +8316,7 @@ daoyu.411 = {
 	option = { name = building_art_academy trigger = { has_global_variable = daoyu_urban_building daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_art_academy" } } add_country_monopoly = bt:building_art_academy }#艺术学院
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_development_building
 		remove_global_variable = daoyu_resource_building
@@ -8391,6 +8429,7 @@ daoyu.441 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.440 popup = yes } }
 	}
@@ -8462,6 +8501,7 @@ daoyu.442 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -8537,6 +8577,7 @@ daoyu.443 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 	}
@@ -8579,6 +8620,7 @@ daoyu.450 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_all_owned_state
 		remove_global_variable = daoyu_incorporated_state
@@ -8625,6 +8667,7 @@ daoyu.451 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.450 popup = yes } }
 	}
@@ -8700,6 +8743,7 @@ daoyu.452 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_global_variable = daoyu_151
 	}
@@ -8797,6 +8841,7 @@ daoyu.453 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -9010,6 +9055,7 @@ daoyu.500 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.10 popup = yes } }
 	}
@@ -9351,6 +9397,7 @@ daoyu.512 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_variable = daoyu_return
 		every_state = { limit = { has_variable = daoyu_potential_target } remove_variable = daoyu_potential_target }
@@ -9475,6 +9522,7 @@ daoyu.520 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_target_country_convert_population
 		if = {
@@ -9606,6 +9654,7 @@ daoyu.570 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.500 popup = yes } }
 	}
@@ -9690,6 +9739,7 @@ daoyu.571 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_global_variable = daoyu_570
 		every_state = { limit = { has_variable = daoyu_potential_target } remove_variable = daoyu_potential_target }
@@ -9807,6 +9857,7 @@ daoyu.572 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_tst_1 remove_global_variable = daoyu_tst_2 remove_global_variable = daoyu_tst_3
 		remove_global_variable = daoyu_tst_4 remove_global_variable = daoyu_tst_5 remove_global_variable = daoyu_tst_6
@@ -9868,6 +9919,7 @@ daoyu.573 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.572 popup = yes } }
 	}
@@ -9938,6 +9990,7 @@ daoyu.580 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = {
 			if = { limit = { has_global_variable = daoyu_obsession } remove_global_variable = daoyu_obsession trigger_event = { id = daoyu.500 popup = yes } }
@@ -10070,6 +10123,7 @@ daoyu.581 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_variable = daoyu_mark_target_culture_obsession
 		random_country = { limit = { has_variable = daoyu_target_country } remove_variable = daoyu_target_country }
@@ -10517,6 +10571,7 @@ daoyu.582 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		if = {
 			limit = { or = { has_variable = daoyu_military has_variable = daoyu_staple has_variable = daoyu_industrial has_variable = daoyu_luxury } }
@@ -10604,6 +10659,7 @@ daoyu.590 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		clear_saved_scope = daoyu_target_country
 	}
@@ -10701,6 +10757,7 @@ daoyu.600 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.10 popup = yes } }
 	}
@@ -10749,6 +10806,7 @@ daoyu.601 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -10799,6 +10857,7 @@ daoyu.602 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.600 popup = yes } }
 	}
@@ -10822,6 +10881,7 @@ daoyu.604 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.600 popup = yes } }
 	}
@@ -10978,6 +11038,7 @@ daoyu.605 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		daoyu_clean_building_level_effect = yes
 	}
@@ -11110,6 +11171,7 @@ daoyu.606 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.605 popup = yes } }
 	}
@@ -11152,6 +11214,7 @@ daoyu.610 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.602 popup = yes } }
 	}
@@ -11196,6 +11259,7 @@ daoyu.615 = {
 	option = { name = building_opium_plantation trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "enclosure" } } daoyu_building_lens_effcet = { BUILDING = "building_opium_plantation" } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.602 popup = yes } }
 	}
@@ -11282,6 +11346,7 @@ daoyu.620 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.602 popup = yes } }
 	}
@@ -11331,6 +11396,7 @@ daoyu.625 = {
 	option = { name = building_power_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "electrical_generation" } } daoyu_building_lens_effcet = { BUILDING = "building_power_plant" } }
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.602 popup = yes } }
 	}
@@ -11732,6 +11798,7 @@ daoyu.655 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		daoyu_state_modifier_remove_global_variable_effect = yes
 		hidden_effect = { trigger_event = { id = daoyu.650 popup = yes } }
@@ -11813,6 +11880,7 @@ daoyu.660 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.600 popup = yes } }
 	}
@@ -11892,6 +11960,7 @@ daoyu.661 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		set_global_variable = daoyu_660
 	}
@@ -11937,6 +12006,7 @@ daoyu.662 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		random_state = { limit = { has_variable = daoyu_target_state } remove_variable = daoyu_target_state }
 		hidden_effect = { trigger_event = { id = daoyu.660 popup = yes } }
@@ -12018,6 +12088,7 @@ daoyu.665 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		if = { limit = { any_state = { has_variable = daoyu_target_state } } set_global_variable = daoyu_662 }
 		else = { set_global_variable = daoyu_660 }
@@ -12174,6 +12245,7 @@ daoyu.666 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		scope:daoyu_migration_from = { every_scope_culture = { set_variable = daoyu_potential_target remove_variable = daoyu_target_culture } }
 		scope:daoyu_migration_go_to = { every_scope_culture = { remove_variable = daoyu_target_culture } }
@@ -12342,6 +12414,7 @@ daoyu.667 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		scope:daoyu_migration_from = { every_scope_culture = { remove_variable = daoyu_target_pop } }
 		scope:daoyu_migration_go_to = { every_scope_culture = { remove_variable = daoyu_target_pop } }
@@ -12442,6 +12515,7 @@ daoyu.670 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_nationalized_buildings
 		remove_global_variable = daoyu_remove_building
@@ -12514,6 +12588,7 @@ daoyu.671 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		if = { limit = { any_state = { has_variable = daoyu_remove_all_buildings } } every_state = { limit = { has_variable = daoyu_remove_all_buildings } remove_variable = daoyu_remove_all_buildings } }
 		else = { set_variable = daoyu_return }
@@ -12581,6 +12656,7 @@ daoyu.672 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = {
 			every_scope_building = { limit = { has_modifier = daoyu_preselection_building } remove_modifier = daoyu_preselection_building }
@@ -12672,6 +12748,7 @@ daoyu.673 = {
 	option = { name = building_shipyard trigger = { has_global_variable = daoyu_urban_building daoyu_single_can_nationalized = { BUILDING = "building_shipyard" } } daoyu_can_nationalized_effect = { BUILDING = "building_shipyard" } }#军用造船厂
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_development_building
 		remove_global_variable = daoyu_resource_building
@@ -12771,6 +12848,7 @@ daoyu.675 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		hidden_effect = { every_scope_building = { remove_modifier = daoyu_potential_building remove_modifier = daoyu_potential_building remove_modifier = daoyu_potential_building remove_modifier = daoyu_potential_building } }
 		remove_variable = daoyu_current_building_1
 		remove_variable = daoyu_current_building_2
@@ -12833,6 +12911,7 @@ daoyu.679 = {
 	duration = 0
 	option = {
 		name = daoyu_current_building_1
+		default_option = yes
 		trigger = { exists = scope:daoyu_current_building_1 scope:daoyu_current_building_1 = { daoyu_buildings_expand_or_nationally_owned = yes } }
 		daoyu_current_building_effect = { ORDER = 1 }
 	}
@@ -12939,6 +13018,7 @@ daoyu.680 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_remove_building
 		set_variable = daoyu_return
@@ -13039,6 +13119,7 @@ daoyu.690 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		trigger = { has_global_variable = daoyu_remove_building_state_trait }
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_remove_building_state_trait
@@ -13093,7 +13174,7 @@ daoyu.691 = {
 	option = { name = building_rubber_plantation trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_rubber_plantation" } } set_global_variable = daoyu_S_T_building_rubber_plantation }
 	option = { name = building_whaling_station trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_whaling_station " } } set_global_variable = daoyu_S_T_building_whaling_station }
 	option = { name = building_fishing_wharf trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_fishing_wharf" } } set_global_variable = daoyu_S_T_building_fishing_wharf }
-	option = { name = RESIGN set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
+	option = { name = RESIGN default_option = yes set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
 	after = {
 		if = { limit = { has_variable = daoyu_690 } remove_variable = daoyu_690 trigger_event = { id = daoyu.690 popup = yes } }
 		else = { set_global_variable = daoyu_691 trigger_event = { id = daoyu.695 popup = yes } }
@@ -13127,7 +13208,7 @@ daoyu.692 = {
 	option = { name = building_sugar_plantation trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_sugar_plantation" } } set_global_variable = daoyu_S_T_building_sugar_plantation }
 	option = { name = building_banana_plantation trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_banana_plantation" } } set_global_variable = daoyu_S_T_building_banana_plantation }
 	option = { name = building_opium_plantation trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_opium_plantation" } } set_global_variable = daoyu_S_T_building_opium_plantation }
-	option = { name = RESIGN set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
+	option = { name = RESIGN default_option = yes set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
 	after = {
 		if = { limit = { has_variable = daoyu_690 } remove_variable = daoyu_690 trigger_event = { id = daoyu.690 popup = yes } }
 		else = { set_global_variable = daoyu_692 trigger_event = { id = daoyu.695 popup = yes } }
@@ -13162,7 +13243,7 @@ daoyu.693 = {
 	option = { name = building_electrics_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_electrics_industry" } } set_global_variable = daoyu_S_T_building_electrics_industry }
 	option = { name = building_munition_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_munition_plant" } } set_global_variable = daoyu_S_T_building_munition_plant }
 	option = { name = building_power_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_power_plant" } } set_global_variable = daoyu_S_T_building_power_plant }
-	option = { name = RESIGN set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
+	option = { name = RESIGN default_option = yes set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
 	after = {
 		if = { limit = { has_variable = daoyu_690 } remove_variable = daoyu_690 trigger_event = { id = daoyu.690 popup = yes } }
 		else = { set_global_variable = daoyu_693 trigger_event = { id = daoyu.695 popup = yes } }
@@ -13317,6 +13398,7 @@ daoyu.695 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		trigger = { not = { has_global_variable = daoyu_next_page } }
 		remove_global_variable = daoyu_695
@@ -13740,6 +13822,7 @@ daoyu.901 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 	}
 	after = {
@@ -13826,6 +13909,7 @@ daoyu.902 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.900 popup = yes } }
 	}
@@ -13881,6 +13965,7 @@ daoyu.903 = {
 	}
 	option = {
 		name = RESIGN
+		default_option = yes
 		ai_chance = { base = 100 }
 		hidden_effect = { trigger_event = { id = daoyu.900 popup = yes } }
 	}
