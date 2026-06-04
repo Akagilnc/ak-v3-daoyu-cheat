@@ -124,6 +124,8 @@
  daoyu_create_character:0 "Create Character"
  daoyu_target_country_create_character:0 "$daoyu_target_country$ $daoyu_create_character$"
  daoyu_target_character:0 "Target Character"
+ daoyu_potential_target_character:0 "Potential Target Character"
+ daoyu_tool_man:0 "Tool Man"
  daoyu_target_character_desc:0 "Target Character"
  daoyu_target_character_change_culture:0 "Change Culture"
  daoyu_target_character_culture_save_mark_target_culture:0 "Save [SCOPE.sCharacter('daoyu_target_character').GetCulture] as $daoyu_mark_target_culture$"

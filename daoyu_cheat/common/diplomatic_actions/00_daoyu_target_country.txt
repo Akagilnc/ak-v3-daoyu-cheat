@@ -131,7 +131,8 @@ daoyu_add_military_access = {
 			random_state = { limit = { owner = { is_ai = yes has_modifier = daoyu_add_military_access } } owner = { remove_modifier = daoyu_add_military_access } }
 		}
 		scope:target_country = {
-			add_modifier = { name = daoyu_add_military_access days = 1 save_scope_as = daoyu_add_military_access }
+			add_modifier = { name = daoyu_add_military_access days = 1 }
+			save_scope_as = daoyu_add_military_access
 		}
 	}
 	ai = { propose_score = { value = 0 } will_propose = { always = no } }

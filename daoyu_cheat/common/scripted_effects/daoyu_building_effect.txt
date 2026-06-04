@@ -340,7 +340,7 @@ daoyu_auto_expand_building_effcet = {
 	#daoyu_auto_single_expand_building_effcet = { BUILDING = "building_railway" }
 }
 daoyu_auto_single_expand_building_government_administration_effcet = {
-	if = { limit = { not = { has_building = building_government_administration } } create_building = { building = building_government_administration } }
+	if = { limit = { not = { has_building = building_government_administration } } create_building = { building = building_government_administration level = 1 } }
 	else_if = { limit = { any_scope_building = { is_building_type = building_government_administration is_under_construction = no level < 2 } } create_building = { building = building_government_administration level = 2 reserves = 1 } }
 	else_if = { limit = { any_scope_building = { is_building_type = building_government_administration is_under_construction = no level < 3 } } create_building = { building = building_government_administration level = 3 reserves = 1 } }
 	else_if = { limit = { any_scope_building = { is_building_type = building_government_administration is_under_construction = no level < 4 } } create_building = { building = building_government_administration level = 4 reserves = 1 } }

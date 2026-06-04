@@ -1240,7 +1240,7 @@ d_law_tec.850 = {
 #军事
 d_law_tec.860 = {
 	type = country_event
-	placement = daoyu_cheat
+	placement = ROOT
 	title = daoyu_cheat
 	desc = military
 	flavor = daoyu_technology_desc

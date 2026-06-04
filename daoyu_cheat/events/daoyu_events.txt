@@ -1572,7 +1572,7 @@ daoyu.145 = {
 			}
 		}
 		if = { limit = { has_variable = daoyu_je_divided_monarchists has_journal_entry = je_divided_monarchists } remove_variable = daoyu_je_divided_monarchists set_variable = one_true_french_dynasty }
-		if = { limit = { has_variable = daoyu_je_famine has_journal_entry = je_indian_famines } remove_variable = daoyu_je_famine every_scope_state = { add_modifier = { name = expecting_riches_less multiplier = 20 days = 28 } } }
+		if = { limit = { has_variable = daoyu_je_famine has_journal_entry = je_indian_famines } remove_variable = daoyu_je_famine every_scope_state = { add_modifier = { name = expecting_riches multiplier = 20 days = 28 } } }
 		if = { limit = { has_variable = daoyu_je_matter_of_slavery has_journal_entry = je_matter_of_slavery } remove_variable = daoyu_je_matter_of_slavery activate_law = law_type:law_legacy_slavery }
 		#if = { limit = { has_variable = daoyu_je_opium_obsession has_journal_entry = je_opium_obsession } remove_variable = daoyu_je_opium_obsession add_banned_goods = g:opium }
 		if = { limit = { has_variable = daoyu_je_spanish_flu has_journal_entry = je_spanish_flu } remove_variable = daoyu_je_spanish_flu every_scope_state = { limit = { has_modifier = plague_modifier } remove_modifier = plague_modifier } }
@@ -7343,8 +7343,7 @@ daoyu.375 = {
 	option = {
 		name = dp_give_foreign_investment_rights#投资权
 		trigger = { has_global_variable = daoyu_declare_war not = { has_global_variable = daoyu_declare_war_completed } exists = scope:daoyu_declare_war_initiator exists = scope:daoyu_target_country }
-		if = { limit = { scope:daoyu_declare_war_initiator = { not = { can_create_diplomatic_pact = { target = scope:daoyu_target_country type = foreign_investment_rights } } } } custom_tooltip = TARGET_COUNTRY_NOT_VALID }
-		else = { scope:daoyu_declare_war_initiator = { create_diplomatic_play = { name = humiliation target_country = scope:daoyu_target_country type = dp_give_foreign_investment_rights } } }
+		scope:daoyu_declare_war_initiator = { create_diplomatic_play = { name = humiliation target_country = scope:daoyu_target_country type = dp_give_foreign_investment_rights } }
 		remove_global_variable = daoyu_declare_war set_global_variable = daoyu_declare_war_completed
 	}
 	option = {
@@ -8941,7 +8940,8 @@ daoyu.462 = {
 				every_scope_state = {
 					limit = { not = { any_scope_pop = { is_pop_type = peasants } } }
 					if = { limit = { free_arable_land < 5 } state_region = { add_arable_land = 5 } }
-					create_pop = { size = 2000 working_adult_ratio = 1 }
+					owner = { random_primary_culture = { save_scope_as = daoyu_peasant_fill_culture } }
+					create_pop = { size = 2000 working_adult_ratio = 1 culture = scope:daoyu_peasant_fill_culture }
 				}
 			}
 			else = {
@@ -8971,7 +8971,8 @@ daoyu.463 = {
 				every_scope_state = {
 					limit = { not = { any_scope_pop = { is_pop_type = peasants } } }
 					if = { limit = { free_arable_land < 5 } state_region = { add_arable_land = 5 } }
-					create_pop = { size = 2000 working_adult_ratio = 1 }
+					owner = { random_primary_culture = { save_scope_as = daoyu_peasant_fill_culture } }
+					create_pop = { size = 2000 working_adult_ratio = 1 culture = scope:daoyu_peasant_fill_culture }
 				}
 			}
 			else = {

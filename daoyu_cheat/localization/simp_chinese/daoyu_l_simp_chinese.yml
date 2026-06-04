@@ -124,6 +124,8 @@
  daoyu_create_character:0 "创建角色"
  daoyu_target_country_create_character:0 "$daoyu_target_country$$daoyu_create_character$"
  daoyu_target_character:0 "目标角色"
+ daoyu_potential_target_character:0 "潜在目标角色"
+ daoyu_tool_man:0 "工具人"
  daoyu_target_character_desc:0 "目标角色"
  daoyu_target_character_change_culture:0 "改变文化"
  daoyu_target_character_culture_save_mark_target_culture:0 "$daoyu_target_character_get_culture$保存为标记文化"
