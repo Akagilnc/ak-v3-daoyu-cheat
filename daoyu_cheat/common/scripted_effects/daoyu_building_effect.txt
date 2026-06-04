@@ -1071,16 +1071,12 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_steel_mill" PM = "pm_watertube_boiler_building_steel_mill" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_diesel_engines" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_electric_engines" }
-	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_automobile_production" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_assembly_lines_building_motor_industry" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_rotary_valve_engine_building_motor_industry" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_watertube_boiler_building_motor_industry" }
 	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_arc_welding_shipbuilding" }
 	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_metal_shipbuilding" }
 	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_complex_shipbuilding" }
-	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_military_shipbuilding_steam_2" }
-	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_military_shipbuilding_steam" }
-	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_military_shipbuilding_wooden_2" }
 	daoyu_production_method_effect = { TYPE = "building_arms_industry" PM = "pm_bolt_action_rifles" }
 	daoyu_production_method_effect = { TYPE = "building_arms_industry" PM = "pm_repeaters" }
 	daoyu_production_method_effect = { TYPE = "building_arms_industry" PM = "pm_rifles" }
@@ -1191,10 +1187,6 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_conscription_center" PM = "pm_training_streamlining_conscription" }
 	daoyu_production_method_effect = { TYPE = "building_conscription_center" PM = "pm_advanced_tactics_training_conscription" }
 	daoyu_production_method_effect = { TYPE = "building_conscription_center" PM = "pm_general_training_conscription" }
-	daoyu_production_method_effect = { TYPE = "building_port" PM = "pm_battlefleet_tactics" }
-	daoyu_production_method_effect = { TYPE = "building_port" PM = "pm_sea_lane_strategies" }
-	daoyu_production_method_effect = { TYPE = "building_port" PM = "pm_jeune_ecole" }
-	daoyu_production_method_effect = { TYPE = "building_port" PM = "pm_power_of_the_purse" }
 	daoyu_production_method_effect = { TYPE = "building_urban_center" PM = "pm_arcades" }
 	daoyu_production_method_effect = { TYPE = "building_urban_center" PM = "pm_covered_markets" }
 	daoyu_production_method_effect = { TYPE = "building_urban_center" PM = "pm_market_squares" }
