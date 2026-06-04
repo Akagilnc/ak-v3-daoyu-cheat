@@ -1,8 +1,9 @@
 ﻿daoyu_treaty_articles = {
 	kind = directed
+	maintenance_paid_by = source_country
 	cost = 0
 	relations_progress_per_day = 100
-	relations_improvement_max = 200
+	relations_improvement_max = 100
 	icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/daoyu_treaty_articles.dds"
 	usage_limit = once_per_side
 	flags = { is_trade_privilege }
