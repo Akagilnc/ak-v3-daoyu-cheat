@@ -1929,7 +1929,7 @@ daoyu_all_country_modifiers_effect = {
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = state_working_adult_ratio_add MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = tariff_import_add MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = tariff_export_add MULTIPLIER = $MULTIPLIER$ }
-	daoyu_add_or_remove_single_modifiers = { BUFFVAR = building_port_throughput_add MULTIPLIER = $MULTIPLIER$ }
+	daoyu_add_or_remove_single_modifiers = { BUFFVAR = goods_output_merchant_marine_add MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = country_construction_add MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = mobilization_cost_mult MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = military_drill MULTIPLIER = $MULTIPLIER$ }

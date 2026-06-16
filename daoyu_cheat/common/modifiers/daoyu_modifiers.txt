@@ -153,9 +153,9 @@ daoyu_decree_enlistment_efforts = {
 	state_conscription_rate_add = 0.02
 	building_training_rate_mult = 0.05
 }
-daoyu_building_port_throughput_add = {
+daoyu_goods_output_merchant_marine_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	building_port_throughput_add = 100
+	goods_output_merchant_marine_add = 1000
 }
 daoyu_interest_group_approval_SUB = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds

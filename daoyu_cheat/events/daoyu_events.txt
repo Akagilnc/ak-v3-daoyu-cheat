@@ -2869,8 +2869,8 @@ daoyu.191 = {
 		set_global_variable = daoyu_tariff_export_add
 	}
 	option = {
-		name = daoyu_building_port_throughput_add#增加商船
-		set_global_variable = daoyu_building_port_throughput_add
+		name = daoyu_goods_output_merchant_marine_add#增加商船
+		set_global_variable = daoyu_goods_output_merchant_marine_add
 	}
 	option = {
 		name = daoyu_country_construction_add#国家建造力
@@ -2914,7 +2914,7 @@ daoyu.192 = {
 			triggered_desc = { trigger = { has_global_variable = daoyu_state_working_adult_ratio_add } desc = state_working_adult_ratio_add }#劳动力比例
 			triggered_desc = { trigger = { has_global_variable = daoyu_tariff_import_add } desc = daoyu_tariff_import_add }#关税税率
 			triggered_desc = { trigger = { has_global_variable = daoyu_tariff_export_add } desc = daoyu_tariff_export_add }#关税税率
-			triggered_desc = { trigger = { has_global_variable = daoyu_building_port_throughput_add } desc = daoyu_building_port_throughput_add }#增加商船
+			triggered_desc = { trigger = { has_global_variable = daoyu_goods_output_merchant_marine_add } desc = daoyu_goods_output_merchant_marine_add }#增加商船
 			triggered_desc = { trigger = { has_global_variable = daoyu_country_construction_add } desc = daoyu_country_construction_add }#国家建造力
 			triggered_desc = { trigger = { has_global_variable = daoyu_mobilization_cost_mult } desc = daoyu_mobilization_cost_mult }#动员花费
 			triggered_desc = { trigger = { has_global_variable = daoyu_military_drill } desc = military_drill }#军事操练
