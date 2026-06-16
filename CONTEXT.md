@@ -72,3 +72,12 @@ vanilla 1.13 游戏文件在 `G:\SteamLibrary\steamapps\common\Victoria 3\game`(
 - 多个 vanilla 州在 1.13 改名/拆分(见 ADR-0003)。
 - **签名 grep 会漏整类**:抓报错要全扫 `Script system error` / `Failed` / `Missing` / `Invalid` / `Unexpected`,别只挑几个签名。
 - 不确定的 API 先 grep `game_docs_113/` 或 vanilla 文件坐实,别凭记忆改。
+
+## 检查(回归门)
+
+V3 mod 无传统单元测试/无离线运行期断言(游戏是唯一权威校验器)。所以不是 TDD,是「回归门」。详见 ADR-0004。两道门:
+
+- **`python tools/check.py`** —— 静态、全自动、**零误报**。查:① 花括号平衡 ② modifier 开关接线一致(15 个 BUFFVAR 的正/负 modifier 都有定义)③ 死名黑名单(本季确认 1.13 报错过的名字不复发)。改完随手跑。
+- **`python tools/check_errorlog.py`** —— 权威。纯 daoyu 启动→主菜单→退出后跑,解析 error.log 断言无真结构错(自动滤掉不可约噪音:loc key / investment_pool / 6 条文化 modifier)。
+
+**不查 modifier 类型是否 1.13 合法** —— 无完整 oracle(类型大量运行时动态生成),静态查必误报;那一类只能靠 `check_errorlog.py`(游戏说了算)。
