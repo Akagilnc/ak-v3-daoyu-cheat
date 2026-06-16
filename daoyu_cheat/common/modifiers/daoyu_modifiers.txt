@@ -155,7 +155,7 @@ daoyu_decree_enlistment_efforts = {
 }
 daoyu_country_convoys_capacity_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	country_convoys_capacity_add = 10000
+	building_port_throughput_add = 100
 }
 daoyu_interest_group_approval_SUB = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
