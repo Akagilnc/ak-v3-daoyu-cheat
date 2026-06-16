@@ -70,7 +70,7 @@
  daoyu_state_working_adult_ratio_add:0 "$state_working_adult_ratio_add$"
  daoyu_tariff_import_add:0 "$IMPORTING$ $concept_tariff_rate$"
  daoyu_tariff_export_add:0 "$EXPORTING$ $concept_tariff_rate$"
- daoyu_country_convoys_capacity_add:0 "$SINGLE_GOODS_OR_EMPLOYMENT_MORE$$concept_convoys$"
+ daoyu_country_convoys_capacity_add:0 "$SINGLE_GOODS_OR_EMPLOYMENT_MORE$$concept_convoys$(港口吞吐)"
  daoyu_country_construction_add:0 "$concept_country$$concept_construction$"
  daoyu_character_health_add:0 "$character_health_add$"
  daoyu_mobilization_cost_mult:0 "动员需求"
