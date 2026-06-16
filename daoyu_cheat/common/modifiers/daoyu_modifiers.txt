@@ -153,7 +153,7 @@ daoyu_decree_enlistment_efforts = {
 	state_conscription_rate_add = 0.02
 	building_training_rate_mult = 0.05
 }
-daoyu_country_convoys_capacity_add = {
+daoyu_building_port_throughput_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_port_throughput_add = 100
 }
