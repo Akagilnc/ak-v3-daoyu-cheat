@@ -24,7 +24,7 @@ vanilla 1.13 游戏文件在 `G:\SteamLibrary\steamapps\common\Victoria 3\game`(
 2. `git commit`(每类一个,中文 message)
 3. `cp -rf` 同步到**两个**目标:
    - 测试:`G:\SteamLibrary\steamapps\workshop\content\529340\2882576273`(原 item 的本地下载,测试用)
-   - 发布:`C:\Users\Administrator\Documents\Paradox Interactive\Victoria 3\mod\Daoyu Cheat 刀鱼作弊  1.13 社区适配版`(启动器从这里上传更新)
+   - 发布:`C:\Users\Administrator\Documents\Paradox Interactive\Victoria 3\mod\daoyu-cheat-113`(启动器从这里上传更新;**目录名必须纯 ASCII 无空格**,中文招牌只放 metadata.json 的 name 字段。旧中文目录名曾触发启动器加载坑)
 4. 重启**纯 daoyu**(禁用其它 mod 排噪)→ 主菜单 → 退出 → 看 `Documents\...\Victoria 3\logs\error.log`
 5. 沙箱会拦 cp 到仓库外目录,需用户显式授权
 
