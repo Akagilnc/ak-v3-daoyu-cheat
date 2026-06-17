@@ -42,10 +42,13 @@ Victoria 3 作弊 MOD「Daoyu Cheat 刀鱼作弊」1.13 社区维护版(akagilnc
 ## modifier 能不能 add_modifier:先查 Mask(血泪教训)★
 
 - 用任何 modifier 前,**先 grep `game_docs_113/modifiers.log` 看它的 `Mask:`**。
-- **`Mask: goods`(如 `goods_output_*`、`goods_input_*`)只能用在生产方式(production_methods)里,不能 add_modifier** —— 加到国家会报 `Failed to obtain modifier from script`,加到州会**粉脸空转**(无报错、无效果、占位图标)。
-- 能 add_modifier 的是 `building` / `state` / `country` / `character` / `interest_group` 等 Mask。
-- 事故:convoy 作弊想提港口商船产出,选了 `goods_output_merchant_marine_*`(goods 类),国家级、州级都失败,空转 3 轮。**正解是 `building_port_throughput_add`(Mask: building,港口专属,vanilla 公司就用它)** —— building 类能 add_modifier 且州级级联到港口。代价:throughput 连带提投入(多吃货),作弊无所谓。
-- 经验:**别照 modifier 名字猜能不能用,先看 Mask 一锤定音。**
+- **`Mask: goods`(`goods_output_*`、`goods_input_*`)不能用于 add_modifier 作弊产出**,两个变体都废:
+  - `_mult` 变体很多货物**根本不存在**(加载期报 `Unknown modifier type`,如 `goods_output_merchant_marine_mult`)。
+  - `_add` 变体能加载、tooltip 会显示「+X 商船产出」**幻影**,但**引擎不把它算进真实产出**(跑几周产量纹丝不动)—— 即「goods 修正在生产方式之外不生效」的官方限制。显示有、实际无。
+- **能 add_modifier 真生效的是 `building` / `state` / `country` / `character` / `interest_group` 等 Mask**。
+- ★**文件夹规矩**:`building_*` / `state_*` 类修正定义**必须放 `common/static_modifiers/`**,放 `common/modifiers/` 会 `Failed to obtain modifier from script`(modifiers/ 只认 `country_*` 类给国家用)。能用的 `daoyu_throughput_add`(building_throughput_add)就在 static_modifiers/。
+- 事故(空转 4 轮才定):convoy 提港口商船产出,先后试 goods `_add`(国家)/goods 州级/building_port 在 modifiers/,全失败。**终解 = `daoyu_goods_output_merchant_marine_mult` 定义在 `static_modifiers/`、内层用 `building_port_throughput_add`(Mask building,港口专属,vanilla 公司就用它)**,挂进 `daoyu_state_add_modifier_effect` 走州级菜单 daoyu.650。代价:throughput 连带提投入(多吃货),作弊无所谓;Vic3 没有「能 add_modifier 又只提产出还真生效」的商船修正。
+- 经验:**别照名字猜,先看 Mask + 确认文件夹;goods 类直接放弃,选 building_/state_ 类放 static_modifiers/。**
 
 ## loc 写法:简洁原生,先验概念键存在
 
