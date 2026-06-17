@@ -36,6 +36,16 @@ daoyu_cheat_missing = {
 		remove_global_variable = daoyu_cheat
 	}
 }
+ak_reset_cheat = {
+	is_shown = {
+		is_ai = no
+		has_global_variable = daoyu_off
+		not = { has_global_variable = daoyu_on }
+	}
+	when_taken = {
+		remove_global_variable = daoyu_off
+	}
+}
 daoyu_diplomatic_actions_missing = {
 	is_shown = {
 		is_ai = no

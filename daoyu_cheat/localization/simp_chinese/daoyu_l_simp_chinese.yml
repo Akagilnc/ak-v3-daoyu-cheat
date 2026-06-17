@@ -6,6 +6,8 @@
  daoyu_cheat:0 "刀鱼作弊"
  daoyu_cheat_desc:0 "版本号#N 2025-10-10#!\n预留对支持修改了科技与法律的mod的支持，请mod作者自行查看科技或法律页面。\n感谢 bilibili ID #N zkonikishi#! 对本MOD的大力支持。"
  daoyu_cheat_missing:0 "刀鱼作弊消失了"
+ ak_reset_cheat:0 "重置刀鱼作弊(入口全部消失时点这个)"
+ ak_reset_cheat_desc:0 "清除卡住的开关状态,让「刀鱼作弊」决议重新出现。"
  daoyu_cheat_missing_desc:0 "#N 在刀鱼作弊事件组正常使用时不要点击。#"
  daoyu_bug:0 "#N P社的BUG，指令无法生效#"
  daoyu_diplomatic_actions_missing:0 "$concept_diplomatic_actions$消失了"

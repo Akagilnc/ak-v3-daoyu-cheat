@@ -6,6 +6,8 @@
  daoyu_cheat:0 "Daoyu Cheat"
  daoyu_cheat_desc:0 "Version No.#N 10/10/2025#!\nReserved for compatibility support for mods that modify technology and laws. Mod authors are requested to check the technology or law pages themselves..\nThanks to bilibili ID #N zkonikishi#! for sending me Victoria 3."
  daoyu_cheat_missing:0 "Daoyu Cheat Disappeared"
+ ak_reset_cheat:0 "Reset Daoyu Cheat (use if all entries vanished)"
+ ak_reset_cheat_desc:0 "Clears the stuck toggle state so the Daoyu Cheat decision reappears."
  daoyu_cheat_missing_desc:0 "#N Don't click when "Daoyu Cheat" event group is in normal use.#"
  daoyu_bug:0 "#N Paradox Interactive's bug causing commands to not work.#"
  daoyu_diplomatic_actions_missing:0 "$concept_diplomatic_actions$ Disappeared"
