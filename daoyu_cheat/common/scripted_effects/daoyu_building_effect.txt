@@ -306,7 +306,6 @@ daoyu_auto_expand_building_effcet = {
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_steel_mill" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_motor_industry" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_shipyard" }
-	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_shipyard" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_electrics_industry" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_arms_industry" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_artillery_foundry" }
@@ -740,7 +739,6 @@ daoyu_A_R_building_state_trait_effect = {
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_paper_mill" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_rye_farm" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_shipyard" }
-	daoyu_A_R_S_T = { STATE_TRAIT = "building_shipyard" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_steel_mill" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_synthetics_plant" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_textile_mill" }
@@ -801,7 +799,6 @@ daoyu_other_building_state_trait_effect = {
 	daoyu_other_S_T = { STATE_TRAIT = "building_munition_plant" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_paper_mill" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_rye_farm" }
-	daoyu_other_S_T = { STATE_TRAIT = "building_shipyard" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_shipyard" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_steel_mill" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_synthetics_plant" }
@@ -914,7 +911,6 @@ daoyu_remove_all_buildings_effect = {
 		if = { limit = { has_building = building_motor_industry } remove_building = building_motor_industry }
 		if = { limit = { has_building = building_electrics_industry } remove_building = building_electrics_industry }
 		if = { limit = { has_building = building_shipyard } remove_building = building_shipyard }
-		if = { limit = { has_building = building_shipyard } remove_building = building_shipyard }
 		remove_variable = daoyu_remove_all_buildings
 	}
 }
@@ -936,7 +932,6 @@ daoyu_remove_building_effect = {
 	daoyu_remove_single_building = { BUILDING = "building_university" ORDER = $ORDER$ }#大学
 	daoyu_remove_single_building = { BUILDING = "building_conscription_center" ORDER = $ORDER$ }#征兵中心
 	daoyu_remove_single_building = { BUILDING = "building_barrack" ORDER = $ORDER$ }#兵营
-	daoyu_remove_single_building = { BUILDING = "building_port" ORDER = $ORDER$ }#海军基地
 	daoyu_remove_single_building = { BUILDING = "building_power_plant" ORDER = $ORDER$ }#发电厂
 	daoyu_remove_single_building = { BUILDING = "building_coal_mine" ORDER = $ORDER$ }#煤矿
 	daoyu_remove_single_building = { BUILDING = "building_iron_mine" ORDER = $ORDER$ }#铁矿
@@ -980,7 +975,6 @@ daoyu_remove_building_effect = {
 	daoyu_remove_single_building = { BUILDING = "building_motor_industry" ORDER = $ORDER$ }#动力机械厂
 	daoyu_remove_single_building = { BUILDING = "building_electrics_industry" ORDER = $ORDER$ }#电子厂
 	daoyu_remove_single_building = { BUILDING = "building_shipyard" ORDER = $ORDER$ }#造船厂
-	daoyu_remove_single_building = { BUILDING = "building_shipyard" ORDER = $ORDER$ }#军用造船厂
 }
 daoyu_remove_single_building = {
 	if = { limit = { scope:daoyu_current_building_$ORDER$ = { is_building_type = $BUILDING$ } } remove_building = $BUILDING$ }
