@@ -2869,10 +2869,6 @@ daoyu.191 = {
 		set_global_variable = daoyu_tariff_export_add
 	}
 	option = {
-		name = daoyu_goods_output_merchant_marine_mult#增加商船
-		set_global_variable = daoyu_goods_output_merchant_marine_mult
-	}
-	option = {
 		name = daoyu_country_construction_add#国家建造力
 		set_global_variable = daoyu_country_construction_add
 	}
@@ -2914,7 +2910,6 @@ daoyu.192 = {
 			triggered_desc = { trigger = { has_global_variable = daoyu_state_working_adult_ratio_add } desc = state_working_adult_ratio_add }#劳动力比例
 			triggered_desc = { trigger = { has_global_variable = daoyu_tariff_import_add } desc = daoyu_tariff_import_add }#关税税率
 			triggered_desc = { trigger = { has_global_variable = daoyu_tariff_export_add } desc = daoyu_tariff_export_add }#关税税率
-			triggered_desc = { trigger = { has_global_variable = daoyu_goods_output_merchant_marine_mult } desc = daoyu_goods_output_merchant_marine_mult }#增加商船
 			triggered_desc = { trigger = { has_global_variable = daoyu_country_construction_add } desc = daoyu_country_construction_add }#国家建造力
 			triggered_desc = { trigger = { has_global_variable = daoyu_mobilization_cost_mult } desc = daoyu_mobilization_cost_mult }#动员花费
 			triggered_desc = { trigger = { has_global_variable = daoyu_military_drill } desc = military_drill }#军事操练
@@ -11560,6 +11555,7 @@ daoyu.650 = {
 					has_modifier = daoyu_throughput_add
 					has_modifier = daoyu_goods_input_mult
 					has_modifier = daoyu_decree_enlistment_efforts
+					has_modifier = daoyu_goods_output_merchant_marine_mult
 				}
 			}
 		}
@@ -11639,6 +11635,12 @@ daoyu.650 = {
 		hidden_effect = { trigger_event = { id = daoyu.650 popup = yes } }
 	}
 	option = {
+		name = daoyu_goods_output_merchant_marine_mult#港口商船产出
+		trigger = { has_global_variable = daoyu_adventitious_options not = { has_global_variable = daoyu_goods_output_merchant_marine_mult } }
+		set_global_variable = daoyu_goods_output_merchant_marine_mult
+		hidden_effect = { trigger_event = { id = daoyu.650 popup = yes } }
+	}
+	option = {
 		name = decree_enlistment_efforts#征募努力
 		trigger = { has_global_variable = daoyu_adventitious_options not = { has_global_variable = daoyu_decree_enlistment_efforts } }
 		set_global_variable = daoyu_decree_enlistment_efforts
@@ -11653,6 +11655,7 @@ daoyu.650 = {
 				has_global_variable = daoyu_decree_road_maintenance
 				has_global_variable = daoyu_throughput_add
 				has_global_variable = daoyu_goods_input_mult
+				has_global_variable = daoyu_goods_output_merchant_marine_mult
 				has_global_variable = daoyu_decree_enlistment_efforts
 			}
 		}

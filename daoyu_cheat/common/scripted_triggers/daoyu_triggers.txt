@@ -37,7 +37,6 @@ daoyu_has_country_modifiers_trigger = {
 		has_modifier = daoyu_military_drill
 		has_modifier = daoyu_tariff_import_add
 		has_modifier = daoyu_tariff_export_add
-		has_modifier = daoyu_goods_output_merchant_marine_mult
 	}
 }
 daoyu_all_culture_trigger = {
