@@ -1892,6 +1892,7 @@ daoyu_add_building_state_trait_building_explosives_factory = { has_technology_re
 daoyu_add_building_state_trait_building_synthetics_plant = { has_technology_researched = aniline }
 daoyu_add_building_state_trait_building_steel_mill = { has_technology_researched = steelworking }
 daoyu_add_building_state_trait_building_motor_industry = { has_technology_researched = atmospheric_engine }
+daoyu_add_building_state_trait_building_automotive_industry = { has_technology_researched = combustion_engine }
 daoyu_add_building_state_trait_building_electrics_industry = { has_technology_researched = telephone }
 daoyu_add_building_state_trait_building_munition_plant = { has_technology_researched = percussion_cap }
 daoyu_add_building_state_trait_building_power_plant = { has_technology_researched = electrical_generation }
@@ -1950,7 +1951,7 @@ daoyu_industry_building_state_trait_trigger = {
 			has_state_trait = building_munition_plant#弹药厂
 			has_state_trait = building_artillery_foundry#火炮铸造厂
 			has_state_trait = building_motor_industry#动力机械厂
-			has_state_trait = building_motor_industry#汽车工业
+			has_state_trait = building_automotive_industry#汽车厂
 			has_state_trait = building_power_plant#发电厂
 			has_state_trait = building_electrics_industry#电子厂
 			has_state_trait = building_shipyard#造船厂
@@ -2043,6 +2044,7 @@ daoyu_urban_building_trigger = {
 		is_building_type = building_munition_plant#弹药厂
 		is_building_type = building_artillery_foundry#火炮铸造厂
 		is_building_type = building_motor_industry#动力机械厂
+		is_building_type = building_automotive_industry#汽车厂
 		is_building_type = building_electrics_industry#电子厂
 		is_building_type = building_shipyard#造船厂
 	}
@@ -2123,6 +2125,7 @@ daoyu_remove_all_buildings_has_building_trigger = {
 		has_building = building_munition_plant
 		has_building = building_artillery_foundry
 		has_building = building_motor_industry
+		has_building = building_automotive_industry
 		has_building = building_electrics_industry
 		has_building = building_shipyard
 		has_building = building_shipyard
@@ -2626,6 +2629,7 @@ daoyu_can_country_monopolized_urban_trigger = {
 		daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_munition_plant" }#弹药厂
 		daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_artillery_foundry" }#火炮铸造厂
 		daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_motor_industry" }#动力机械厂
+		daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_automotive_industry" }#汽车厂
 		daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_electrics_industry" }#电子厂
 		daoyu_can_country_monopolized_single_trigger = { BUILDING = "building_shipyard" }#造船厂
 	}

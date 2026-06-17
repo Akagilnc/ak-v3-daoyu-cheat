@@ -9,6 +9,7 @@ building_explosives_factory = { icon = "gfx/interface/icons/building_icons/explo
 building_synthetics_plant = { icon = "gfx/interface/icons/building_icons/synthetics_plants.dds" }
 building_steel_mill = { icon = "gfx/interface/icons/building_icons/steel_mills.dds" }
 building_motor_industry = { icon = "gfx/interface/icons/building_icons/motor_industry.dds" }
+building_automotive_industry = { icon = "gfx/interface/icons/building_icons/vehicles_industry.dds" }
 building_shipyard = { icon = "gfx/interface/icons/building_icons/shipyards.dds" }
 building_electrics_industry = { icon = "gfx/interface/icons/building_icons/electrics_industry.dds" }
 building_arms_industry = { icon = "gfx/interface/icons/building_icons/arms_industry.dds" }

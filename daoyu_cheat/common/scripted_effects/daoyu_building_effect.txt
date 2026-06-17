@@ -305,6 +305,7 @@ daoyu_auto_expand_building_effcet = {
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_synthetics_plant" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_steel_mill" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_motor_industry" }
+	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_automotive_industry" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_shipyard" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_electrics_industry" }
 	daoyu_auto_single_expand_building_effcet = { BUILDING = "building_arms_industry" }
@@ -548,6 +549,7 @@ daoyu_building_level_effect = {
 		if = { limit = { has_variable = daoyu_building_synthetics_plant } create_building = { building = building_synthetics_plant level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_steel_mill } create_building = { building = building_steel_mill level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_motor_industry } create_building = { building = building_motor_industry level = $LEVEL$ reserves = 1 } }
+		if = { limit = { has_variable = daoyu_building_automotive_industry } create_building = { building = building_automotive_industry level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_electrics_industry } create_building = { building = building_electrics_industry level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_munition_plant } create_building = { building = building_munition_plant level = $LEVEL$ reserves = 1 } }
 		if = { limit = { has_variable = daoyu_building_power_plant } create_building = { building = building_power_plant level = $LEVEL$ reserves = 1 } }
@@ -635,6 +637,7 @@ daoyu_clean_building_level_effect = {
 					has_variable = daoyu_building_synthetics_plant
 					has_variable = daoyu_building_steel_mill
 					has_variable = daoyu_building_motor_industry
+					has_variable = daoyu_building_automotive_industry
 					has_variable = daoyu_building_electrics_industry
 					has_variable = daoyu_building_munition_plant
 					has_variable = daoyu_building_power_plant
@@ -693,6 +696,7 @@ daoyu_clean_building_level_effect = {
 		remove_variable = daoyu_building_synthetics_plant
 		remove_variable = daoyu_building_steel_mill
 		remove_variable = daoyu_building_motor_industry
+		remove_variable = daoyu_building_automotive_industry
 		remove_variable = daoyu_building_electrics_industry
 		remove_variable = daoyu_building_munition_plant
 		remove_variable = daoyu_building_power_plant
@@ -735,6 +739,7 @@ daoyu_A_R_building_state_trait_effect = {
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_furniture_manufactory" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_glassworks" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_motor_industry" }
+	daoyu_A_R_S_T = { STATE_TRAIT = "building_automotive_industry" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_munition_plant" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_paper_mill" }
 	daoyu_A_R_S_T = { STATE_TRAIT = "building_rye_farm" }
@@ -796,6 +801,7 @@ daoyu_other_building_state_trait_effect = {
 	daoyu_other_S_T = { STATE_TRAIT = "building_furniture_manufactory" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_glassworks" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_motor_industry" }
+	daoyu_other_S_T = { STATE_TRAIT = "building_automotive_industry" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_munition_plant" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_paper_mill" }
 	daoyu_other_S_T = { STATE_TRAIT = "building_rye_farm" }
@@ -909,6 +915,7 @@ daoyu_remove_all_buildings_effect = {
 		if = { limit = { has_building = building_munition_plant } remove_building = building_munition_plant }
 		if = { limit = { has_building = building_artillery_foundry } remove_building = building_artillery_foundry }
 		if = { limit = { has_building = building_motor_industry } remove_building = building_motor_industry }
+		if = { limit = { has_building = building_automotive_industry } remove_building = building_automotive_industry }
 		if = { limit = { has_building = building_electrics_industry } remove_building = building_electrics_industry }
 		if = { limit = { has_building = building_shipyard } remove_building = building_shipyard }
 		remove_variable = daoyu_remove_all_buildings
@@ -973,6 +980,7 @@ daoyu_remove_building_effect = {
 	daoyu_remove_single_building = { BUILDING = "building_munition_plant" ORDER = $ORDER$ }#弹药厂
 	daoyu_remove_single_building = { BUILDING = "building_artillery_foundry" ORDER = $ORDER$ }#火炮铸造厂
 	daoyu_remove_single_building = { BUILDING = "building_motor_industry" ORDER = $ORDER$ }#动力机械厂
+	daoyu_remove_single_building = { BUILDING = "building_automotive_industry" ORDER = $ORDER$ }#汽车厂
 	daoyu_remove_single_building = { BUILDING = "building_electrics_industry" ORDER = $ORDER$ }#电子厂
 	daoyu_remove_single_building = { BUILDING = "building_shipyard" ORDER = $ORDER$ }#造船厂
 }
@@ -1068,6 +1076,10 @@ daoyu_auto_production_method_effect = {
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_assembly_lines_building_motor_industry" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_rotary_valve_engine_building_motor_industry" }
 	daoyu_production_method_effect = { TYPE = "building_motor_industry" PM = "pm_watertube_boiler_building_motor_industry" }
+	daoyu_production_method_effect = { TYPE = "building_automotive_industry" PM = "pm_mass_automobile_production" }
+	daoyu_production_method_effect = { TYPE = "building_automotive_industry" PM = "pm_aeroplane_production" }
+	daoyu_production_method_effect = { TYPE = "building_automotive_industry" PM = "pm_tank_production" }
+	daoyu_production_method_effect = { TYPE = "building_automotive_industry" PM = "pm_assembly_lines_building_automotive_industry" }
 	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_arc_welding_shipbuilding" }
 	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_metal_shipbuilding" }
 	daoyu_production_method_effect = { TYPE = "building_shipyard" PM = "pm_complex_shipbuilding" }
