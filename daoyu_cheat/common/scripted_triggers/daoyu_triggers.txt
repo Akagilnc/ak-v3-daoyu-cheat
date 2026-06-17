@@ -35,6 +35,7 @@ daoyu_has_country_modifiers_trigger = {
 		has_modifier = daoyu_character_health_add
 		has_modifier = daoyu_mobilization_cost_mult
 		has_modifier = daoyu_military_drill
+		has_modifier = daoyu_supply_ship_construction
 		has_modifier = daoyu_tariff_import_add
 		has_modifier = daoyu_tariff_export_add
 	}

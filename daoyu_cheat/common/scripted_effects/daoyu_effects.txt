@@ -145,7 +145,6 @@ daoyu_state_modifier_remove_global_variable_effect = {
 	remove_global_variable = daoyu_goods_input_mult
 	remove_global_variable = daoyu_decree_enlistment_efforts
 	remove_global_variable = daoyu_building_minimum_wage_mult
-	remove_global_variable = daoyu_goods_output_merchant_marine_mult
 	remove_global_variable = daoyu_adventitious_options
 	every_state = { limit = { has_variable = daoyu_state_modifier } remove_variable = daoyu_state_modifier }
 }
@@ -164,7 +163,6 @@ daoyu_state_modifier_remove_modifier_effect = {
 			if = { limit = { has_modifier = daoyu_state_negative_birth_rate_mult } remove_modifier = daoyu_state_negative_birth_rate_mult }
 			if = { limit = { has_modifier = daoyu_state_positive_birth_rate_mult } remove_modifier = daoyu_state_positive_birth_rate_mult }
 			if = { limit = { has_modifier = daoyu_building_minimum_wage_mult } remove_modifier = daoyu_building_minimum_wage_mult }
-			if = { limit = { has_modifier = daoyu_goods_output_merchant_marine_mult } remove_modifier = daoyu_goods_output_merchant_marine_mult }
 		}
 	}
 }
@@ -617,10 +615,6 @@ daoyu_state_add_modifier_effect = {
 	if = {
 		limit = { has_global_variable = daoyu_building_minimum_wage_mult }
 		every_scope_state = { limit = { has_variable = daoyu_state_modifier } add_modifier = { name = daoyu_building_minimum_wage_mult multiplier = $MULTIPLIER$ months = -1 } }
-	}
-	if = {
-		limit = { has_global_variable = daoyu_goods_output_merchant_marine_mult }
-		every_scope_state = { limit = { has_variable = daoyu_state_modifier } add_modifier = { name = daoyu_goods_output_merchant_marine_mult multiplier = $MULTIPLIER$ months = -1 } }
 	}
 	daoyu_state_modifier_remove_global_variable_effect = yes
 }
@@ -1939,6 +1933,7 @@ daoyu_all_country_modifiers_effect = {
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = country_construction_add MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = mobilization_cost_mult MULTIPLIER = $MULTIPLIER$ }
 	daoyu_add_or_remove_single_modifiers = { BUFFVAR = military_drill MULTIPLIER = $MULTIPLIER$ }
+	daoyu_add_or_remove_single_modifiers = { BUFFVAR = supply_ship_construction MULTIPLIER = $MULTIPLIER$ }
 }
 daoyu_remove_create_character_flag = {
 	remove_global_variable = daoyu_create_general
