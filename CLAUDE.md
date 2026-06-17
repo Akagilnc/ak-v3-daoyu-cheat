@@ -39,6 +39,14 @@ Victoria 3 作弊 MOD「Daoyu Cheat 刀鱼作弊」1.13 社区维护版(akagilnc
 - **同一个名字别在两个文件夹各定义一份** —— 否则 `add_modifier` 的效果预览会把它**列两遍**(实际只生效一份,修正面板只有一条,但预览/tooltip 重复)。
 - 已修事故:`daoyu_goods_output_merchant_marine_add`(增加商船)曾在 static_modifiers/ 多了个无效果空壳 → 预览重复,删空壳解决。**注意:关税/国家建造力等正向修正目前也都双注册,同样隐患,待统一清理。**
 
+## modifier 能不能 add_modifier:先查 Mask(血泪教训)★
+
+- 用任何 modifier 前,**先 grep `game_docs_113/modifiers.log` 看它的 `Mask:`**。
+- **`Mask: goods`(如 `goods_output_*`、`goods_input_*`)只能用在生产方式(production_methods)里,不能 add_modifier** —— 加到国家会报 `Failed to obtain modifier from script`,加到州会**粉脸空转**(无报错、无效果、占位图标)。
+- 能 add_modifier 的是 `building` / `state` / `country` / `character` / `interest_group` 等 Mask。
+- 事故:convoy 作弊想提港口商船产出,选了 `goods_output_merchant_marine_*`(goods 类),国家级、州级都失败,空转 3 轮。**正解是 `building_port_throughput_add`(Mask: building,港口专属,vanilla 公司就用它)** —— building 类能 add_modifier 且州级级联到港口。代价:throughput 连带提投入(多吃货),作弊无所谓。
+- 经验:**别照 modifier 名字猜能不能用,先看 Mask 一锤定音。**
+
 ## loc 写法:简洁原生,先验概念键存在
 
 - 学 vanilla:**一个干净名词 + 合法 `$concept_x$` / `@icon!` / `[GetGoods('x').GetName]`**。别堆「增加…(……产出)」这种冗余,别加解释性括号(一眼 AI 味,用户反感)。
