@@ -5,17 +5,23 @@ All notable changes to this community-maintained 1.13.x port.
 
 ---
 
-## 2026.06.16 (1.13)
+## 2026.06.17 (1.13)
 
 **English**
-- **Fixed — "Add Merchant Ships / Convoys" cheat.** Victoria 3 1.13 removed the old country-level convoy-capacity modifier the cheat relied on, so it threw an error. Reworked to boost port merchant-marine (convoy) output directly — clean, with no hidden economy side-effects.
-- **New thumbnail artwork**, replacing the previous unrelated image.
-- **Store page**: English-friendly title + full bilingual description.
+- **New cheat — Supply Ship Construction.** Massively boost navy supply-ship construction (country-wide) from the Country Modifiers menu.
+- **Restored the Automotive Industry building** (a separate building in 1.13) across all cheat menus: expand / remove / monopoly / nationalize / state trait / build / production methods.
+- **Removed the "Add Merchant Ships / Convoys" cheat.** 1.13 has no clean cheat-modifier way to boost convoys, and the existing Throughput state cheat already raises port output.
+- **Publishing cleanup**: ASCII mod folder, identity aligned to the Workshop title, multiplayer_synchronized enabled.
+- **New thumbnail artwork**; English-friendly store title + full bilingual description.
+- Several cheat values buffed.
 
 **中文**
-- **修复 —「增加商船」作弊。** 1.13 移除了原作弊依赖的国家级商船容量 modifier,导致报错。已改为直接提升港口商船产出 —— 干净、无隐藏经济副作用。
-- **更换封面图**,替换掉之前与 MOD 无关的旧图。
-- **商店页**:英文友好标题 + 完整双语描述。
+- **新增作弊 —「补给船建造力」。** 在「国家修正」菜单大幅提升海军补给船建造(全国生效)。
+- **补回「汽车厂」建筑**(1.13 独立建筑),补全扩建/移除/垄断/国有化/状态特征/建造/生产方式各菜单。
+- **移除「增加商船(护航舰队)」作弊。** 1.13 没有干净的作弊修正能提升护航舰队,且现有「吞吐量」地区作弊已能提港口产出。
+- **发布规范化**:mod 目录改纯 ASCII、身份对齐线上标题、开启 multiplayer_synchronized。
+- **更换封面图**;英文友好商店标题 + 双语描述。
+- 部分作弊数值增强。
 
 ---
 

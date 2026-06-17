@@ -122,12 +122,10 @@ daoyu_negative_tariff_export_add = {
 daoyu_supply_ship_construction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	country_supply_ship_construction_ratio_add = 1
-	country_supply_ship_construction_progress_max_mult = 1
 }
 daoyu_negative_supply_ship_construction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	country_supply_ship_construction_ratio_add = 1
-	country_supply_ship_construction_progress_max_mult = 1
 }
 daoyu_negative_country_construction_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
