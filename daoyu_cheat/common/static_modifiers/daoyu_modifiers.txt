@@ -49,9 +49,6 @@ daoyu_tariff_export_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	state_tariff_export_add = 0.05
 }
-daoyu_goods_output_merchant_marine_add = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-}
 daoyu_country_construction_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	country_max_weekly_construction_progress_add = 100
@@ -124,6 +121,7 @@ daoyu_negative_tariff_export_add = {
 }
 daoyu_negative_goods_output_merchant_marine_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	goods_output_merchant_marine_add = 1000
 }
 daoyu_negative_country_construction_add = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
