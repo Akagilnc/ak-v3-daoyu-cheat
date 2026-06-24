@@ -917,6 +917,8 @@ daoyu.132 = {
 		daoyu_upgrade_principle = { PRI = "exploit_members" }
 		daoyu_upgrade_principle = { PRI = "sacred_civics" }
 		daoyu_upgrade_principle = { PRI = "ideological_truth" }
+		daoyu_upgrade_principle = { PRI = "shared_canon" }
+		daoyu_upgrade_principle = { PRI = "navy" }
 	}
 	option = {
 		name = principle_group_construction#建设
@@ -1022,6 +1024,16 @@ daoyu.132 = {
 		name = principle_group_companies#公司
 		trigger = { daoyu_has_principle = { PRI = "companies" } }
 		daoyu_add_or_remove_principle = { PRI = "companies" }
+	}
+	option = {
+		name = principle_group_shared_canon#共同准则
+		trigger = { daoyu_has_principle = { PRI = "shared_canon" } }
+		daoyu_add_or_remove_principle = { PRI = "shared_canon" }
+	}
+	option = {
+		name = principle_group_navy#海上霸权
+		trigger = { daoyu_has_principle = { PRI = "navy" } }
+		daoyu_add_or_remove_principle = { PRI = "navy" }
 	}
 	option = {
 		name = RESIGN
