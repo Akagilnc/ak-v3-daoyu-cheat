@@ -662,7 +662,6 @@ dculo.30 = {
 	option = { name = ryukyuan trigger = { has_variable = daoyu_show_cu_ryukyuan } daoyu_culture_effect = { CULTURE = "ryukyuan" } }
 	option = { name = scottish_gaelic trigger = { has_variable = daoyu_show_cu_scottish_gaelic } daoyu_culture_effect = { CULTURE = "scottish_gaelic" } }
 	option = { name = griqua trigger = { has_variable = daoyu_show_cu_griqua } daoyu_culture_effect = { CULTURE = "griqua" } }
-	option = { name = promethean trigger = { has_variable = daoyu_show_cu_promethean } daoyu_culture_effect = { CULTURE = "promethean" } }
 	option = {
 		name = NEXT_PAGE#下一页
 		trigger = { daoyu_check_page_next = yes }

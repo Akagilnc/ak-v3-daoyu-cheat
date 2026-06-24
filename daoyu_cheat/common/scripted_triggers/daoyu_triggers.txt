@@ -359,7 +359,6 @@ daoyu_all_culture_trigger = {
 		daoyu_single_culture_trigger = { CULTURE = "ryukyuan" }
 		daoyu_single_culture_trigger = { CULTURE = "scottish_gaelic" }
 		daoyu_single_culture_trigger = { CULTURE = "griqua" }
-		daoyu_single_culture_trigger = { CULTURE = "promethean" }
 	}
 }
 daoyu_single_culture_trigger = {
@@ -1787,6 +1786,18 @@ daoyu_cu_luri = { has_variable = daoyu_heritage_iranian }
 daoyu_cu_kho = { has_variable = daoyu_heritage_kashmiri }
 daoyu_cu_champa = { has_variable = daoyu_heritage_insulindian }
 daoyu_cu_east_german = { has_variable = daoyu_heritage_germanic }
+daoyu_cu_aragonese = { has_variable = daoyu_heritage_iberian }
+daoyu_cu_asturleonese = { has_variable = daoyu_heritage_iberian }
+daoyu_cu_iberian = { has_variable = daoyu_heritage_iberian }
+daoyu_cu_filipino_hispanophone = { has_variable = daoyu_heritage_insulindian }
+daoyu_cu_filipino_mestizo = { has_variable = daoyu_heritage_insulindian }
+daoyu_cu_tagalog = { has_variable = daoyu_heritage_insulindian }
+daoyu_cu_visayan = { has_variable = daoyu_heritage_insulindian }
+daoyu_cu_ilocano = { has_variable = daoyu_heritage_insulindian }
+daoyu_cu_lumad = { has_variable = daoyu_heritage_insulindian }
+daoyu_cu_ryukyuan = { has_variable = daoyu_heritage_japanese }
+daoyu_cu_scottish_gaelic = { has_variable = daoyu_heritage_british }
+daoyu_cu_griqua = { has_variable = daoyu_heritage_southern_bantu }
 daoyu_a_o_r_homeland_trigger = {
 	or = {
 		and = { has_global_variable = daoyu_remove_homeland any_state = { has_variable = daoyu_target_state state_region = { is_homeland = cu:$CULTURE$ } } }
