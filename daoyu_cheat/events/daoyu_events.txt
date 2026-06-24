@@ -13490,6 +13490,26 @@ daoyu.693 = {
 	option = { name = building_arms_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_arms_industry" } } set_global_variable = daoyu_S_T_building_arms_industry }
 	option = { name = building_artillery_foundry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_artillery_foundry" } } set_global_variable = daoyu_S_T_building_artillery_foundry }
 	option = { name = building_chemical_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_chemical_plant" } } set_global_variable = daoyu_S_T_building_chemical_plant }
+	option = { name = NEXT_PAGE set_variable = daoyu_factory_p2 }
+	option = { name = RESIGN default_option = yes set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
+	after = {
+		if = { limit = { has_variable = daoyu_690 } remove_variable = daoyu_690 trigger_event = { id = daoyu.690 popup = yes } }
+		else_if = { limit = { has_variable = daoyu_factory_p2 } remove_variable = daoyu_factory_p2 trigger_event = { id = daoyu.694 popup = yes } }
+		else = { set_global_variable = daoyu_693 trigger_event = { id = daoyu.695 popup = yes } }
+	}
+}
+#扩建工厂·第2页
+daoyu.694 = {
+	type = country_event
+	placement = ROOT
+	title = daoyu_cheat
+	desc = industry_lens_tab
+	flavor = daoyu_one_building_one_region_flavor
+	event_image = { video = "gfx/event_pictures/southamerica_factory_opening.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/factory_opening"
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	duration = 0
 	option = { name = building_explosives_factory trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_explosives_factory" } } set_global_variable = daoyu_S_T_building_explosives_factory }
 	option = { name = building_synthetics_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_synthetics_plant" } } set_global_variable = daoyu_S_T_building_synthetics_plant }
 	option = { name = building_steel_mill trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_steel_mill" } } set_global_variable = daoyu_S_T_building_steel_mill }
@@ -13498,9 +13518,11 @@ daoyu.693 = {
 	option = { name = building_electrics_industry trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_electrics_industry" } } set_global_variable = daoyu_S_T_building_electrics_industry }
 	option = { name = building_munition_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_munition_plant" } } set_global_variable = daoyu_S_T_building_munition_plant }
 	option = { name = building_power_plant trigger = { daoyu_building_state_trait_trigger = { STATE_TRAIT = "building_power_plant" } } set_global_variable = daoyu_S_T_building_power_plant }
+	option = { name = PREVIOUS_PAGE set_variable = daoyu_factory_p1 }
 	option = { name = RESIGN default_option = yes set_variable = daoyu_690 remove_global_variable = daoyu_add_building_state_trait }
 	after = {
 		if = { limit = { has_variable = daoyu_690 } remove_variable = daoyu_690 trigger_event = { id = daoyu.690 popup = yes } }
+		else_if = { limit = { has_variable = daoyu_factory_p1 } remove_variable = daoyu_factory_p1 trigger_event = { id = daoyu.693 popup = yes } }
 		else = { set_global_variable = daoyu_693 trigger_event = { id = daoyu.695 popup = yes } }
 	}
 }
