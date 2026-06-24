@@ -11641,6 +11641,30 @@ daoyu.625 = {
 	option = { name = building_arms_industry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "gunsmithing" } } daoyu_building_lens_effcet = { BUILDING = "building_arms_industry" } }
 	option = { name = building_artillery_foundry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "gunsmithing" } } daoyu_building_lens_effcet = { BUILDING = "building_artillery_foundry" } }
 	option = { name = building_chemical_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "intensive_agriculture" } } daoyu_building_lens_effcet = { BUILDING = "building_chemical_plant" } }
+	option = { name = NEXT_PAGE hidden_effect = { trigger_event = { id = daoyu.626 popup = yes } } }
+	option = {
+		name = RESIGN
+		default_option = yes
+		ai_chance = { base = 100 }
+		hidden_effect = { trigger_event = { id = daoyu.602 popup = yes } }
+	}
+}
+#扩建工厂·第2页
+daoyu.626 = {
+	type = country_event
+	placement = ROOT
+	title = daoyu_cheat
+	desc = ai_goal_expand_factories
+	flavor = {
+		first_valid = { desc = daoyu_states_desc }
+		first_valid = { triggered_desc = { trigger = { not = { any_scope_state = { has_decree = decree_daoyu_target_state } } } desc = daoyu_line_reaks } }
+		first_valid = { triggered_desc = { trigger = { not = { any_scope_state = { has_decree = decree_daoyu_target_state } } } desc = TARGET_STATE_NOT_VALID } }
+	}
+	event_image = { video = "gfx/event_pictures/southamerica_factory_opening.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/factory_opening"
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+	duration = 0
 	option = { name = building_explosives_factory trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "intensive_agriculture" } } daoyu_building_lens_effcet = { BUILDING = "building_explosives_factory" } }
 	option = { name = building_synthetics_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "aniline" } } daoyu_building_lens_effcet = { BUILDING = "building_synthetics_plant" } }
 	option = { name = building_steel_mill trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "steelworking" } } daoyu_building_lens_effcet = { BUILDING = "building_steel_mill" } }
@@ -11649,6 +11673,7 @@ daoyu.625 = {
 	option = { name = building_electrics_industry trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "telephone" } } daoyu_building_lens_effcet = { BUILDING = "building_electrics_industry" } }
 	option = { name = building_munition_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "percussion_cap" } } daoyu_building_lens_effcet = { BUILDING = "building_munition_plant" } }
 	option = { name = building_power_plant trigger = { daoyu_building_lens_trigger = { TECHNOLOGY = "electrical_generation" } } daoyu_building_lens_effcet = { BUILDING = "building_power_plant" } }
+	option = { name = PREVIOUS_PAGE hidden_effect = { trigger_event = { id = daoyu.625 popup = yes } } }
 	option = {
 		name = RESIGN
 		default_option = yes
