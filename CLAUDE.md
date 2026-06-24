@@ -13,6 +13,7 @@ Victoria 3 作弊 MOD「Daoyu Cheat 刀鱼作弊」1.13 社区维护版(akagilnc
 - mod 真名:**`Daoyu Cheat (1.13 Community Port) 刀鱼作弊`**
 - mod id:**`akagilnc@gmail.com-daoyu-cheat-113`**
 - 中文招牌只放 metadata.json 的 `name` 字段,**不进路径**。
+- ★**Steam 描述/更新说明里绝不放 URL/超链接** —— 带链接的描述会被 Steam **自动隐藏(item 被藏)**。原版引用一律写**纯文本**「原版 Workshop ID: 2882576273」,绝不写 `https://...` 或 `[url]`。给用户的任何 Steam 文本(描述/留言/change notes)都按此规则。
 
 ## 路径铁律:一律纯 ASCII 无空格
 

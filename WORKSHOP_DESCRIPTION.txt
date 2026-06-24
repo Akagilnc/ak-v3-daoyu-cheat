@@ -1,0 +1,41 @@
+==================================================================
+Daoyu Cheat (1.13 Community Port) 刀鱼作弊
+Steam 创意工坊描述 / Workshop store description
+------------------------------------------------------------------
+铁律:此文件绝不放 URL / 超链接。带链接的描述会被 Steam 自动隐藏。
+原版引用只写纯文本「原版 Workshop ID: 2882576273」。
+Rule: NEVER put a URL/hyperlink here. Steam auto-hides items whose
+description contains links. Reference the original by plain text ID only.
+==================================================================
+
+
+【中文】
+
+刀鱼作弊（1.13 社区维护版）
+
+原作者「刀鱼作弊 / 贴心小D.VA」已停更,本版由 akagilnc 接手,仅做 1.13 兼容修复与功能增补,保留原作者全部设计与署名。纯脚本,无 DLL。
+
+· 一站式作弊菜单:加钱/官僚/威望、科技、法律、文化、建筑、国家集团等
+· 持续对齐 Victoria 3 1.13.* 新内容
+· 单人/多人(已开启 multiplayer_synchronized)
+
+使用:作弊时请暂停游戏;若入口消失,点决议「重置刀鱼作弊」恢复。
+欢迎在创意工坊或 GitHub 反馈 BUG、提建议。
+
+原版 Workshop ID: 2882576273（原作者旧物,仅作致谢说明,非本版)
+
+
+【English】
+
+Daoyu Cheat (1.13 Community Port)
+
+The original by "刀鱼作弊 / 贴心小D.VA" is no longer updated. This version is maintained by akagilnc — 1.13 compatibility fixes and feature additions only, with all original design and credit retained. Script-only, no DLL.
+
+· One-stop cheat menu: money / bureaucracy / prestige, technology, laws, cultures, buildings, power blocs, and more
+· Kept in sync with Victoria 3 1.13.* content
+· Single-player / multiplayer (multiplayer_synchronized enabled)
+
+Tip: pause the game while cheating; if the entry disappears, use the "Reset Daoyu Cheat" decision to restore it.
+Bug reports and suggestions welcome on the Workshop or GitHub.
+
+Original Workshop ID: 2882576273 (the original author's old item — credit note only, not this port)
