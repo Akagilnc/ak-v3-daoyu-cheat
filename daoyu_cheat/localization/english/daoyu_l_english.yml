@@ -4,7 +4,7 @@
  daoyu_activate:0 "Activate Daoyu Cheat"
  daoyu_off:0 "Deactivate Daoyu Cheat"
  daoyu_cheat:0 "Daoyu Cheat"
- daoyu_cheat_desc:0 "Version No.#N 06/17/2026#!\nReserved for compatibility support for mods that modify technology and laws. Mod authors are requested to check the technology or law pages themselves..\nThanks to bilibili ID #N zkonikishi#! for sending me Victoria 3."
+ daoyu_cheat_desc:0 "Version No.#N 06/17/2026#!"
  daoyu_cheat_missing:0 "Daoyu Cheat Disappeared"
  ak_reset_cheat:0 "Reset Daoyu Cheat (use if all entries vanished)"
  ak_reset_cheat_desc:0 "Clears the stuck toggle state so the Daoyu Cheat decision reappears."
