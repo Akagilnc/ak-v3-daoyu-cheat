@@ -221,6 +221,7 @@ dculo_remove_heritage_group_effect = {
 	remove_variable = daoyu_heritage_group_north_asian
 	remove_variable = daoyu_heritage_group_south_asian
 	remove_variable = daoyu_heritage_group_southeast_asian
+	remove_variable = daoyu_heritage_group_special
 }
 dculo_remove_heritage_effect = {
 	remove_variable = daoyu_heritage_abyssinian
@@ -323,6 +324,7 @@ dculo_remove_heritage_effect = {
 	remove_variable = daoyu_heritage_khmu
 	remove_variable = daoyu_heritage_tai
 	remove_variable = daoyu_heritage_vietnamese
+	remove_variable = daoyu_heritage_promethean
 }
 dcc_created_effect = {
 	if = { limit = { has_global_variable = dcc_law_chiefdom not = { has_law = law_type:law_chiefdom } } activate_law = law_type:law_chiefdom }

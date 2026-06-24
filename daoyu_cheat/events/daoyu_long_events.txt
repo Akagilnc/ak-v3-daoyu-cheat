@@ -22,6 +22,7 @@ dculo.10 = {
 	option = { name = heritage_group_north_asian set_variable = daoyu_heritage_group_north_asian }
 	option = { name = heritage_group_south_asian set_variable = daoyu_heritage_group_south_asian }
 	option = { name = heritage_group_southeast_asian set_variable = daoyu_heritage_group_southeast_asian }
+	option = { name = daoyu_heritage_group_special set_variable = daoyu_heritage_group_special }
 	option = {
 		name = RESIGN
 		ai_chance = { base = 100 }
@@ -178,6 +179,7 @@ dculo.20 = {
 	option = { name = heritage_khmu trigger = { has_variable = daoyu_heritage_group_southeast_asian } set_variable = daoyu_heritage_khmu }#克木
 	option = { name = heritage_tai trigger = { has_variable = daoyu_heritage_group_southeast_asian } set_variable = daoyu_heritage_tai }#泰
 	option = { name = heritage_vietnamese trigger = { has_variable = daoyu_heritage_group_southeast_asian } set_variable = daoyu_heritage_vietnamese }#越南
+	option = { name = promethean trigger = { has_variable = daoyu_heritage_group_special } set_variable = daoyu_heritage_promethean }#普罗米修斯
 	option = {
 		name = RESIGN
 		ai_chance = { base = 100 }
@@ -662,6 +664,7 @@ dculo.30 = {
 	option = { name = ryukyuan trigger = { has_variable = daoyu_show_cu_ryukyuan } daoyu_culture_effect = { CULTURE = "ryukyuan" } }
 	option = { name = scottish_gaelic trigger = { has_variable = daoyu_show_cu_scottish_gaelic } daoyu_culture_effect = { CULTURE = "scottish_gaelic" } }
 	option = { name = griqua trigger = { has_variable = daoyu_show_cu_griqua } daoyu_culture_effect = { CULTURE = "griqua" } }
+	option = { name = promethean trigger = { has_variable = daoyu_show_cu_promethean } daoyu_culture_effect = { CULTURE = "promethean" } }
 	option = {
 		name = NEXT_PAGE#下一页
 		trigger = { daoyu_check_page_next = yes }

@@ -689,6 +689,7 @@ daoyu_all_culture_effect = {
 	daoyu_single_culture_effect = { CULTURE = "ryukyuan" }
 	daoyu_single_culture_effect = { CULTURE = "scottish_gaelic" }
 	daoyu_single_culture_effect = { CULTURE = "griqua" }
+	daoyu_single_culture_effect = { CULTURE = "promethean" }
 }
 daoyu_united_all_state_culture_effect = {
 	scope:daoyu_target_country = {

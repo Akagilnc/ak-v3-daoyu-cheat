@@ -802,14 +802,9 @@ daoyu.130 = {
 		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
 	}
 	option = {
-		name = daoyu_add_principle_1#添加原则1
+		name = ADD_NEW_PRINCIPLE#添加原则
 		trigger = { is_power_bloc_leader = yes }
 		hidden_effect = { trigger_event = { id = daoyu.132 popup = yes } }
-	}
-	option = {
-		name = daoyu_add_principle_2#添加原则2
-		trigger = { is_power_bloc_leader = yes }
-		hidden_effect = { trigger_event = { id = daoyu.134 popup = yes } }
 	}
 	option = {
 		name = daoyu_remove_principle#移除原则
@@ -991,6 +986,11 @@ daoyu.132 = {
 		daoyu_add_or_remove_principle = { PRI = "military_industry" }
 	}
 	option = {
+		name = NEXT_PAGE#下一页
+		trigger = { is_power_bloc_leader = yes }
+		set_variable = daoyu_principle_goto_p2
+	}
+	option = {
 		name = RESIGN
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_remove_principle
@@ -999,6 +999,7 @@ daoyu.132 = {
 	}
 	after = {
 		if = { limit = { has_variable = daoyu_return } remove_variable = daoyu_return trigger_event = { id = daoyu.130 popup = yes } }
+		else_if = { limit = { has_variable = daoyu_principle_goto_p2 } remove_variable = daoyu_principle_goto_p2 trigger_event = { id = daoyu.134 popup = yes } }
 		else = { trigger_event = { id = daoyu.132 popup = yes } }
 	}
 }
@@ -1141,6 +1142,11 @@ daoyu.134 = {
 		daoyu_add_or_remove_principle = { PRI = "navy" }
 	}
 	option = {
+		name = PREVIOUS_PAGE#上一页
+		trigger = { is_power_bloc_leader = yes }
+		set_variable = daoyu_principle_goto_p1
+	}
+	option = {
 		name = RESIGN
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_remove_principle
@@ -1149,6 +1155,7 @@ daoyu.134 = {
 	}
 	after = {
 		if = { limit = { has_variable = daoyu_return } remove_variable = daoyu_return trigger_event = { id = daoyu.130 popup = yes } }
+		else_if = { limit = { has_variable = daoyu_principle_goto_p1 } remove_variable = daoyu_principle_goto_p1 trigger_event = { id = daoyu.132 popup = yes } }
 		else = { trigger_event = { id = daoyu.134 popup = yes } }
 	}
 }
