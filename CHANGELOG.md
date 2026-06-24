@@ -5,6 +5,36 @@ All notable changes to this community-maintained 1.13.x port.
 
 ---
 
+## 2026.06.24 (1.13)
+
+**English**
+- **National Power Blocs — major additions.**
+  - New: **Form your own power bloc** from the cheat menu and instantly become its leader — pick any of 5 identities, including the new **Cultural Commonwealth** (1.13). (Previously the `create_power_bloc` effect existed but was never wired to a menu.)
+  - Principles now cover **all 23 vanilla groups** (added **Shared Canon** and **Maritime Supremacy**).
+  - Principle menu now **paginates** (Next / Previous page) instead of one over-long list.
+- **New-version content.**
+  - Technology: added **Pre-Dreadnought**.
+  - Cultures: added **13 missing cultures** (Filipino group, Iberian group, Ryukyuan, Scottish Gaelic, Griqua, Promethean, etc.).
+- **Quality of life.**
+  - **Expand-Factory** menu now paginates — the buildings at the bottom are reachable again.
+  - Cleaner main-menu header (dropped stale leftover text).
+- **Fixes.** Stopped a power-bloc naming error-log flood; fixed culture-menu `Unknown trigger type` errors.
+
+**中文**
+- **国家集团 — 大改。**
+  - 新增 **「组建国家集团」**:从作弊菜单凭空建集团并当领袖,5 种认同任选(含 1.13 新增 **「文化共同体」**)。(原 `create_power_bloc` 效果已存在却从未接进菜单。)
+  - 集团原则补全:现覆盖 **vanilla 全部 23 组**(补 **「共同准则」** 和 **「海上霸权」**)。
+  - 原则菜单改 **翻页**(下一页/上一页),不再一长条排不下。
+- **新版本内容补全。**
+  - 科技:补 **「前无畏舰」**。
+  - 文化:补 **13 个新文化**(菲律宾系、伊比利亚系、琉球、盖尔、格里夸、普罗米修斯等)。
+- **体验改进。**
+  - **「扩建工厂」** 菜单改翻页,底部工厂够得着了。
+  - 主菜单说明精简(去掉过时遗留文字)。
+- **修复。** 集团命名导致的 error.log 刷屏;文化菜单 `Unknown trigger type` 报错。
+
+---
+
 ## 2026.06.17 (1.13)
 
 **English**
