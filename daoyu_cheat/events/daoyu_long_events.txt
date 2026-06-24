@@ -650,6 +650,19 @@ dculo.30 = {
 	option = { name = kho trigger = { has_variable = daoyu_show_cu_kho } daoyu_culture_effect = { CULTURE = "kho" } }
 	option = { name = champa trigger = { has_variable = daoyu_show_cu_champa } daoyu_culture_effect = { CULTURE = "champa" } }
 	option = { name = east_german trigger = { has_variable = daoyu_show_cu_east_german } daoyu_culture_effect = { CULTURE = "east_german" } }
+	option = { name = aragonese trigger = { has_variable = daoyu_show_cu_aragonese } daoyu_culture_effect = { CULTURE = "aragonese" } }
+	option = { name = asturleonese trigger = { has_variable = daoyu_show_cu_asturleonese } daoyu_culture_effect = { CULTURE = "asturleonese" } }
+	option = { name = iberian trigger = { has_variable = daoyu_show_cu_iberian } daoyu_culture_effect = { CULTURE = "iberian" } }
+	option = { name = filipino_hispanophone trigger = { has_variable = daoyu_show_cu_filipino_hispanophone } daoyu_culture_effect = { CULTURE = "filipino_hispanophone" } }
+	option = { name = filipino_mestizo trigger = { has_variable = daoyu_show_cu_filipino_mestizo } daoyu_culture_effect = { CULTURE = "filipino_mestizo" } }
+	option = { name = tagalog trigger = { has_variable = daoyu_show_cu_tagalog } daoyu_culture_effect = { CULTURE = "tagalog" } }
+	option = { name = visayan trigger = { has_variable = daoyu_show_cu_visayan } daoyu_culture_effect = { CULTURE = "visayan" } }
+	option = { name = ilocano trigger = { has_variable = daoyu_show_cu_ilocano } daoyu_culture_effect = { CULTURE = "ilocano" } }
+	option = { name = lumad trigger = { has_variable = daoyu_show_cu_lumad } daoyu_culture_effect = { CULTURE = "lumad" } }
+	option = { name = ryukyuan trigger = { has_variable = daoyu_show_cu_ryukyuan } daoyu_culture_effect = { CULTURE = "ryukyuan" } }
+	option = { name = scottish_gaelic trigger = { has_variable = daoyu_show_cu_scottish_gaelic } daoyu_culture_effect = { CULTURE = "scottish_gaelic" } }
+	option = { name = griqua trigger = { has_variable = daoyu_show_cu_griqua } daoyu_culture_effect = { CULTURE = "griqua" } }
+	option = { name = promethean trigger = { has_variable = daoyu_show_cu_promethean } daoyu_culture_effect = { CULTURE = "promethean" } }
 	option = {
 		name = NEXT_PAGE#下一页
 		trigger = { daoyu_check_page_next = yes }

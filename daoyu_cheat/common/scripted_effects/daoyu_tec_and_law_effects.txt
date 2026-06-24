@@ -322,7 +322,7 @@ daoyu_bolt_action_rifles_effect = { daoyu_repeaters_effect = yes daoyu_add_tech 
 daoyu_automatic_machine_guns_effect = { daoyu_handcranked_machine_gun_effect = yes daoyu_bolt_action_rifles_effect = yes daoyu_add_tech = { TECH = "automatic_machine_guns" } }
 daoyu_submarine_effect = { daoyu_self_propelled_torpedoes_effect = yes daoyu_add_tech = { TECH = "submarine" } }
 daoyu_destroyer_effect = { daoyu_monitor_tech_effect = yes daoyu_add_tech = { TECH = "destroyer" } }
-daoyu_dreadnought_effect = { daoyu_ironclad_tech_effect = yes daoyu_sea_lane_strategies_effect = yes daoyu_add_tech = { TECH = "dreadnought_tech" } }
+daoyu_dreadnought_effect = { daoyu_ironclad_tech_effect = yes daoyu_sea_lane_strategies_effect = yes daoyu_add_tech = { TECH = "pre_dreadnought_tech" } daoyu_add_tech = { TECH = "dreadnought_tech" } }
 daoyu_sea_lane_strategies_effect = { daoyu_jeune_ecole_effect = yes daoyu_add_tech = { TECH = "sea_lane_strategies" } }
 daoyu_landing_craft_effect = { daoyu_jeune_ecole_effect = yes daoyu_monitor_tech_effect = yes daoyu_add_tech = { TECH = "landing_craft" } }
 daoyu_concrete_dockyards_effect = { daoyu_floating_harbor_effect = yes daoyu_add_tech = { TECH = "concrete_dockyards" } }

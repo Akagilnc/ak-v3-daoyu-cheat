@@ -1293,6 +1293,7 @@ d_law_tec.860 = {
 	option = { name = automatic_machine_guns trigger = { scope:daoyu_target_country = { can_research = automatic_machine_guns } } scope:daoyu_target_country = { add_technology_researched = automatic_machine_guns } }
 	option = { name = submarine trigger = { scope:daoyu_target_country = { can_research = submarine } } scope:daoyu_target_country = { add_technology_researched = submarine } }
 	option = { name = destroyer trigger = { scope:daoyu_target_country = { can_research = destroyer } } scope:daoyu_target_country = { add_technology_researched = destroyer } }
+	option = { name = pre_dreadnought_tech trigger = { scope:daoyu_target_country = { can_research = pre_dreadnought_tech } } scope:daoyu_target_country = { add_technology_researched = pre_dreadnought_tech } }
 	option = { name = dreadnought_tech trigger = { scope:daoyu_target_country = { can_research = dreadnought_tech } } scope:daoyu_target_country = { add_technology_researched = dreadnought_tech } }
 	option = { name = sea_lane_strategies trigger = { scope:daoyu_target_country = { can_research = sea_lane_strategies } } scope:daoyu_target_country = { add_technology_researched = sea_lane_strategies } }
 	option = { name = landing_craft trigger = { scope:daoyu_target_country = { can_research = landing_craft } } scope:daoyu_target_country = { add_technology_researched = landing_craft } }

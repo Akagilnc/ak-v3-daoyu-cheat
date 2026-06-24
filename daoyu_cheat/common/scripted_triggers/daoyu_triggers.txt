@@ -347,6 +347,19 @@ daoyu_all_culture_trigger = {
 		daoyu_single_culture_trigger = { CULTURE = "pathan" }
 		daoyu_single_culture_trigger = { CULTURE = "champa" }
 		daoyu_single_culture_trigger = { CULTURE = "east_german" }
+		daoyu_single_culture_trigger = { CULTURE = "aragonese" }
+		daoyu_single_culture_trigger = { CULTURE = "asturleonese" }
+		daoyu_single_culture_trigger = { CULTURE = "iberian" }
+		daoyu_single_culture_trigger = { CULTURE = "filipino_hispanophone" }
+		daoyu_single_culture_trigger = { CULTURE = "filipino_mestizo" }
+		daoyu_single_culture_trigger = { CULTURE = "tagalog" }
+		daoyu_single_culture_trigger = { CULTURE = "visayan" }
+		daoyu_single_culture_trigger = { CULTURE = "ilocano" }
+		daoyu_single_culture_trigger = { CULTURE = "lumad" }
+		daoyu_single_culture_trigger = { CULTURE = "ryukyuan" }
+		daoyu_single_culture_trigger = { CULTURE = "scottish_gaelic" }
+		daoyu_single_culture_trigger = { CULTURE = "griqua" }
+		daoyu_single_culture_trigger = { CULTURE = "promethean" }
 	}
 }
 daoyu_single_culture_trigger = {
