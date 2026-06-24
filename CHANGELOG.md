@@ -18,7 +18,9 @@ All notable changes to this community-maintained 1.13.x port.
 - **Quality of life.**
   - **Expand-Factory** menu now paginates — the buildings at the bottom are reachable again.
   - Cleaner main-menu header (dropped stale leftover text).
-- **Fixes.** Stopped a power-bloc naming error-log flood; fixed culture-menu `Unknown trigger type` errors.
+- **Fixes.**
+  - **Supply-Ship Construction cheat** was the allocation **ratio** (only reassigns existing ship construction); now boosts supply-ship construction **efficiency** so supply ships actually build faster.
+  - Stopped a power-bloc naming error-log flood; fixed culture-menu `Unknown trigger type` errors.
 
 **中文**
 - **国家集团 — 大改。**
@@ -31,7 +33,9 @@ All notable changes to this community-maintained 1.13.x port.
 - **体验改进。**
   - **「扩建工厂」** 菜单改翻页,底部工厂够得着了。
   - 主菜单说明精简(去掉过时遗留文字)。
-- **修复。** 集团命名导致的 error.log 刷屏;文化菜单 `Unknown trigger type` 报错。
+- **修复。**
+  - **「补给船建造力」** 原来加的是**分配比例**(只是把现有船舶建造力重新分配),改为**建造效率**,补给船真正造得更快。
+  - 集团命名导致的 error.log 刷屏;文化菜单 `Unknown trigger type` 报错。
 
 ---
 
