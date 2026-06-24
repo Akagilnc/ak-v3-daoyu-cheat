@@ -405,8 +405,6 @@
  daoyu_power_bloc_name:0 "[PowerBloc.GetLeader.GetName] Bloc"
  daoyu_add_principle_1:0 "Add Principle (1)"
  daoyu_add_principle_2:0 "Add Principle (2)"
- daoyu_remove_principle_1:0 "Remove Principle (1)"
- daoyu_remove_principle_2:0 "Remove Principle (2)"
  daoyu_target_country_power_bloc: "$concept_power_bloc$: [SCOPE.sCountry('daoyu_target_country').GetPowerBloc.GetName]\n"
  daoyu_root_power_bloc: "$concept_power_bloc$: [ROOT.GetCountry.GetPowerBloc.GetName]\n"
  daoyu_root_join_target_country_power_bloc: "$daoyu_root_get_name$ joins the [SCOPE.sCountry('daoyu_target_country').GetPowerBloc.GetName]"
