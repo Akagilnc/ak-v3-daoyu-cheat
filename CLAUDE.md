@@ -61,6 +61,18 @@ Victoria 3 作弊 MOD「Daoyu Cheat 刀鱼作弊」1.13 社区维护版(akagilnc
 - **先拿基线/日志/实验坐实,再下结论。** 本会话多次凭 DB 字段、凭推断下定论,都被实验推翻(isMetadataApplied 当 bug、steam 链接当根因…)。
 - 根因常在**环境**(路径编码、启动器 DB、同名两份),不在 `common/decisions` 代码。改前先看 error.log 的 Error 详情行,别只看 PostValidate。
 
+## 加「列表型」内容要动多处 + 名字只能静态(血泪坑)★
+
+- **加一个文化要动 4 处**,漏一处就报错/不显示:
+  1. `daoyu_culture_effect.txt` 的 `daoyu_all_culture_effect` 总表(`daoyu_single_culture_effect = { CULTURE = "X" }`)
+  2. `daoyu_long_events.txt` 文化菜单 option(`has_variable = daoyu_show_cu_X`)
+  3. `daoyu_triggers.txt` 的 `daoyu_single_culture_trigger` 列表
+  4. ★`daoyu_triggers.txt` 的 **`daoyu_cu_X = { has_variable = daoyu_heritage_<血统> }`**(文化→血统映射,`daoyu_single_culture_effect` 内部引用;漏了 → `Unknown trigger type: daoyu_cu_X`)
+- **特殊文化**(如 `promethean`,血统 `heritage_promethean` 不在常规血统选单):走 `dculo.10` 的「特殊文化」组(`daoyu_heritage_group_special`)→ `dculo.20` 直接 `set_variable = daoyu_heritage_promethean` → `dculo.30`。别直接删特殊文化。
+- 文化菜单流程:`dculo.10`(血统组)→ `dculo.20`(血统,按组过滤)→ `dculo.30`(文化列表,翻页:`daoyu_check_page_next`/`daoyu_determine_page_next`/`PREVIOUS_PAGE`)。退出要在 `dculo_remove_heritage_group_effect`/`dculo_remove_heritage_effect` 里清变量。
+- **菜单太长选不滚动 → 学文化菜单用翻页**(`NEXT_PAGE`/`PREVIOUS_PAGE` + 页变量),别拆成「X1/X2」两个并列菜单项(占格、丑)。
+- **`create_power_bloc` 的 `name` 只能是静态 loc 串**:集团名 loc 解析时**不提供 `PowerBloc` 数据上下文**,任何数据函数(`[ROOT.GetName]`、`[PowerBloc.GetLeader.GetName]`)都取不到值 → 要么空、要么 `No context supplied for PowerBloc...` 刷屏。vanilla 集团名全静态、无 `set_power_bloc_name` effect、name 不可省。玩家游戏内可自行改名。
+
 ## 改动后验证
 
 - 改 loc / 修正定义后,游戏内**旧脚本是缓存的**,要**重启游戏 / 重载存档**(或调试 console reload)才看得到。
