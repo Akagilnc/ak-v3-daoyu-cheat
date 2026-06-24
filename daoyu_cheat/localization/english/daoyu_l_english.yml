@@ -401,6 +401,8 @@
  daoyu_join_power_bloc:0 "Joins $concept_power_bloc$"
  daoyu_join_power_bloc_desc:0 "$daoyu_join_power_bloc$"
  daoyu_no_power_bloc:0 "#R No $concept_power_bloc$#!"
+ daoyu_form_power_bloc:0 "Form $concept_power_bloc$"
+ daoyu_power_bloc_name:0 "[ROOT.GetName] Power Bloc"
  daoyu_target_country_power_bloc: "$concept_power_bloc$: [SCOPE.sCountry('daoyu_target_country').GetPowerBloc.GetName]\n"
  daoyu_root_power_bloc: "$concept_power_bloc$: [ROOT.GetCountry.GetPowerBloc.GetName]\n"
  daoyu_root_join_target_country_power_bloc: "$daoyu_root_get_name$ joins the [SCOPE.sCountry('daoyu_target_country').GetPowerBloc.GetName]"

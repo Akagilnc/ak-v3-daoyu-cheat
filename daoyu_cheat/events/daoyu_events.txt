@@ -768,6 +768,11 @@ daoyu.130 = {
 	duration = 0
 	immediate = { random_state = { limit = { owner = { is_ai = yes has_modifier = daoyu_target_country } } owner = { save_scope_as = daoyu_target_country } } }
 	option = {
+		name = daoyu_form_power_bloc#组建国家集团
+		trigger = { has_dlc_feature = power_bloc_features is_in_power_bloc = no }
+		hidden_effect = { trigger_event = { id = daoyu.133 popup = yes } }
+	}
+	option = {
 		name = daoyu_root_join_target_country_power_bloc#加入国家集团
 		trigger = { is_in_power_bloc = no exists = scope:daoyu_target_country scope:daoyu_target_country = { is_power_bloc_leader = yes } }
 		join_power_bloc = scope:daoyu_target_country
@@ -1045,6 +1050,65 @@ daoyu.132 = {
 	after = {
 		if = { limit = { has_variable = daoyu_return } remove_variable = daoyu_return trigger_event = { id = daoyu.130 popup = yes } }
 		else = { trigger_event = { id = daoyu.132 popup = yes } }
+	}
+}
+#组建国家集团:选认同
+daoyu.133 = {
+	type = country_event
+	placement = root
+	title = daoyu_cheat
+	desc = concept_power_bloc
+	flavor = daoyu_no_power_bloc
+	event_image = { video = "gfx/event_pictures/unspecific_signed_contract.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	duration = 0
+	option = {
+		name = identity_sovereign_empire#至高帝国
+		trigger = { is_in_power_bloc = no }
+		set_variable = daoyu_sovereign_empire
+		daoyu_create_power_bloc = { NAME = daoyu_power_bloc_name }
+		remove_variable = daoyu_sovereign_empire
+		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
+	}
+	option = {
+		name = identity_military_treaty_organization#军事条约
+		trigger = { is_in_power_bloc = no }
+		set_variable = daoyu_military_treaty_organization
+		daoyu_create_power_bloc = { NAME = daoyu_power_bloc_name }
+		remove_variable = daoyu_military_treaty_organization
+		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
+	}
+	option = {
+		name = identity_ideological_union#意识形态联盟
+		trigger = { is_in_power_bloc = no }
+		set_variable = daoyu_ideological_union
+		daoyu_create_power_bloc = { NAME = daoyu_power_bloc_name }
+		remove_variable = daoyu_ideological_union
+		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
+	}
+	option = {
+		name = identity_religious#宗教大会
+		trigger = { is_in_power_bloc = no }
+		set_variable = daoyu_religious
+		daoyu_create_power_bloc = { NAME = daoyu_power_bloc_name }
+		remove_variable = daoyu_religious
+		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
+	}
+	option = {
+		name = identity_cultural#文化共同体
+		trigger = { is_in_power_bloc = no }
+		set_variable = daoyu_cultural
+		daoyu_create_power_bloc = { NAME = daoyu_power_bloc_name }
+		remove_variable = daoyu_cultural
+		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
+	}
+	option = {
+		name = RESIGN
+		ai_chance = { base = 100 }
+		default_option = yes
+		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
 	}
 }
 #日志条目

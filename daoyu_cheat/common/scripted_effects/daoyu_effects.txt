@@ -1788,6 +1788,7 @@ daoyu_create_power_bloc = {
 	if = { limit = { has_variable = daoyu_military_treaty_organization } create_power_bloc = { name = $NAME$ identity = identity_military_treaty_organization } }
 	if = { limit = { has_variable = daoyu_ideological_union } create_power_bloc = { name = $NAME$ identity = identity_ideological_union } }
 	if = { limit = { has_variable = daoyu_religious } create_power_bloc = { name = $NAME$ identity = identity_religious } }
+	if = { limit = { has_variable = daoyu_cultural } create_power_bloc = { name = $NAME$ identity = identity_cultural } }
 }
 
 
