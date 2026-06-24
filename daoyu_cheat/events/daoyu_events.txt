@@ -802,15 +802,26 @@ daoyu.130 = {
 		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
 	}
 	option = {
-		name = ADD_NEW_PRINCIPLE#添加原则
+		name = daoyu_add_principle_1#添加原则1
 		trigger = { is_power_bloc_leader = yes }
 		hidden_effect = { trigger_event = { id = daoyu.132 popup = yes } }
 	}
 	option = {
-		name = daoyu_remove_principle#移除原则
+		name = daoyu_add_principle_2#添加原则2
+		trigger = { is_power_bloc_leader = yes }
+		hidden_effect = { trigger_event = { id = daoyu.134 popup = yes } }
+	}
+	option = {
+		name = daoyu_remove_principle_1#移除原则1
 		trigger = { is_power_bloc_leader = yes }
 		set_global_variable = daoyu_remove_principle
 		hidden_effect = { trigger_event = { id = daoyu.132 popup = yes } }
+	}
+	option = {
+		name = daoyu_remove_principle_2#移除原则2
+		trigger = { is_power_bloc_leader = yes }
+		set_global_variable = daoyu_remove_principle
+		hidden_effect = { trigger_event = { id = daoyu.134 popup = yes } }
 	}
 	option = {
 		name = QUIT
@@ -986,61 +997,6 @@ daoyu.132 = {
 		daoyu_add_or_remove_principle = { PRI = "military_industry" }
 	}
 	option = {
-		name = principle_group_colonial_offices#殖民部
-		trigger = { daoyu_has_principle = { PRI = "colonial_offices" } }
-		daoyu_add_or_remove_principle = { PRI = "colonial_offices" }
-	}
-	option = {
-		name = principle_group_foreign_investment#外国投资
-		trigger = { daoyu_has_principle = { PRI = "foreign_investment" } }
-		daoyu_add_or_remove_principle = { PRI = "foreign_investment" }
-	}
-	option = {
-		name = principle_group_creative_legislature#创意立法
-		trigger = { daoyu_has_principle = { PRI = "creative_legislature" } }
-		daoyu_add_or_remove_principle = { PRI = "creative_legislature" }
-	}
-	option = {
-		name = principle_group_freedom_of_movement#迁徙自由
-		trigger = { daoyu_has_principle = { PRI = "freedom_of_movement" } }
-		daoyu_add_or_remove_principle = { PRI = "freedom_of_movement" }
-	}
-	option = {
-		name = principle_group_divine_economics#神圣经济学
-		trigger = { daoyu_has_principle = { PRI = "divine_economics" } }
-		daoyu_add_or_remove_principle = { PRI = "divine_economics" }
-	}
-	option = {
-		name = principle_group_exploit_members#剥削成员国
-		trigger = { daoyu_has_principle = { PRI = "exploit_members" } }
-		daoyu_add_or_remove_principle = { PRI = "exploit_members" }
-	}
-	option = {
-		name = principle_group_sacred_civics#神圣公民
-		trigger = { daoyu_has_principle = { PRI = "sacred_civics" } }
-		daoyu_add_or_remove_principle = { PRI = "sacred_civics" }
-	}
-	option = {
-		name = principle_group_ideological_truth#意识形态真理
-		trigger = { daoyu_has_principle = { PRI = "ideological_truth" } }
-		daoyu_add_or_remove_principle = { PRI = "ideological_truth" }
-	}
-	option = {
-		name = principle_group_companies#公司
-		trigger = { daoyu_has_principle = { PRI = "companies" } }
-		daoyu_add_or_remove_principle = { PRI = "companies" }
-	}
-	option = {
-		name = principle_group_shared_canon#共同准则
-		trigger = { daoyu_has_principle = { PRI = "shared_canon" } }
-		daoyu_add_or_remove_principle = { PRI = "shared_canon" }
-	}
-	option = {
-		name = principle_group_navy#海上霸权
-		trigger = { daoyu_has_principle = { PRI = "navy" } }
-		daoyu_add_or_remove_principle = { PRI = "navy" }
-	}
-	option = {
 		name = RESIGN
 		ai_chance = { base = 100 }
 		remove_global_variable = daoyu_remove_principle
@@ -1109,6 +1065,97 @@ daoyu.133 = {
 		ai_chance = { base = 100 }
 		default_option = yes
 		hidden_effect = { trigger_event = { id = daoyu.130 popup = yes } }
+	}
+}
+#添加原则·第2页
+daoyu.134 = {
+	type = country_event
+	placement = root
+	title = daoyu_cheat
+	desc = daoyu_power_bloc_modifier#国家集团修正
+	flavor = daoyu_root_power_bloc
+	event_image = { video = "gfx/event_pictures/unspecific_signed_contract.bk2" }
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	duration = 0
+	immediate = {
+		daoyu_upgrade_principle = { PRI = "colonial_offices" }
+		daoyu_upgrade_principle = { PRI = "foreign_investment" }
+		daoyu_upgrade_principle = { PRI = "creative_legislature" }
+		daoyu_upgrade_principle = { PRI = "freedom_of_movement" }
+		daoyu_upgrade_principle = { PRI = "divine_economics" }
+		daoyu_upgrade_principle = { PRI = "exploit_members" }
+		daoyu_upgrade_principle = { PRI = "sacred_civics" }
+		daoyu_upgrade_principle = { PRI = "ideological_truth" }
+		daoyu_upgrade_principle = { PRI = "shared_canon" }
+		daoyu_upgrade_principle = { PRI = "navy" }
+	}
+	option = {
+		name = principle_group_colonial_offices#殖民部
+		trigger = { daoyu_has_principle = { PRI = "colonial_offices" } }
+		daoyu_add_or_remove_principle = { PRI = "colonial_offices" }
+	}
+	option = {
+		name = principle_group_foreign_investment#外国投资
+		trigger = { daoyu_has_principle = { PRI = "foreign_investment" } }
+		daoyu_add_or_remove_principle = { PRI = "foreign_investment" }
+	}
+	option = {
+		name = principle_group_creative_legislature#创意立法
+		trigger = { daoyu_has_principle = { PRI = "creative_legislature" } }
+		daoyu_add_or_remove_principle = { PRI = "creative_legislature" }
+	}
+	option = {
+		name = principle_group_freedom_of_movement#迁徙自由
+		trigger = { daoyu_has_principle = { PRI = "freedom_of_movement" } }
+		daoyu_add_or_remove_principle = { PRI = "freedom_of_movement" }
+	}
+	option = {
+		name = principle_group_divine_economics#神圣经济学
+		trigger = { daoyu_has_principle = { PRI = "divine_economics" } }
+		daoyu_add_or_remove_principle = { PRI = "divine_economics" }
+	}
+	option = {
+		name = principle_group_exploit_members#剥削成员国
+		trigger = { daoyu_has_principle = { PRI = "exploit_members" } }
+		daoyu_add_or_remove_principle = { PRI = "exploit_members" }
+	}
+	option = {
+		name = principle_group_sacred_civics#神圣公民
+		trigger = { daoyu_has_principle = { PRI = "sacred_civics" } }
+		daoyu_add_or_remove_principle = { PRI = "sacred_civics" }
+	}
+	option = {
+		name = principle_group_ideological_truth#意识形态真理
+		trigger = { daoyu_has_principle = { PRI = "ideological_truth" } }
+		daoyu_add_or_remove_principle = { PRI = "ideological_truth" }
+	}
+	option = {
+		name = principle_group_companies#公司
+		trigger = { daoyu_has_principle = { PRI = "companies" } }
+		daoyu_add_or_remove_principle = { PRI = "companies" }
+	}
+	option = {
+		name = principle_group_shared_canon#共同准则
+		trigger = { daoyu_has_principle = { PRI = "shared_canon" } }
+		daoyu_add_or_remove_principle = { PRI = "shared_canon" }
+	}
+	option = {
+		name = principle_group_navy#海上霸权
+		trigger = { daoyu_has_principle = { PRI = "navy" } }
+		daoyu_add_or_remove_principle = { PRI = "navy" }
+	}
+	option = {
+		name = RESIGN
+		ai_chance = { base = 100 }
+		remove_global_variable = daoyu_remove_principle
+		set_variable = daoyu_return
+		default_option = yes
+	}
+	after = {
+		if = { limit = { has_variable = daoyu_return } remove_variable = daoyu_return trigger_event = { id = daoyu.130 popup = yes } }
+		else = { trigger_event = { id = daoyu.134 popup = yes } }
 	}
 }
 #日志条目
